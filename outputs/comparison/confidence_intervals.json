@@ -1,0 +1,387 @@
+{
+  "dataset": "BCMID",
+  "cohort_size": 48,
+  "n_malignant": 8,
+  "n_benign": 40,
+  "malignant_prevalence": 0.16666666666666666,
+  "bootstrap_replicates": 2000,
+  "models": {
+    "DenseNet-121": {
+      "model_key": "DenseNet-121",
+      "model_name": "DenseNet-121 Mammogram",
+      "threshold": 0.2932,
+      "test_patients_total": 48,
+      "test_patients_malignant": 8,
+      "test_patients_benign": 40,
+      "malignant_prevalence": 0.16666666666666666,
+      "bootstrap_replicates": 2000,
+      "bootstrap_method": "patient_level_stratified_percentile",
+      "confusion_matrix": {
+        "tn": 29,
+        "fp": 11,
+        "fn": 4,
+        "tp": 4
+      },
+      "point_estimates": {
+        "roc_auc": 0.58125,
+        "pr_auc": 0.2234475074733061,
+        "accuracy": 0.6875,
+        "balanced_accuracy": 0.6125,
+        "precision": 0.26666666666666666,
+        "sensitivity": 0.5,
+        "specificity": 0.725,
+        "f1": 0.34782608695652173
+      },
+      "confidence_intervals_95": {
+        "roc_auc": {
+          "method": "bootstrap_percentile",
+          "point": 0.58125,
+          "ci_low": 0.35000000000000003,
+          "ci_high": 0.803125
+        },
+        "pr_auc": {
+          "method": "bootstrap_percentile",
+          "point": 0.2234475074733061,
+          "ci_low": 0.1229770788237321,
+          "ci_high": 0.540588455296158
+        },
+        "accuracy": {
+          "method": "bootstrap_percentile",
+          "point": 0.6875,
+          "ci_low": 0.5625,
+          "ci_high": 0.8125,
+          "exact_binomial_ci": [
+            0.5374864218941467,
+            0.8134037169039876
+          ]
+        },
+        "sensitivity": {
+          "method": "exact_binomial_clopper_pearson",
+          "point": 0.5,
+          "ci_low": 0.15701277048705803,
+          "ci_high": 0.842987229512942,
+          "bootstrap_ci": [
+            0.125,
+            0.875
+          ]
+        },
+        "specificity": {
+          "method": "exact_binomial_clopper_pearson",
+          "point": 0.725,
+          "ci_low": 0.5611170928206619,
+          "ci_high": 0.8539910080361406,
+          "bootstrap_ci": [
+            0.575,
+            0.85
+          ]
+        },
+        "precision": {
+          "method": "bootstrap_percentile",
+          "point": 0.26666666666666666,
+          "ci_low": 0.09090909090909091,
+          "ci_high": 0.45454545454545453
+        },
+        "f1": {
+          "method": "bootstrap_percentile",
+          "point": 0.34782608695652173,
+          "ci_low": 0.10526315789473684,
+          "ci_high": 0.56
+        },
+        "balanced_accuracy": {
+          "method": "bootstrap_percentile",
+          "point": 0.6125,
+          "ci_low": 0.425,
+          "ci_high": 0.7878124999999983
+        }
+      }
+    },
+    "ResNet-50": {
+      "model_key": "ResNet-50",
+      "model_name": "ResNet-50 Ultrasound",
+      "threshold": 0.3844,
+      "test_patients_total": 48,
+      "test_patients_malignant": 8,
+      "test_patients_benign": 40,
+      "malignant_prevalence": 0.16666666666666666,
+      "bootstrap_replicates": 2000,
+      "bootstrap_method": "patient_level_stratified_percentile",
+      "confusion_matrix": {
+        "tn": 36,
+        "fp": 4,
+        "fn": 3,
+        "tp": 5
+      },
+      "point_estimates": {
+        "roc_auc": 0.859375,
+        "pr_auc": 0.6947094705797299,
+        "accuracy": 0.8541666666666666,
+        "balanced_accuracy": 0.7625,
+        "precision": 0.5555555555555556,
+        "sensitivity": 0.625,
+        "specificity": 0.9,
+        "f1": 0.5882352941176471
+      },
+      "confidence_intervals_95": {
+        "roc_auc": {
+          "method": "bootstrap_percentile",
+          "point": 0.859375,
+          "ci_low": 0.709375,
+          "ci_high": 0.971875
+        },
+        "pr_auc": {
+          "method": "bootstrap_percentile",
+          "point": 0.6947094705797299,
+          "ci_low": 0.4074059787644746,
+          "ci_high": 0.9256213450292398
+        },
+        "accuracy": {
+          "method": "bootstrap_percentile",
+          "point": 0.8541666666666666,
+          "ci_low": 0.75,
+          "ci_high": 0.9375,
+          "exact_binomial_ci": [
+            0.722361659977972,
+            0.939295530633386
+          ]
+        },
+        "sensitivity": {
+          "method": "exact_binomial_clopper_pearson",
+          "point": 0.625,
+          "ci_low": 0.2448632163664999,
+          "ci_high": 0.9147665858624069,
+          "bootstrap_ci": [
+            0.25,
+            0.875
+          ]
+        },
+        "specificity": {
+          "method": "exact_binomial_clopper_pearson",
+          "point": 0.9,
+          "ci_low": 0.7633626001240518,
+          "ci_high": 0.9720745847057807,
+          "bootstrap_ci": [
+            0.8,
+            0.975
+          ]
+        },
+        "precision": {
+          "method": "bootstrap_percentile",
+          "point": 0.5555555555555556,
+          "ci_low": 0.3,
+          "ci_high": 0.875
+        },
+        "f1": {
+          "method": "bootstrap_percentile",
+          "point": 0.5882352941176471,
+          "ci_low": 0.30750000000000005,
+          "ci_high": 0.8421052631578947
+        },
+        "balanced_accuracy": {
+          "method": "bootstrap_percentile",
+          "point": 0.7625,
+          "ci_low": 0.5871875000000001,
+          "ci_high": 0.925
+        }
+      }
+    },
+    "Simple Fusion": {
+      "model_key": "Simple Fusion",
+      "model_name": "Simple Fusion Baseline",
+      "threshold": 0.2928,
+      "test_patients_total": 48,
+      "test_patients_malignant": 8,
+      "test_patients_benign": 40,
+      "malignant_prevalence": 0.16666666666666666,
+      "bootstrap_replicates": 2000,
+      "bootstrap_method": "patient_level_stratified_percentile",
+      "confusion_matrix": {
+        "tn": 32,
+        "fp": 8,
+        "fn": 3,
+        "tp": 5
+      },
+      "point_estimates": {
+        "roc_auc": 0.70625,
+        "pr_auc": 0.2728458462833463,
+        "accuracy": 0.7708333333333334,
+        "balanced_accuracy": 0.7125,
+        "precision": 0.38461538461538464,
+        "sensitivity": 0.625,
+        "specificity": 0.8,
+        "f1": 0.47619047619047616
+      },
+      "confidence_intervals_95": {
+        "roc_auc": {
+          "method": "bootstrap_percentile",
+          "point": 0.70625,
+          "ci_low": 0.493671875,
+          "ci_high": 0.8875
+        },
+        "pr_auc": {
+          "method": "bootstrap_percentile",
+          "point": 0.2728458462833463,
+          "ci_low": 0.16618164404616387,
+          "ci_high": 0.46633931172993665
+        },
+        "accuracy": {
+          "method": "bootstrap_percentile",
+          "point": 0.7708333333333334,
+          "ci_low": 0.6458333333333334,
+          "ci_high": 0.875,
+          "exact_binomial_ci": [
+            0.6268797526841396,
+            0.8796698331742108
+          ]
+        },
+        "sensitivity": {
+          "method": "exact_binomial_clopper_pearson",
+          "point": 0.625,
+          "ci_low": 0.2448632163664999,
+          "ci_high": 0.9147665858624069,
+          "bootstrap_ci": [
+            0.25,
+            0.875
+          ]
+        },
+        "specificity": {
+          "method": "exact_binomial_clopper_pearson",
+          "point": 0.8,
+          "ci_low": 0.6435219813207784,
+          "ci_high": 0.9094775906000439,
+          "bootstrap_ci": [
+            0.675,
+            0.925
+          ]
+        },
+        "precision": {
+          "method": "bootstrap_percentile",
+          "point": 0.38461538461538464,
+          "ci_low": 0.2,
+          "ci_high": 0.6153846153846154
+        },
+        "f1": {
+          "method": "bootstrap_percentile",
+          "point": 0.47619047619047616,
+          "ci_low": 0.23055555555555557,
+          "ci_high": 0.7
+        },
+        "balanced_accuracy": {
+          "method": "bootstrap_percentile",
+          "point": 0.7125,
+          "ci_low": 0.525,
+          "ci_high": 0.875
+        }
+      }
+    },
+    "Graph Transformer": {
+      "model_key": "Graph Transformer",
+      "model_name": "Multimodal Graph Transformer",
+      "threshold": 0.2565,
+      "test_patients_total": 48,
+      "test_patients_malignant": 8,
+      "test_patients_benign": 40,
+      "malignant_prevalence": 0.16666666666666666,
+      "bootstrap_replicates": 2000,
+      "bootstrap_method": "patient_level_stratified_percentile",
+      "confusion_matrix": {
+        "tn": 32,
+        "fp": 8,
+        "fn": 2,
+        "tp": 6
+      },
+      "point_estimates": {
+        "roc_auc": 0.859375,
+        "pr_auc": 0.5449522516956726,
+        "accuracy": 0.7916666666666666,
+        "balanced_accuracy": 0.775,
+        "precision": 0.42857142857142855,
+        "sensitivity": 0.75,
+        "specificity": 0.8,
+        "f1": 0.5454545454545454
+      },
+      "confidence_intervals_95": {
+        "roc_auc": {
+          "method": "bootstrap_percentile",
+          "point": 0.859375,
+          "ci_low": 0.7374218749999999,
+          "ci_high": 0.95625
+        },
+        "pr_auc": {
+          "method": "bootstrap_percentile",
+          "point": 0.5449522516956726,
+          "ci_low": 0.2879094136728308,
+          "ci_high": 0.8510416666666667
+        },
+        "accuracy": {
+          "method": "bootstrap_percentile",
+          "point": 0.7916666666666666,
+          "ci_low": 0.6666666666666666,
+          "ci_high": 0.8958333333333334,
+          "exact_binomial_ci": [
+            0.6500897597426735,
+            0.895309316967094
+          ]
+        },
+        "sensitivity": {
+          "method": "exact_binomial_clopper_pearson",
+          "point": 0.75,
+          "ci_low": 0.3491442055871758,
+          "ci_high": 0.9681459737500557,
+          "bootstrap_ci": [
+            0.5,
+            1.0
+          ]
+        },
+        "specificity": {
+          "method": "exact_binomial_clopper_pearson",
+          "point": 0.8,
+          "ci_low": 0.6435219813207784,
+          "ci_high": 0.9094775906000439,
+          "bootstrap_ci": [
+            0.675,
+            0.9006249999999966
+          ]
+        },
+        "precision": {
+          "method": "bootstrap_percentile",
+          "point": 0.42857142857142855,
+          "ci_low": 0.26666666666666666,
+          "ci_high": 0.6363636363636364
+        },
+        "f1": {
+          "method": "bootstrap_percentile",
+          "point": 0.5454545454545454,
+          "ci_low": 0.3333333333333333,
+          "ci_high": 0.7368421052631579
+        },
+        "balanced_accuracy": {
+          "method": "bootstrap_percentile",
+          "point": 0.775,
+          "ci_low": 0.6,
+          "ci_high": 0.9125
+        }
+      }
+    }
+  },
+  "paired_comparison_graph_transformer_vs_resnet": {
+    "models": "Graph Transformer vs ResNet-50",
+    "contingency_table": {
+      "both_correct": 33,
+      "a_correct_b_wrong": 5,
+      "b_correct_a_wrong": 8,
+      "both_wrong": 2
+    },
+    "mcnemar_exact_two_sided_p": 0.5810546875,
+    "roc_auc_diff_mean": 0.00030312499999999795,
+    "roc_auc_diff_95ci": [
+      -0.11249999999999993,
+      0.12187499999999996
+    ],
+    "roc_auc_diff_p_value": 1.0,
+    "pr_auc_diff_mean": -0.1343384718070967,
+    "pr_auc_diff_95ci": [
+      -0.44212065979202686,
+      0.1854847269320043
+    ]
+  }
+}

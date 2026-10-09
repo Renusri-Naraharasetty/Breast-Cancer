@@ -1,0 +1,41 @@
+# Byte-compiled / cache / build
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+.coverage
+htmlcov/
+dist/
+build/
+*.egg-info/
+
+# Virtual environments
+.env
+.venv
+env/
+venv/
+ENV/
+
+# PyTorch checkpoints and model weights (>100MB exceeds GitHub push limits)
+*.pth
+*.pt
+*.bin
+*.onnx
+*.safetensors
+checkpoints/
+outputs/**/checkpoints/
+
+# Clinical dataset (12.4 GB patient scans - medical privacy & GitHub limits)
+BCMID/
+*.pdf
+
+# Editor & OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+ehthumbs.db
+
+# Logs
+*.log

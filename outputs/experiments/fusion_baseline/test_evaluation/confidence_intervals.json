@@ -1,0 +1,89 @@
+{
+  "model_key": "Simple Fusion",
+  "model_name": "Simple Fusion Baseline",
+  "threshold": 0.2928,
+  "test_patients_total": 48,
+  "test_patients_malignant": 8,
+  "test_patients_benign": 40,
+  "malignant_prevalence": 0.16666666666666666,
+  "bootstrap_replicates": 2000,
+  "bootstrap_method": "patient_level_stratified_percentile",
+  "confusion_matrix": {
+    "tn": 32,
+    "fp": 8,
+    "fn": 3,
+    "tp": 5
+  },
+  "point_estimates": {
+    "roc_auc": 0.70625,
+    "pr_auc": 0.2728458462833463,
+    "accuracy": 0.7708333333333334,
+    "balanced_accuracy": 0.7125,
+    "precision": 0.38461538461538464,
+    "sensitivity": 0.625,
+    "specificity": 0.8,
+    "f1": 0.47619047619047616
+  },
+  "confidence_intervals_95": {
+    "roc_auc": {
+      "method": "bootstrap_percentile",
+      "point": 0.70625,
+      "ci_low": 0.493671875,
+      "ci_high": 0.8875
+    },
+    "pr_auc": {
+      "method": "bootstrap_percentile",
+      "point": 0.2728458462833463,
+      "ci_low": 0.16618164404616387,
+      "ci_high": 0.46633931172993665
+    },
+    "accuracy": {
+      "method": "bootstrap_percentile",
+      "point": 0.7708333333333334,
+      "ci_low": 0.6458333333333334,
+      "ci_high": 0.875,
+      "exact_binomial_ci": [
+        0.6268797526841396,
+        0.8796698331742108
+      ]
+    },
+    "sensitivity": {
+      "method": "exact_binomial_clopper_pearson",
+      "point": 0.625,
+      "ci_low": 0.2448632163664999,
+      "ci_high": 0.9147665858624069,
+      "bootstrap_ci": [
+        0.25,
+        0.875
+      ]
+    },
+    "specificity": {
+      "method": "exact_binomial_clopper_pearson",
+      "point": 0.8,
+      "ci_low": 0.6435219813207784,
+      "ci_high": 0.9094775906000439,
+      "bootstrap_ci": [
+        0.675,
+        0.925
+      ]
+    },
+    "precision": {
+      "method": "bootstrap_percentile",
+      "point": 0.38461538461538464,
+      "ci_low": 0.2,
+      "ci_high": 0.6153846153846154
+    },
+    "f1": {
+      "method": "bootstrap_percentile",
+      "point": 0.47619047619047616,
+      "ci_low": 0.23055555555555557,
+      "ci_high": 0.7
+    },
+    "balanced_accuracy": {
+      "method": "bootstrap_percentile",
+      "point": 0.7125,
+      "ci_low": 0.525,
+      "ci_high": 0.875
+    }
+  }
+}

@@ -1,0 +1,90 @@
+[
+  {
+    "model": "DenseNet-121 Mammogram",
+    "epoch": 5,
+    "val_roc_auc": 0.621875,
+    "calibrated_threshold_youden": 0.29321709275245667,
+    "calibrated_threshold_f1": 0.2928264800761197,
+    "test_roc_auc": 0.58125,
+    "test_pr_auc": 0.2234475074733061,
+    "test_acc_05": 0.8333333333333334,
+    "test_sens_05": 0.0,
+    "test_spec_05": 1.0,
+    "test_acc_cal": 0.6875,
+    "test_sens_cal": 0.5,
+    "test_spec_cal": 0.725,
+    "test_f1_cal": 0.34782608695652173,
+    "cm_cal": {
+      "tn": 29,
+      "fp": 11,
+      "fn": 4,
+      "tp": 4
+    }
+  },
+  {
+    "model": "ResNet-50 Ultrasound",
+    "epoch": 5,
+    "val_roc_auc": 0.759375,
+    "calibrated_threshold_youden": 0.38439974188804626,
+    "calibrated_threshold_f1": 0.39286517768770135,
+    "test_roc_auc": 0.859375,
+    "test_pr_auc": 0.6947094705797299,
+    "test_acc_05": 0.8333333333333334,
+    "test_sens_05": 0.0,
+    "test_spec_05": 1.0,
+    "test_acc_cal": 0.8541666666666666,
+    "test_sens_cal": 0.625,
+    "test_spec_cal": 0.9,
+    "test_f1_cal": 0.5882352941176471,
+    "cm_cal": {
+      "tn": 36,
+      "fp": 4,
+      "fn": 3,
+      "tp": 5
+    }
+  },
+  {
+    "model": "Simple Fusion Baseline",
+    "epoch": 14,
+    "val_roc_auc": 0.7999999999999999,
+    "calibrated_threshold_youden": 0.29275941848754883,
+    "calibrated_threshold_f1": 0.3189016208723859,
+    "test_roc_auc": 0.70625,
+    "test_pr_auc": 0.2728458462833463,
+    "test_acc_05": 0.8333333333333334,
+    "test_sens_05": 0.0,
+    "test_spec_05": 1.0,
+    "test_acc_cal": 0.7708333333333334,
+    "test_sens_cal": 0.625,
+    "test_spec_cal": 0.8,
+    "test_f1_cal": 0.47619047619047616,
+    "cm_cal": {
+      "tn": 32,
+      "fp": 8,
+      "fn": 3,
+      "tp": 5
+    }
+  },
+  {
+    "model": "Multimodal Graph Transformer",
+    "epoch": 11,
+    "val_roc_auc": 0.840625,
+    "calibrated_threshold_youden": 0.2565418779850006,
+    "calibrated_threshold_f1": 0.2558689284163553,
+    "test_roc_auc": 0.859375,
+    "test_pr_auc": 0.5449522516956726,
+    "test_acc_05": 0.8333333333333334,
+    "test_sens_05": 0.0,
+    "test_spec_05": 1.0,
+    "test_acc_cal": 0.7916666666666666,
+    "test_sens_cal": 0.75,
+    "test_spec_cal": 0.8,
+    "test_f1_cal": 0.5454545454545454,
+    "cm_cal": {
+      "tn": 32,
+      "fp": 8,
+      "fn": 2,
+      "tp": 6
+    }
+  }
+]

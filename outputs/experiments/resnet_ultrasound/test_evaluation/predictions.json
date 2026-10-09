@@ -1,0 +1,338 @@
+[
+  {
+    "patient_id": "00263y23",
+    "true_label": 1,
+    "pred_label": 0,
+    "pred_label_default_05": 0,
+    "prob_malignant": 0.3532094955444336
+  },
+  {
+    "patient_id": "0055y17",
+    "true_label": 0,
+    "pred_label": 0,
+    "pred_label_default_05": 0,
+    "prob_malignant": 0.342892050743103
+  },
+  {
+    "patient_id": "0072y16",
+    "true_label": 0,
+    "pred_label": 0,
+    "pred_label_default_05": 0,
+    "prob_malignant": 0.37539637088775635
+  },
+  {
+    "patient_id": "01172y23",
+    "true_label": 1,
+    "pred_label": 0,
+    "pred_label_default_05": 0,
+    "prob_malignant": 0.3623657822608948
+  },
+  {
+    "patient_id": "01262y21",
+    "true_label": 1,
+    "pred_label": 1,
+    "pred_label_default_05": 0,
+    "prob_malignant": 0.40701040625572205
+  },
+  {
+    "patient_id": "01281y21",
+    "true_label": 1,
+    "pred_label": 0,
+    "pred_label_default_05": 0,
+    "prob_malignant": 0.37405118346214294
+  },
+  {
+    "patient_id": "0178y10",
+    "true_label": 0,
+    "pred_label": 0,
+    "pred_label_default_05": 0,
+    "prob_malignant": 0.3805369734764099
+  },
+  {
+    "patient_id": "02418y21",
+    "true_label": 0,
+    "pred_label": 0,
+    "pred_label_default_05": 0,
+    "prob_malignant": 0.2791527211666107
+  },
+  {
+    "patient_id": "02570y20",
+    "true_label": 0,
+    "pred_label": 0,
+    "pred_label_default_05": 0,
+    "prob_malignant": 0.28360822796821594
+  },
+  {
+    "patient_id": "0331y15",
+    "true_label": 1,
+    "pred_label": 1,
+    "pred_label_default_05": 0,
+    "prob_malignant": 0.39089635014533997
+  },
+  {
+    "patient_id": "0343y15",
+    "true_label": 0,
+    "pred_label": 0,
+    "pred_label_default_05": 0,
+    "prob_malignant": 0.3763291537761688
+  },
+  {
+    "patient_id": "03835y20",
+    "true_label": 0,
+    "pred_label": 0,
+    "pred_label_default_05": 0,
+    "prob_malignant": 0.29523488879203796
+  },
+  {
+    "patient_id": "0423y18",
+    "true_label": 0,
+    "pred_label": 0,
+    "pred_label_default_05": 0,
+    "prob_malignant": 0.38296693563461304
+  },
+  {
+    "patient_id": "04364y20",
+    "true_label": 0,
+    "pred_label": 0,
+    "pred_label_default_05": 0,
+    "prob_malignant": 0.26978355646133423
+  },
+  {
+    "patient_id": "04376y19",
+    "true_label": 0,
+    "pred_label": 0,
+    "pred_label_default_05": 0,
+    "prob_malignant": 0.283600389957428
+  },
+  {
+    "patient_id": "04409y22",
+    "true_label": 0,
+    "pred_label": 0,
+    "pred_label_default_05": 0,
+    "prob_malignant": 0.38229113817214966
+  },
+  {
+    "patient_id": "0544y16",
+    "true_label": 0,
+    "pred_label": 0,
+    "pred_label_default_05": 0,
+    "prob_malignant": 0.32270124554634094
+  },
+  {
+    "patient_id": "05891y20",
+    "true_label": 0,
+    "pred_label": 1,
+    "pred_label_default_05": 0,
+    "prob_malignant": 0.391965389251709
+  },
+  {
+    "patient_id": "0721y18",
+    "true_label": 0,
+    "pred_label": 0,
+    "pred_label_default_05": 0,
+    "prob_malignant": 0.30172061920166016
+  },
+  {
+    "patient_id": "1083y07",
+    "true_label": 1,
+    "pred_label": 1,
+    "pred_label_default_05": 0,
+    "prob_malignant": 0.41105201840400696
+  },
+  {
+    "patient_id": "1537y19",
+    "true_label": 0,
+    "pred_label": 0,
+    "pred_label_default_05": 0,
+    "prob_malignant": 0.3779553472995758
+  },
+  {
+    "patient_id": "1677y19",
+    "true_label": 0,
+    "pred_label": 0,
+    "pred_label_default_05": 0,
+    "prob_malignant": 0.3746337890625
+  },
+  {
+    "patient_id": "1692y12",
+    "true_label": 0,
+    "pred_label": 0,
+    "pred_label_default_05": 0,
+    "prob_malignant": 0.330131471157074
+  },
+  {
+    "patient_id": "1767y15",
+    "true_label": 0,
+    "pred_label": 0,
+    "pred_label_default_05": 0,
+    "prob_malignant": 0.2905365526676178
+  },
+  {
+    "patient_id": "1769y15",
+    "true_label": 0,
+    "pred_label": 0,
+    "pred_label_default_05": 0,
+    "prob_malignant": 0.25670626759529114
+  },
+  {
+    "patient_id": "1949y14",
+    "true_label": 1,
+    "pred_label": 1,
+    "pred_label_default_05": 0,
+    "prob_malignant": 0.404758095741272
+  },
+  {
+    "patient_id": "2101y17",
+    "true_label": 0,
+    "pred_label": 0,
+    "pred_label_default_05": 0,
+    "prob_malignant": 0.28705376386642456
+  },
+  {
+    "patient_id": "2150y18",
+    "true_label": 0,
+    "pred_label": 0,
+    "pred_label_default_05": 0,
+    "prob_malignant": 0.3623225688934326
+  },
+  {
+    "patient_id": "2215y19",
+    "true_label": 0,
+    "pred_label": 0,
+    "pred_label_default_05": 0,
+    "prob_malignant": 0.34407472610473633
+  },
+  {
+    "patient_id": "2233y16",
+    "true_label": 0,
+    "pred_label": 0,
+    "pred_label_default_05": 0,
+    "prob_malignant": 0.32528549432754517
+  },
+  {
+    "patient_id": "2386y11",
+    "true_label": 0,
+    "pred_label": 0,
+    "pred_label_default_05": 0,
+    "prob_malignant": 0.3376920223236084
+  },
+  {
+    "patient_id": "2829y16",
+    "true_label": 1,
+    "pred_label": 1,
+    "pred_label_default_05": 0,
+    "prob_malignant": 0.39713290333747864
+  },
+  {
+    "patient_id": "2995y15",
+    "true_label": 0,
+    "pred_label": 0,
+    "pred_label_default_05": 0,
+    "prob_malignant": 0.35650983452796936
+  },
+  {
+    "patient_id": "3216y14",
+    "true_label": 0,
+    "pred_label": 0,
+    "pred_label_default_05": 0,
+    "prob_malignant": 0.3737258315086365
+  },
+  {
+    "patient_id": "3284y18",
+    "true_label": 0,
+    "pred_label": 0,
+    "pred_label_default_05": 0,
+    "prob_malignant": 0.3538226783275604
+  },
+  {
+    "patient_id": "3391y18",
+    "true_label": 0,
+    "pred_label": 1,
+    "pred_label_default_05": 0,
+    "prob_malignant": 0.394597589969635
+  },
+  {
+    "patient_id": "3499y19",
+    "true_label": 0,
+    "pred_label": 0,
+    "pred_label_default_05": 0,
+    "prob_malignant": 0.31060469150543213
+  },
+  {
+    "patient_id": "3664y19",
+    "true_label": 0,
+    "pred_label": 0,
+    "pred_label_default_05": 0,
+    "prob_malignant": 0.3624626100063324
+  },
+  {
+    "patient_id": "3677y17",
+    "true_label": 0,
+    "pred_label": 0,
+    "pred_label_default_05": 0,
+    "prob_malignant": 0.3507477343082428
+  },
+  {
+    "patient_id": "3753y19",
+    "true_label": 0,
+    "pred_label": 0,
+    "pred_label_default_05": 0,
+    "prob_malignant": 0.3547106981277466
+  },
+  {
+    "patient_id": "4033y15",
+    "true_label": 0,
+    "pred_label": 0,
+    "pred_label_default_05": 0,
+    "prob_malignant": 0.25430941581726074
+  },
+  {
+    "patient_id": "4105y18",
+    "true_label": 0,
+    "pred_label": 1,
+    "pred_label_default_05": 0,
+    "prob_malignant": 0.39107412099838257
+  },
+  {
+    "patient_id": "4228y16",
+    "true_label": 0,
+    "pred_label": 0,
+    "pred_label_default_05": 0,
+    "prob_malignant": 0.3390796482563019
+  },
+  {
+    "patient_id": "4315y15",
+    "true_label": 0,
+    "pred_label": 0,
+    "pred_label_default_05": 0,
+    "prob_malignant": 0.3186953663825989
+  },
+  {
+    "patient_id": "4578y16",
+    "true_label": 0,
+    "pred_label": 0,
+    "pred_label_default_05": 0,
+    "prob_malignant": 0.3593105375766754
+  },
+  {
+    "patient_id": "4584y15",
+    "true_label": 0,
+    "pred_label": 0,
+    "pred_label_default_05": 0,
+    "prob_malignant": 0.2727962136268616
+  },
+  {
+    "patient_id": "4908y16",
+    "true_label": 0,
+    "pred_label": 0,
+    "pred_label_default_05": 0,
+    "prob_malignant": 0.269847571849823
+  },
+  {
+    "patient_id": "9639y18",
+    "true_label": 0,
+    "pred_label": 1,
+    "pred_label_default_05": 0,
+    "prob_malignant": 0.38754937052726746
+  }
+]

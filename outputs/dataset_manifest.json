@@ -1,0 +1,3322 @@
+{
+  "00074y23": {
+    "patient_id": "00074y23",
+    "label_str": "UNKNOWN",
+    "label_id": -1,
+    "confidence": 0.0,
+    "status": "UNKNOWN",
+    "reason": "Missing PDF report file",
+    "birads_score": null,
+    "pdf_filename": null
+  },
+  "00163y21": {
+    "patient_id": "00163y21",
+    "label_str": "UNKNOWN",
+    "label_id": -1,
+    "confidence": 0.0,
+    "status": "UNKNOWN",
+    "reason": "Missing PDF report file",
+    "birads_score": null,
+    "pdf_filename": null
+  },
+  "0016y11": {
+    "patient_id": "0016y11",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 2 in report",
+    "birads_score": "2",
+    "pdf_filename": "0016y11_US_MG_Report.pdf"
+  },
+  "00212y21": {
+    "patient_id": "00212y21",
+    "label_str": "MALIGNANT",
+    "label_id": 1,
+    "confidence": 0.9,
+    "status": "INFERRED_CLINICAL",
+    "reason": "Neoadjuvant treatment localization for known breast carcinoma",
+    "birads_score": null,
+    "pdf_filename": "00212y21_US_MG_Report.pdf"
+  },
+  "0021y19": {
+    "patient_id": "0021y19",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 1 in report",
+    "birads_score": "1",
+    "pdf_filename": "0021y19_US_MG_Report.pdf"
+  },
+  "00247y21": {
+    "patient_id": "00247y21",
+    "label_str": "MALIGNANT",
+    "label_id": 1,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 6 in report",
+    "birads_score": "6",
+    "pdf_filename": "00247y21_US_MG_Report.pdf"
+  },
+  "00263y23": {
+    "patient_id": "00263y23",
+    "label_str": "MALIGNANT",
+    "label_id": 1,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 6 in report",
+    "birads_score": "6",
+    "pdf_filename": "00263y23_US_MG_Report.pdf"
+  },
+  "00278y20": {
+    "patient_id": "00278y20",
+    "label_str": "MALIGNANT",
+    "label_id": 1,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 6 in report",
+    "birads_score": "6",
+    "pdf_filename": "00278y20_US_MG_Report.pdf"
+  },
+  "00338y23": {
+    "patient_id": "00338y23",
+    "label_str": "MALIGNANT",
+    "label_id": 1,
+    "confidence": 0.9,
+    "status": "INFERRED_CLINICAL",
+    "reason": "Pathologically proved malignant neoplastic lesion",
+    "birads_score": null,
+    "pdf_filename": "00338y23_US_MG_Report.pdf"
+  },
+  "00435y23": {
+    "patient_id": "00435y23",
+    "label_str": "UNKNOWN",
+    "label_id": -1,
+    "confidence": 0.0,
+    "status": "UNKNOWN",
+    "reason": "Missing PDF report file",
+    "birads_score": null,
+    "pdf_filename": null
+  },
+  "00472y20": {
+    "patient_id": "00472y20",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 1 in report",
+    "birads_score": "1",
+    "pdf_filename": "00472y20_US_MG_Report.pdf"
+  },
+  "00506y21": {
+    "patient_id": "00506y21",
+    "label_str": "MALIGNANT",
+    "label_id": 1,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 4B in report",
+    "birads_score": "4B",
+    "pdf_filename": "00506y21_US_MG_Report.pdf"
+  },
+  "0055y17": {
+    "patient_id": "0055y17",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 2 in report",
+    "birads_score": "2",
+    "pdf_filename": "0055y17_US_MG_Report.pdf"
+  },
+  "00561y22": {
+    "patient_id": "00561y22",
+    "label_str": "MALIGNANT",
+    "label_id": 1,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 6 in report",
+    "birads_score": "6",
+    "pdf_filename": "00561y22_US_MG_Report.pdf"
+  },
+  "00603y20": {
+    "patient_id": "00603y20",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 2 in report",
+    "birads_score": "2",
+    "pdf_filename": "00603y20_US_MG_Report.pdf"
+  },
+  "00639y20": {
+    "patient_id": "00639y20",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.85,
+    "status": "INFERRED_CLINICAL",
+    "reason": "Satisfactory clear follow-up with no residual/recurrent mass",
+    "birads_score": null,
+    "pdf_filename": "00639y20_US_MG_Report.pdf"
+  },
+  "0065y15": {
+    "patient_id": "0065y15",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 1 in report",
+    "birads_score": "1",
+    "pdf_filename": "0065y15_US_MG_Report.pdf"
+  },
+  "00701y23": {
+    "patient_id": "00701y23",
+    "label_str": "UNKNOWN",
+    "label_id": -1,
+    "confidence": 0.0,
+    "status": "UNKNOWN",
+    "reason": "Missing PDF report file",
+    "birads_score": null,
+    "pdf_filename": null
+  },
+  "00717y20": {
+    "patient_id": "00717y20",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 1 in report",
+    "birads_score": "1",
+    "pdf_filename": "00717y20_US_MG_Report.pdf"
+  },
+  "0072y16": {
+    "patient_id": "0072y16",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 1 in report",
+    "birads_score": "1",
+    "pdf_filename": "0072y16_US_MG_Report.pdf"
+  },
+  "00760y21": {
+    "patient_id": "00760y21",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 3 in report",
+    "birads_score": "3",
+    "pdf_filename": "00760y21_US_MG_Report.pdf"
+  },
+  "00933y21": {
+    "patient_id": "00933y21",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 3 in report",
+    "birads_score": "3",
+    "pdf_filename": "00933y21_US_MG_Report.pdf"
+  },
+  "00953y23": {
+    "patient_id": "00953y23",
+    "label_str": "UNKNOWN",
+    "label_id": -1,
+    "confidence": 0.0,
+    "status": "UNKNOWN",
+    "reason": "Missing PDF report file",
+    "birads_score": null,
+    "pdf_filename": null
+  },
+  "0103y17": {
+    "patient_id": "0103y17",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 2 in report",
+    "birads_score": "2",
+    "pdf_filename": "0103y17_US_MG_Report.pdf"
+  },
+  "01113y20": {
+    "patient_id": "01113y20",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 2 in report",
+    "birads_score": "2",
+    "pdf_filename": "01113y20_US_MG_Report.pdf"
+  },
+  "0115y14": {
+    "patient_id": "0115y14",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 2 in report",
+    "birads_score": "2",
+    "pdf_filename": "0115y14_US_MG_Report.pdf"
+  },
+  "01172y23": {
+    "patient_id": "01172y23",
+    "label_str": "MALIGNANT",
+    "label_id": 1,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 6 in report",
+    "birads_score": "6",
+    "pdf_filename": "01172y23_US_MG_Report.pdf"
+  },
+  "01262y21": {
+    "patient_id": "01262y21",
+    "label_str": "MALIGNANT",
+    "label_id": 1,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 5 in report",
+    "birads_score": "5",
+    "pdf_filename": "01262y21_US_MG_Report.pdf"
+  },
+  "01271y23": {
+    "patient_id": "01271y23",
+    "label_str": "MALIGNANT",
+    "label_id": 1,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 6 in report",
+    "birads_score": "6",
+    "pdf_filename": "01271y23_US_MG_Report.pdf"
+  },
+  "01277y20": {
+    "patient_id": "01277y20",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 1 in report",
+    "birads_score": "1",
+    "pdf_filename": "01277y20_US_MG_Report.pdf"
+  },
+  "01281y21": {
+    "patient_id": "01281y21",
+    "label_str": "MALIGNANT",
+    "label_id": 1,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 6 in report",
+    "birads_score": "6",
+    "pdf_filename": "01281y21_US_MG_Report.pdf"
+  },
+  "01514y21": {
+    "patient_id": "01514y21",
+    "label_str": "UNKNOWN",
+    "label_id": -1,
+    "confidence": 0.0,
+    "status": "UNKNOWN",
+    "reason": "PDF contains no extractable text (likely scanned raster image)",
+    "birads_score": null,
+    "pdf_filename": "01514y21_US_MG_Report.pdf"
+  },
+  "01566y21": {
+    "patient_id": "01566y21",
+    "label_str": "MALIGNANT",
+    "label_id": 1,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 4B in report",
+    "birads_score": "4B",
+    "pdf_filename": "01566y21_US_MG_Report.pdf"
+  },
+  "01566y211": {
+    "patient_id": "01566y211",
+    "label_str": "MALIGNANT",
+    "label_id": 1,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 4B in report",
+    "birads_score": "4B",
+    "pdf_filename": "01566y211_US_MG_Report.pdf"
+  },
+  "01615y21": {
+    "patient_id": "01615y21",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 2 in report",
+    "birads_score": "2",
+    "pdf_filename": "01615y21_US_MG_Report.pdf"
+  },
+  "0165y09": {
+    "patient_id": "0165y09",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 2 in report",
+    "birads_score": "2",
+    "pdf_filename": "0165y09_US_MG_Report.pdf"
+  },
+  "01668y21": {
+    "patient_id": "01668y21",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 2 in report",
+    "birads_score": "2",
+    "pdf_filename": "01668y21_US_MG_Report.pdf"
+  },
+  "01698y21": {
+    "patient_id": "01698y21",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 3 in report",
+    "birads_score": "3",
+    "pdf_filename": "01698y21_US_MG_Report.pdf"
+  },
+  "0173y15": {
+    "patient_id": "0173y15",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 1 in report",
+    "birads_score": "1",
+    "pdf_filename": "0173y15_US_MG_Report.pdf"
+  },
+  "0178y10": {
+    "patient_id": "0178y10",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 2 in report",
+    "birads_score": "2",
+    "pdf_filename": "0178y10_US_MG_Report.pdf"
+  },
+  "01870y20": {
+    "patient_id": "01870y20",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 1 in report",
+    "birads_score": "1",
+    "pdf_filename": "01870y20_US_MG_Report.pdf"
+  },
+  "01880y20": {
+    "patient_id": "01880y20",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 2 in report",
+    "birads_score": "2",
+    "pdf_filename": "01880y20_US_MG_Report.pdf"
+  },
+  "01921y21": {
+    "patient_id": "01921y21",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 3 in report",
+    "birads_score": "3",
+    "pdf_filename": "01921y21_US_MG_Report.pdf"
+  },
+  "0193y16": {
+    "patient_id": "0193y16",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 1 in report",
+    "birads_score": "1",
+    "pdf_filename": "0193y16_US_MG_Report.pdf"
+  },
+  "01991y22": {
+    "patient_id": "01991y22",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 2 in report",
+    "birads_score": "2",
+    "pdf_filename": "01991y22_US_MG_Report.pdf"
+  },
+  "02095y21": {
+    "patient_id": "02095y21",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 2 in report",
+    "birads_score": "2",
+    "pdf_filename": "02095y21_US_MG_Report.pdf"
+  },
+  "02137y20": {
+    "patient_id": "02137y20",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 2 in report",
+    "birads_score": "2",
+    "pdf_filename": "02137y20_US_MG_Report.pdf"
+  },
+  "02241y20": {
+    "patient_id": "02241y20",
+    "label_str": "MALIGNANT",
+    "label_id": 1,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 6 in report",
+    "birads_score": "6",
+    "pdf_filename": "02241y20_US_MG_Report.pdf"
+  },
+  "02264y20": {
+    "patient_id": "02264y20",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 3 in report",
+    "birads_score": "3",
+    "pdf_filename": "02264y20_US_MG_Report.pdf"
+  },
+  "02299y20": {
+    "patient_id": "02299y20",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 2 in report",
+    "birads_score": "2",
+    "pdf_filename": "02299y20_US_MG_Report.pdf"
+  },
+  "02300y21": {
+    "patient_id": "02300y21",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 2 in report",
+    "birads_score": "2",
+    "pdf_filename": "02300y21_US_MG_Report.pdf"
+  },
+  "02347y20": {
+    "patient_id": "02347y20",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 2 in report",
+    "birads_score": "2",
+    "pdf_filename": "02347y20_US_MG_Report.pdf"
+  },
+  "02377y21": {
+    "patient_id": "02377y21",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 2 in report",
+    "birads_score": "2",
+    "pdf_filename": "02377y21_US_MG_Report.pdf"
+  },
+  "02410y21": {
+    "patient_id": "02410y21",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 3 in report",
+    "birads_score": "3",
+    "pdf_filename": "02410y21_US_MG_Report.pdf"
+  },
+  "02418y21": {
+    "patient_id": "02418y21",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 2 in report",
+    "birads_score": "2",
+    "pdf_filename": "02418y21_US_MG_Report.pdf"
+  },
+  "02450y20": {
+    "patient_id": "02450y20",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 2 in report",
+    "birads_score": "2",
+    "pdf_filename": "02450y20_US_MG_Report.pdf"
+  },
+  "0249y16": {
+    "patient_id": "0249y16",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 2 in report",
+    "birads_score": "2",
+    "pdf_filename": "0249y16_US_MG_Report.pdf"
+  },
+  "02500y22": {
+    "patient_id": "02500y22",
+    "label_str": "MALIGNANT",
+    "label_id": 1,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 5 in report",
+    "birads_score": "5",
+    "pdf_filename": "02500y22_US_MG_Report.pdf"
+  },
+  "02570y20": {
+    "patient_id": "02570y20",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 2 in report",
+    "birads_score": "2",
+    "pdf_filename": "02570y20_US_MG_Report.pdf"
+  },
+  "02639y22": {
+    "patient_id": "02639y22",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 3 in report",
+    "birads_score": "3",
+    "pdf_filename": "02639y22_US_MG_Report.pdf"
+  },
+  "0263y19": {
+    "patient_id": "0263y19",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 3 in report",
+    "birads_score": "3",
+    "pdf_filename": "0263y19_US_MG_Report.pdf"
+  },
+  "02654y20": {
+    "patient_id": "02654y20",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 2 in report",
+    "birads_score": "2",
+    "pdf_filename": "02654y20_US_MG_Report.pdf"
+  },
+  "0284y14": {
+    "patient_id": "0284y14",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 2 in report",
+    "birads_score": "2",
+    "pdf_filename": "0284y14_US_MG_Report.pdf"
+  },
+  "02899y20": {
+    "patient_id": "02899y20",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 2 in report",
+    "birads_score": "2",
+    "pdf_filename": "02899y20_US_MG_Report.pdf"
+  },
+  "02922y23": {
+    "patient_id": "02922y23",
+    "label_str": "MALIGNANT",
+    "label_id": 1,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 6 in report",
+    "birads_score": "6",
+    "pdf_filename": "02922y23_US_MG_Report.pdf"
+  },
+  "02962y20": {
+    "patient_id": "02962y20",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 3 in report",
+    "birads_score": "3",
+    "pdf_filename": "02962y20_US_MG_Report.pdf"
+  },
+  "02967y20": {
+    "patient_id": "02967y20",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 2 in report",
+    "birads_score": "2",
+    "pdf_filename": "02967y20_US_MG_Report.pdf"
+  },
+  "0299y16": {
+    "patient_id": "0299y16",
+    "label_str": "MALIGNANT",
+    "label_id": 1,
+    "confidence": 0.9,
+    "status": "INFERRED_CLINICAL",
+    "reason": "Pathologically proved malignant neoplastic lesion",
+    "birads_score": null,
+    "pdf_filename": "0299y16_US_MG_Report.pdf"
+  },
+  "03128y21": {
+    "patient_id": "03128y21",
+    "label_str": "MALIGNANT",
+    "label_id": 1,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 4A in report",
+    "birads_score": "4A",
+    "pdf_filename": "03128y21_US_MG_Report.pdf"
+  },
+  "03128y211": {
+    "patient_id": "03128y211",
+    "label_str": "MALIGNANT",
+    "label_id": 1,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 4A in report",
+    "birads_score": "4A",
+    "pdf_filename": "03128y211_US_MG_Report.pdf"
+  },
+  "03191y21": {
+    "patient_id": "03191y21",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 2 in report",
+    "birads_score": "2",
+    "pdf_filename": "03191y21_US_MG_Report.pdf"
+  },
+  "0323y15": {
+    "patient_id": "0323y15",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 2 in report",
+    "birads_score": "2",
+    "pdf_filename": "0323y15_US_MG_Report.pdf"
+  },
+  "0323y18": {
+    "patient_id": "0323y18",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 2 in report",
+    "birads_score": "2",
+    "pdf_filename": "0323y18_US_MG_Report.pdf"
+  },
+  "0331y15": {
+    "patient_id": "0331y15",
+    "label_str": "MALIGNANT",
+    "label_id": 1,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 6 in report",
+    "birads_score": "6",
+    "pdf_filename": "0331y15_US_MG_Report.pdf"
+  },
+  "0343y15": {
+    "patient_id": "0343y15",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 2 in report",
+    "birads_score": "2",
+    "pdf_filename": "0343y15_US_MG_Report.pdf"
+  },
+  "03829y20": {
+    "patient_id": "03829y20",
+    "label_str": "MALIGNANT",
+    "label_id": 1,
+    "confidence": 0.9,
+    "status": "INFERRED_CLINICAL",
+    "reason": "Pathologically proved malignant neoplastic lesion",
+    "birads_score": null,
+    "pdf_filename": "03829y20_US_MG_Report.pdf"
+  },
+  "03835y20": {
+    "patient_id": "03835y20",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 2 in report",
+    "birads_score": "2",
+    "pdf_filename": "03835y20_US_MG_Report.pdf"
+  },
+  "03881y22": {
+    "patient_id": "03881y22",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 2 in report",
+    "birads_score": "2",
+    "pdf_filename": "03881y22_US_MG_Report.pdf"
+  },
+  "03911y20": {
+    "patient_id": "03911y20",
+    "label_str": "MALIGNANT",
+    "label_id": 1,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 6 in report",
+    "birads_score": "6",
+    "pdf_filename": "03911y20_US_MG_Report.pdf"
+  },
+  "03913y21": {
+    "patient_id": "03913y21",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 3 in report",
+    "birads_score": "3",
+    "pdf_filename": "03913y21_US_MG_Report.pdf"
+  },
+  "03964y22": {
+    "patient_id": "03964y22",
+    "label_str": "MALIGNANT",
+    "label_id": 1,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 6 in report",
+    "birads_score": "6",
+    "pdf_filename": "03964y22_US_MG_Report.pdf"
+  },
+  "04138y20": {
+    "patient_id": "04138y20",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 2 in report",
+    "birads_score": "2",
+    "pdf_filename": "04138y20_US_MG_Report.pdf"
+  },
+  "0413y16": {
+    "patient_id": "0413y16",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 1 in report",
+    "birads_score": "1",
+    "pdf_filename": "0413y16_US_MG_Report.pdf"
+  },
+  "0423y18": {
+    "patient_id": "0423y18",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 2 in report",
+    "birads_score": "2",
+    "pdf_filename": "0423y18_US_MG_Report.pdf"
+  },
+  "04272y20": {
+    "patient_id": "04272y20",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 2 in report",
+    "birads_score": "2",
+    "pdf_filename": "04272y20_US_MG_Report.pdf"
+  },
+  "04348y23": {
+    "patient_id": "04348y23",
+    "label_str": "UNKNOWN",
+    "label_id": -1,
+    "confidence": 0.0,
+    "status": "UNKNOWN",
+    "reason": "Missing PDF report file",
+    "birads_score": null,
+    "pdf_filename": null
+  },
+  "04362y20": {
+    "patient_id": "04362y20",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 3 in report",
+    "birads_score": "3",
+    "pdf_filename": "04362y20_US_MG_Report.pdf"
+  },
+  "04364y20": {
+    "patient_id": "04364y20",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 2 in report",
+    "birads_score": "2",
+    "pdf_filename": "04364y20_US_MG_Report.pdf"
+  },
+  "04376y19": {
+    "patient_id": "04376y19",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 2 in report",
+    "birads_score": "2",
+    "pdf_filename": "04376y19_US_MG_Report.pdf"
+  },
+  "04409y22": {
+    "patient_id": "04409y22",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 3 in report",
+    "birads_score": "3",
+    "pdf_filename": "04409y22_US_MG_Report.pdf"
+  },
+  "04412y22": {
+    "patient_id": "04412y22",
+    "label_str": "MALIGNANT",
+    "label_id": 1,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 4C in report",
+    "birads_score": "4C",
+    "pdf_filename": "04412y22_US_MG_Report.pdf"
+  },
+  "04412y221": {
+    "patient_id": "04412y221",
+    "label_str": "MALIGNANT",
+    "label_id": 1,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 4C in report",
+    "birads_score": "4C",
+    "pdf_filename": "04412y221_US_MG_Report.pdf"
+  },
+  "0441y19": {
+    "patient_id": "0441y19",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 2 in report",
+    "birads_score": "2",
+    "pdf_filename": "0441y19_US_MG_Report.pdf"
+  },
+  "04422y20": {
+    "patient_id": "04422y20",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 2 in report",
+    "birads_score": "2",
+    "pdf_filename": "04422y20_US_MG_Report.pdf"
+  },
+  "04436y19": {
+    "patient_id": "04436y19",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 2 in report",
+    "birads_score": "2",
+    "pdf_filename": "04436y19_US_MG_Report.pdf"
+  },
+  "0457y06": {
+    "patient_id": "0457y06",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 1 in report",
+    "birads_score": "1",
+    "pdf_filename": "0457y06_US_MG_Report.pdf"
+  },
+  "04583y20": {
+    "patient_id": "04583y20",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 2 in report",
+    "birads_score": "2",
+    "pdf_filename": "04583y20_US_MG_Report.pdf"
+  },
+  "0470y18": {
+    "patient_id": "0470y18",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 3 in report",
+    "birads_score": "3",
+    "pdf_filename": "0470y18_US_MG_Report.pdf"
+  },
+  "04734y22": {
+    "patient_id": "04734y22",
+    "label_str": "UNKNOWN",
+    "label_id": -1,
+    "confidence": 0.0,
+    "status": "UNKNOWN",
+    "reason": "Missing PDF report file",
+    "birads_score": null,
+    "pdf_filename": null
+  },
+  "04747y22": {
+    "patient_id": "04747y22",
+    "label_str": "MALIGNANT",
+    "label_id": 1,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 6 in report",
+    "birads_score": "6",
+    "pdf_filename": "04747y22_US_MG_Report.pdf"
+  },
+  "04837y20": {
+    "patient_id": "04837y20",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 2 in report",
+    "birads_score": "2",
+    "pdf_filename": "04837y20_US_MG_Report.pdf"
+  },
+  "04902y22": {
+    "patient_id": "04902y22",
+    "label_str": "MALIGNANT",
+    "label_id": 1,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 6 in report",
+    "birads_score": "6",
+    "pdf_filename": "04902y22_US_MG_Report.pdf"
+  },
+  "04906y21": {
+    "patient_id": "04906y21",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 1 in report",
+    "birads_score": "1",
+    "pdf_filename": "04906y21_US_MG_Report.pdf"
+  },
+  "0505y09": {
+    "patient_id": "0505y09",
+    "label_str": "MALIGNANT",
+    "label_id": 1,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 4A in report",
+    "birads_score": "4A",
+    "pdf_filename": "0505y09_US_MG_Report.pdf"
+  },
+  "05119y21": {
+    "patient_id": "05119y21",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 3 in report",
+    "birads_score": "3",
+    "pdf_filename": "05119y21_US_MG_Report.pdf"
+  },
+  "05128y22": {
+    "patient_id": "05128y22",
+    "label_str": "MALIGNANT",
+    "label_id": 1,
+    "confidence": 0.9,
+    "status": "INFERRED_CLINICAL",
+    "reason": "Pathologically proved malignant neoplastic lesion",
+    "birads_score": null,
+    "pdf_filename": "05128y22_US_MG_Report.pdf"
+  },
+  "05176y20": {
+    "patient_id": "05176y20",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 2 in report",
+    "birads_score": "2",
+    "pdf_filename": "05176y20_US_MG_Report.pdf"
+  },
+  "05186y20": {
+    "patient_id": "05186y20",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 3 in report",
+    "birads_score": "3",
+    "pdf_filename": "05186y20_US_MG_Report.pdf"
+  },
+  "0529y15": {
+    "patient_id": "0529y15",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 2 in report",
+    "birads_score": "2",
+    "pdf_filename": "0529y15_US_MG_Report.pdf"
+  },
+  "05365y20": {
+    "patient_id": "05365y20",
+    "label_str": "MALIGNANT",
+    "label_id": 1,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 6 in report",
+    "birads_score": "6",
+    "pdf_filename": "05365y20_US_MG_Report.pdf"
+  },
+  "05439y20": {
+    "patient_id": "05439y20",
+    "label_str": "MALIGNANT",
+    "label_id": 1,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 6 in report",
+    "birads_score": "6",
+    "pdf_filename": "05439y20_US_MG_Report.pdf"
+  },
+  "0544y16": {
+    "patient_id": "0544y16",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 1 in report",
+    "birads_score": "1",
+    "pdf_filename": "0544y16_US_MG_Report.pdf"
+  },
+  "05463y21": {
+    "patient_id": "05463y21",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 2 in report",
+    "birads_score": "2",
+    "pdf_filename": "05463y21_US_MG_Report.pdf"
+  },
+  "0546y16": {
+    "patient_id": "0546y16",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 1 in report",
+    "birads_score": "1",
+    "pdf_filename": "0546y16_US_MG_Report.pdf"
+  },
+  "05494y21": {
+    "patient_id": "05494y21",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 2 in report",
+    "birads_score": "2",
+    "pdf_filename": "05494y21_US_MG_Report.pdf"
+  },
+  "0560y20": {
+    "patient_id": "0560y20",
+    "label_str": "UNKNOWN",
+    "label_id": -1,
+    "confidence": 0.0,
+    "status": "UNKNOWN",
+    "reason": "Missing PDF report file",
+    "birads_score": null,
+    "pdf_filename": null
+  },
+  "05673y22": {
+    "patient_id": "05673y22",
+    "label_str": "UNKNOWN",
+    "label_id": -1,
+    "confidence": 0.0,
+    "status": "UNKNOWN",
+    "reason": "Missing PDF report file",
+    "birads_score": null,
+    "pdf_filename": null
+  },
+  "0568y19": {
+    "patient_id": "0568y19",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 1 in report",
+    "birads_score": "1",
+    "pdf_filename": "0568y19_US_MG_Report.pdf"
+  },
+  "05804y22": {
+    "patient_id": "05804y22",
+    "label_str": "MALIGNANT",
+    "label_id": 1,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 6 in report",
+    "birads_score": "6",
+    "pdf_filename": "05804y22_US_MG_Report.pdf"
+  },
+  "0581y11": {
+    "patient_id": "0581y11",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 2 in report",
+    "birads_score": "2",
+    "pdf_filename": "0581y11_US_MG_Report.pdf"
+  },
+  "0583y19": {
+    "patient_id": "0583y19",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 3 in report",
+    "birads_score": "3",
+    "pdf_filename": "0583y19_US_MG_Report.pdf"
+  },
+  "0585y12": {
+    "patient_id": "0585y12",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 2 in report",
+    "birads_score": "2",
+    "pdf_filename": "0585y12_US_MG_Report.pdf"
+  },
+  "05891y20": {
+    "patient_id": "05891y20",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 1 in report",
+    "birads_score": "1",
+    "pdf_filename": "05891y20_US_MG_Report.pdf"
+  },
+  "06025y20": {
+    "patient_id": "06025y20",
+    "label_str": "MALIGNANT",
+    "label_id": 1,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 6 in report",
+    "birads_score": "6",
+    "pdf_filename": "06025y20_US_MG_Report.pdf"
+  },
+  "0609y09": {
+    "patient_id": "0609y09",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 2 in report",
+    "birads_score": "2",
+    "pdf_filename": "0609y09_US_MG_Report.pdf"
+  },
+  "0618y16": {
+    "patient_id": "0618y16",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 2 in report",
+    "birads_score": "2",
+    "pdf_filename": "0618y16_US_MG_Report.pdf"
+  },
+  "06451y20": {
+    "patient_id": "06451y20",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 1 in report",
+    "birads_score": "1",
+    "pdf_filename": "06451y20_US_MG_Report.pdf"
+  },
+  "0646y19": {
+    "patient_id": "0646y19",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 2 in report",
+    "birads_score": "2",
+    "pdf_filename": "0646y19_US_MG_Report.pdf"
+  },
+  "06511y20": {
+    "patient_id": "06511y20",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 2 in report",
+    "birads_score": "2",
+    "pdf_filename": "06511y20_US_MG_Report.pdf"
+  },
+  "06532y20": {
+    "patient_id": "06532y20",
+    "label_str": "MALIGNANT",
+    "label_id": 1,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 6 in report",
+    "birads_score": "6",
+    "pdf_filename": "06532y20_US_MG_Report.pdf"
+  },
+  "06671y20": {
+    "patient_id": "06671y20",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 1 in report",
+    "birads_score": "1",
+    "pdf_filename": "06671y20_US_MG_Report.pdf"
+  },
+  "0721y18": {
+    "patient_id": "0721y18",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 2 in report",
+    "birads_score": "2",
+    "pdf_filename": "0721y18_US_MG_Report.pdf"
+  },
+  "0740y17": {
+    "patient_id": "0740y17",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 2 in report",
+    "birads_score": "2",
+    "pdf_filename": "0740y17_US_MG_Report.pdf"
+  },
+  "0800y07": {
+    "patient_id": "0800y07",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 2 in report",
+    "birads_score": "2",
+    "pdf_filename": "0800y07_US_MG_Report.pdf"
+  },
+  "0802y11": {
+    "patient_id": "0802y11",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 1 in report",
+    "birads_score": "1",
+    "pdf_filename": "0802y11_US_MG_Report.pdf"
+  },
+  "0812y15": {
+    "patient_id": "0812y15",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 2 in report",
+    "birads_score": "2",
+    "pdf_filename": "0812y15_US_MG_Report.pdf"
+  },
+  "0829y18": {
+    "patient_id": "0829y18",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 2 in report",
+    "birads_score": "2",
+    "pdf_filename": "0829y18_US_MG_Report.pdf"
+  },
+  "0833y15": {
+    "patient_id": "0833y15",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 2 in report",
+    "birads_score": "2",
+    "pdf_filename": "0833y15_US_MG_Report.pdf"
+  },
+  "0877y07": {
+    "patient_id": "0877y07",
+    "label_str": "MALIGNANT",
+    "label_id": 1,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 4A in report",
+    "birads_score": "4A",
+    "pdf_filename": "0877y07_US_MG_Report.pdf"
+  },
+  "0919y18": {
+    "patient_id": "0919y18",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 1 in report",
+    "birads_score": "1",
+    "pdf_filename": "0919y18_US_MG_Report.pdf"
+  },
+  "0950y19": {
+    "patient_id": "0950y19",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 3 in report",
+    "birads_score": "3",
+    "pdf_filename": "0950y19_US_MG_Report.pdf"
+  },
+  "0957y11": {
+    "patient_id": "0957y11",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 1 in report",
+    "birads_score": "1",
+    "pdf_filename": "0957y11_US_MG_Report.pdf"
+  },
+  "0982y19": {
+    "patient_id": "0982y19",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 2 in report",
+    "birads_score": "2",
+    "pdf_filename": "0982y19_US_MG_Report.pdf"
+  },
+  "1000y16": {
+    "patient_id": "1000y16",
+    "label_str": "MALIGNANT",
+    "label_id": 1,
+    "confidence": 0.9,
+    "status": "INFERRED_CLINICAL",
+    "reason": "Pathologically proved malignant neoplastic lesion",
+    "birads_score": null,
+    "pdf_filename": "1000y16_US_MG_Report.pdf"
+  },
+  "1000y17": {
+    "patient_id": "1000y17",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 2 in report",
+    "birads_score": "2",
+    "pdf_filename": "1000y17_US_MG_Report.pdf"
+  },
+  "1016y15": {
+    "patient_id": "1016y15",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 1 in report",
+    "birads_score": "1",
+    "pdf_filename": "1016y15_US_MG_Report.pdf"
+  },
+  "1019y18": {
+    "patient_id": "1019y18",
+    "label_str": "MALIGNANT",
+    "label_id": 1,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 5 in report",
+    "birads_score": "5",
+    "pdf_filename": "1019y18_US_MG_Report.pdf"
+  },
+  "1083y07": {
+    "patient_id": "1083y07",
+    "label_str": "MALIGNANT",
+    "label_id": 1,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 4A in report",
+    "birads_score": "4A",
+    "pdf_filename": "1083y07_US_MG_Report.pdf"
+  },
+  "1112y15": {
+    "patient_id": "1112y15",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 2 in report",
+    "birads_score": "2",
+    "pdf_filename": "1112y15_US_MG_Report.pdf"
+  },
+  "1141y18": {
+    "patient_id": "1141y18",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 3 in report",
+    "birads_score": "3",
+    "pdf_filename": "1141y18_US_MG_Report.pdf"
+  },
+  "1171y18": {
+    "patient_id": "1171y18",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 1 in report",
+    "birads_score": "1",
+    "pdf_filename": "1171y18_US_MG_Report.pdf"
+  },
+  "1173y15": {
+    "patient_id": "1173y15",
+    "label_str": "MALIGNANT",
+    "label_id": 1,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 5 in report",
+    "birads_score": "5",
+    "pdf_filename": "1173y15_US_MG_Report.pdf"
+  },
+  "1193y16": {
+    "patient_id": "1193y16",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 2 in report",
+    "birads_score": "2",
+    "pdf_filename": "1193y16_US_MG_Report.pdf"
+  },
+  "1196y19": {
+    "patient_id": "1196y19",
+    "label_str": "MALIGNANT",
+    "label_id": 1,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 4B in report",
+    "birads_score": "4B",
+    "pdf_filename": "1196y19_US_MG_Report.pdf"
+  },
+  "1217y09": {
+    "patient_id": "1217y09",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 1 in report",
+    "birads_score": "1",
+    "pdf_filename": "1217y09_US_MG_Report.pdf"
+  },
+  "1218y15": {
+    "patient_id": "1218y15",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.85,
+    "status": "INFERRED_CLINICAL",
+    "reason": "Satisfactory clear follow-up with no residual/recurrent mass",
+    "birads_score": null,
+    "pdf_filename": "1218y15_US_MG_Report.pdf"
+  },
+  "1231y18": {
+    "patient_id": "1231y18",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 3 in report",
+    "birads_score": "3",
+    "pdf_filename": "1231y18_US_MG_Report.pdf"
+  },
+  "1238y19": {
+    "patient_id": "1238y19",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 2 in report",
+    "birads_score": "2",
+    "pdf_filename": "1238y19_US_MG_Report.pdf"
+  },
+  "1265y07": {
+    "patient_id": "1265y07",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.85,
+    "status": "INFERRED_CLINICAL",
+    "reason": "Satisfactory clear follow-up with no residual/recurrent mass",
+    "birads_score": null,
+    "pdf_filename": "1265y07_US_MG_Report.pdf"
+  },
+  "1275y19": {
+    "patient_id": "1275y19",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 2 in report",
+    "birads_score": "2",
+    "pdf_filename": "1275y19_US_MG_Report.pdf"
+  },
+  "1291y17": {
+    "patient_id": "1291y17",
+    "label_str": "MALIGNANT",
+    "label_id": 1,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 6 in report",
+    "birads_score": "6",
+    "pdf_filename": "1291y17_US_MG_Report.pdf"
+  },
+  "1322y17": {
+    "patient_id": "1322y17",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 1 in report",
+    "birads_score": "1",
+    "pdf_filename": "1322y17_US_MG_Report.pdf"
+  },
+  "1349y17": {
+    "patient_id": "1349y17",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 3 in report",
+    "birads_score": "3",
+    "pdf_filename": "1349y17_US_MG_Report.pdf"
+  },
+  "1352y15": {
+    "patient_id": "1352y15",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 2 in report",
+    "birads_score": "2",
+    "pdf_filename": "1352y15_US_MG_Report.pdf"
+  },
+  "1362y19": {
+    "patient_id": "1362y19",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 2 in report",
+    "birads_score": "2",
+    "pdf_filename": "1362y19_US_MG_Report.pdf"
+  },
+  "1386y12": {
+    "patient_id": "1386y12",
+    "label_str": "MALIGNANT",
+    "label_id": 1,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 4B in report",
+    "birads_score": "4B",
+    "pdf_filename": "1386y12_US_MG_Report.pdf"
+  },
+  "1400y15": {
+    "patient_id": "1400y15",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 2 in report",
+    "birads_score": "2",
+    "pdf_filename": "1400y15_US_MG_Report.pdf"
+  },
+  "1404y16": {
+    "patient_id": "1404y16",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 2 in report",
+    "birads_score": "2",
+    "pdf_filename": "1404y16_US_MG_Report.pdf"
+  },
+  "1426y16": {
+    "patient_id": "1426y16",
+    "label_str": "MALIGNANT",
+    "label_id": 1,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 4B in report",
+    "birads_score": "4B",
+    "pdf_filename": "1426y16_US_MG_Report.pdf"
+  },
+  "1429y17": {
+    "patient_id": "1429y17",
+    "label_str": "MALIGNANT",
+    "label_id": 1,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 4A in report",
+    "birads_score": "4A",
+    "pdf_filename": "1429y17_US_MG_Report.pdf"
+  },
+  "1434y12": {
+    "patient_id": "1434y12",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 2 in report",
+    "birads_score": "2",
+    "pdf_filename": "1434y12_US_MG_Report.pdf"
+  },
+  "1447y18": {
+    "patient_id": "1447y18",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 1 in report",
+    "birads_score": "1",
+    "pdf_filename": "1447y18_US_MG_Report.pdf"
+  },
+  "1473y18": {
+    "patient_id": "1473y18",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 1 in report",
+    "birads_score": "1",
+    "pdf_filename": "1473y18_US_MG_Report.pdf"
+  },
+  "1504y09": {
+    "patient_id": "1504y09",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 1 in report",
+    "birads_score": "1",
+    "pdf_filename": "1504y09_US_MG_Report.pdf"
+  },
+  "1532y18": {
+    "patient_id": "1532y18",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 2 in report",
+    "birads_score": "2",
+    "pdf_filename": "1532y18_US_MG_Report.pdf"
+  },
+  "1537y19": {
+    "patient_id": "1537y19",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 2 in report",
+    "birads_score": "2",
+    "pdf_filename": "1537y19_US_MG_Report.pdf"
+  },
+  "1549y19": {
+    "patient_id": "1549y19",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 1 in report",
+    "birads_score": "1",
+    "pdf_filename": "1549y19_US_MG_Report.pdf"
+  },
+  "1583y19": {
+    "patient_id": "1583y19",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 2 in report",
+    "birads_score": "2",
+    "pdf_filename": "1583y19_US_MG_Report.pdf"
+  },
+  "1594y19": {
+    "patient_id": "1594y19",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 2 in report",
+    "birads_score": "2",
+    "pdf_filename": "1594y19_US_MG_Report.pdf"
+  },
+  "1608y18": {
+    "patient_id": "1608y18",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 3 in report",
+    "birads_score": "3",
+    "pdf_filename": "1608y18_US_MG_Report.pdf"
+  },
+  "1610y19": {
+    "patient_id": "1610y19",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 3 in report",
+    "birads_score": "3",
+    "pdf_filename": "1610y19_US_MG_Report.pdf"
+  },
+  "1619y19": {
+    "patient_id": "1619y19",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 1 in report",
+    "birads_score": "1",
+    "pdf_filename": "1619y19_US_MG_Report.pdf"
+  },
+  "1636y14": {
+    "patient_id": "1636y14",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 3 in report",
+    "birads_score": "3",
+    "pdf_filename": "1636y14_US_MG_Report.pdf"
+  },
+  "1677y19": {
+    "patient_id": "1677y19",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 2 in report",
+    "birads_score": "2",
+    "pdf_filename": "1677y19_US_MG_Report.pdf"
+  },
+  "1692y12": {
+    "patient_id": "1692y12",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 2 in report",
+    "birads_score": "2",
+    "pdf_filename": "1692y12_US_MG_Report.pdf"
+  },
+  "1720y17": {
+    "patient_id": "1720y17",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 2 in report",
+    "birads_score": "2",
+    "pdf_filename": "1720y17_US_MG_Report.pdf"
+  },
+  "1724y16": {
+    "patient_id": "1724y16",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 2 in report",
+    "birads_score": "2",
+    "pdf_filename": "1724y16_US_MG_Report.pdf"
+  },
+  "1767y15": {
+    "patient_id": "1767y15",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 1 in report",
+    "birads_score": "1",
+    "pdf_filename": "1767y15_US_MG_Report.pdf"
+  },
+  "1769y15": {
+    "patient_id": "1769y15",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 2 in report",
+    "birads_score": "2",
+    "pdf_filename": "1769y15_US_MG_Report.pdf"
+  },
+  "1777y11": {
+    "patient_id": "1777y11",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 2 in report",
+    "birads_score": "2",
+    "pdf_filename": "1777y11_US_MG_Report.pdf"
+  },
+  "1780y07": {
+    "patient_id": "1780y07",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 2 in report",
+    "birads_score": "2",
+    "pdf_filename": "1780y07_US_MG_Report.pdf"
+  },
+  "1796y18": {
+    "patient_id": "1796y18",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 2 in report",
+    "birads_score": "2",
+    "pdf_filename": "1796y18_US_MG_Report.pdf"
+  },
+  "1800y14": {
+    "patient_id": "1800y14",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 2 in report",
+    "birads_score": "2",
+    "pdf_filename": "1800y14_US_MG_Report.pdf"
+  },
+  "1847y17": {
+    "patient_id": "1847y17",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 2 in report",
+    "birads_score": "2",
+    "pdf_filename": "1847y17_US_MG_Report.pdf"
+  },
+  "1853y18": {
+    "patient_id": "1853y18",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 3 in report",
+    "birads_score": "3",
+    "pdf_filename": "1853y18_US_MG_Report.pdf"
+  },
+  "1859y17": {
+    "patient_id": "1859y17",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 2 in report",
+    "birads_score": "2",
+    "pdf_filename": "1859y17_US_MG_Report.pdf"
+  },
+  "1864y16": {
+    "patient_id": "1864y16",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 3 in report",
+    "birads_score": "3",
+    "pdf_filename": "1864y16_US_MG_Report.pdf"
+  },
+  "1877y17": {
+    "patient_id": "1877y17",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 2 in report",
+    "birads_score": "2",
+    "pdf_filename": "1877y17_US_MG_Report.pdf"
+  },
+  "1893y11": {
+    "patient_id": "1893y11",
+    "label_str": "UNKNOWN",
+    "label_id": -1,
+    "confidence": 0.0,
+    "status": "UNKNOWN",
+    "reason": "Missing PDF report file",
+    "birads_score": null,
+    "pdf_filename": null
+  },
+  "1893y15": {
+    "patient_id": "1893y15",
+    "label_str": "MALIGNANT",
+    "label_id": 1,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 4A in report",
+    "birads_score": "4A",
+    "pdf_filename": "1893y15_US_MG_Report.pdf"
+  },
+  "1899y16": {
+    "patient_id": "1899y16",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 2 in report",
+    "birads_score": "2",
+    "pdf_filename": "1899y16_US_MG_Report.pdf"
+  },
+  "1901y11": {
+    "patient_id": "1901y11",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 2 in report",
+    "birads_score": "2",
+    "pdf_filename": "1901y11_US_MG_Report.pdf"
+  },
+  "1938y10": {
+    "patient_id": "1938y10",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 1 in report",
+    "birads_score": "1",
+    "pdf_filename": "1938y10_US_MG_Report.pdf"
+  },
+  "1946y18": {
+    "patient_id": "1946y18",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 3 in report",
+    "birads_score": "3",
+    "pdf_filename": "1946y18_US_MG_Report.pdf"
+  },
+  "1949y14": {
+    "patient_id": "1949y14",
+    "label_str": "MALIGNANT",
+    "label_id": 1,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 4B in report",
+    "birads_score": "4B",
+    "pdf_filename": "1949y14_US_MG_Report.pdf"
+  },
+  "1976y10": {
+    "patient_id": "1976y10",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 2 in report",
+    "birads_score": "2",
+    "pdf_filename": "1976y10_US_MG_Report.pdf"
+  },
+  "2006y16": {
+    "patient_id": "2006y16",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 2 in report",
+    "birads_score": "2",
+    "pdf_filename": "2006y16_US_MG_Report.pdf"
+  },
+  "2017y17": {
+    "patient_id": "2017y17",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 2 in report",
+    "birads_score": "2",
+    "pdf_filename": "2017y17_US_MG_Report.pdf"
+  },
+  "2024y19": {
+    "patient_id": "2024y19",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 1 in report",
+    "birads_score": "1",
+    "pdf_filename": "2024y19_US_MG_Report.pdf"
+  },
+  "2053y14": {
+    "patient_id": "2053y14",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 2 in report",
+    "birads_score": "2",
+    "pdf_filename": "2053y14_US_MG_Report.pdf"
+  },
+  "2071y19": {
+    "patient_id": "2071y19",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 2 in report",
+    "birads_score": "2",
+    "pdf_filename": "2071y19_US_MG_Report.pdf"
+  },
+  "2072y14": {
+    "patient_id": "2072y14",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 2 in report",
+    "birads_score": "2",
+    "pdf_filename": "2072y14_US_MG_Report.pdf"
+  },
+  "2092y13": {
+    "patient_id": "2092y13",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 2 in report",
+    "birads_score": "2",
+    "pdf_filename": "2092y13_US_MG_Report.pdf"
+  },
+  "2099y15": {
+    "patient_id": "2099y15",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 2 in report",
+    "birads_score": "2",
+    "pdf_filename": "2099y15_US_MG_Report.pdf"
+  },
+  "2101y17": {
+    "patient_id": "2101y17",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 2 in report",
+    "birads_score": "2",
+    "pdf_filename": "2101y17_US_MG_Report.pdf"
+  },
+  "2104y14": {
+    "patient_id": "2104y14",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 2 in report",
+    "birads_score": "2",
+    "pdf_filename": "2104y14_US_MG_Report.pdf"
+  },
+  "2138y13": {
+    "patient_id": "2138y13",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 2 in report",
+    "birads_score": "2",
+    "pdf_filename": "2138y13_US_MG_Report.pdf"
+  },
+  "2150y18": {
+    "patient_id": "2150y18",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 2 in report",
+    "birads_score": "2",
+    "pdf_filename": "2150y18_US_MG_Report.pdf"
+  },
+  "2156y12": {
+    "patient_id": "2156y12",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 2 in report",
+    "birads_score": "2",
+    "pdf_filename": "2156y12_US_MG_Report.pdf"
+  },
+  "2199y18": {
+    "patient_id": "2199y18",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 1 in report",
+    "birads_score": "1",
+    "pdf_filename": "2199y18_US_MG_Report.pdf"
+  },
+  "2215y19": {
+    "patient_id": "2215y19",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 2 in report",
+    "birads_score": "2",
+    "pdf_filename": "2215y19_US_MG_Report.pdf"
+  },
+  "2226y18": {
+    "patient_id": "2226y18",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 2 in report",
+    "birads_score": "2",
+    "pdf_filename": "2226y18_US_MG_Report.pdf"
+  },
+  "2227y17": {
+    "patient_id": "2227y17",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 2 in report",
+    "birads_score": "2",
+    "pdf_filename": "2227y17_US_MG_Report.pdf"
+  },
+  "2233y16": {
+    "patient_id": "2233y16",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 2 in report",
+    "birads_score": "2",
+    "pdf_filename": "2233y16_US_MG_Report.pdf"
+  },
+  "2254y14": {
+    "patient_id": "2254y14",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 3 in report",
+    "birads_score": "3",
+    "pdf_filename": "2254y14_US_MG_Report.pdf"
+  },
+  "2265y11": {
+    "patient_id": "2265y11",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 1 in report",
+    "birads_score": "1",
+    "pdf_filename": "2265y11_US_MG_Report.pdf"
+  },
+  "2310y19": {
+    "patient_id": "2310y19",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 1 in report",
+    "birads_score": "1",
+    "pdf_filename": "2310y19_US_MG_Report.pdf"
+  },
+  "2324y16": {
+    "patient_id": "2324y16",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 2 in report",
+    "birads_score": "2",
+    "pdf_filename": "2324y16_US_MG_Report.pdf"
+  },
+  "2327y19": {
+    "patient_id": "2327y19",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 2 in report",
+    "birads_score": "2",
+    "pdf_filename": "2327y19_US_MG_Report.pdf"
+  },
+  "2352y18": {
+    "patient_id": "2352y18",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 2 in report",
+    "birads_score": "2",
+    "pdf_filename": "2352y18_US_MG_Report.pdf"
+  },
+  "2358y14": {
+    "patient_id": "2358y14",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 2 in report",
+    "birads_score": "2",
+    "pdf_filename": "2358y14_US_MG_Report.pdf"
+  },
+  "2370y19": {
+    "patient_id": "2370y19",
+    "label_str": "MALIGNANT",
+    "label_id": 1,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 4A in report",
+    "birads_score": "4A",
+    "pdf_filename": "2370y19_US_MG_Report.pdf"
+  },
+  "2386y11": {
+    "patient_id": "2386y11",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 2 in report",
+    "birads_score": "2",
+    "pdf_filename": "2386y11_US_MG_Report.pdf"
+  },
+  "2429y17": {
+    "patient_id": "2429y17",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 3 in report",
+    "birads_score": "3",
+    "pdf_filename": "2429y17_US_MG_Report.pdf"
+  },
+  "2445y19": {
+    "patient_id": "2445y19",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 2 in report",
+    "birads_score": "2",
+    "pdf_filename": "2445y19_US_MG_Report.pdf"
+  },
+  "2462y19": {
+    "patient_id": "2462y19",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 1 in report",
+    "birads_score": "1",
+    "pdf_filename": "2462y19_US_MG_Report.pdf"
+  },
+  "2499y19": {
+    "patient_id": "2499y19",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 2 in report",
+    "birads_score": "2",
+    "pdf_filename": "2499y19_US_MG_Report.pdf"
+  },
+  "2515y11": {
+    "patient_id": "2515y11",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 2 in report",
+    "birads_score": "2",
+    "pdf_filename": "2515y11_US_MG_Report.pdf"
+  },
+  "2592y17": {
+    "patient_id": "2592y17",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 2 in report",
+    "birads_score": "2",
+    "pdf_filename": "2592y17_US_MG_Report.pdf"
+  },
+  "2599y11": {
+    "patient_id": "2599y11",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 1 in report",
+    "birads_score": "1",
+    "pdf_filename": "2599y11_US_MG_Report.pdf"
+  },
+  "2609y16": {
+    "patient_id": "2609y16",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 2 in report",
+    "birads_score": "2",
+    "pdf_filename": "2609y16_US_MG_Report.pdf"
+  },
+  "2629y19": {
+    "patient_id": "2629y19",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 3 in report",
+    "birads_score": "3",
+    "pdf_filename": "2629y19_US_MG_Report.pdf"
+  },
+  "2640y17": {
+    "patient_id": "2640y17",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 2 in report",
+    "birads_score": "2",
+    "pdf_filename": "2640y17_US_MG_Report.pdf"
+  },
+  "2645y10": {
+    "patient_id": "2645y10",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 2 in report",
+    "birads_score": "2",
+    "pdf_filename": "2645y10_US_MG_Report.pdf"
+  },
+  "2695y19": {
+    "patient_id": "2695y19",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 2 in report",
+    "birads_score": "2",
+    "pdf_filename": "2695y19_US_MG_Report.pdf"
+  },
+  "2702y19": {
+    "patient_id": "2702y19",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 2 in report",
+    "birads_score": "2",
+    "pdf_filename": "2702y19_US_MG_Report.pdf"
+  },
+  "2705y19": {
+    "patient_id": "2705y19",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 2 in report",
+    "birads_score": "2",
+    "pdf_filename": "2705y19_US_MG_Report.pdf"
+  },
+  "2731y17": {
+    "patient_id": "2731y17",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 2 in report",
+    "birads_score": "2",
+    "pdf_filename": "2731y17_US_MG_Report.pdf"
+  },
+  "2738y19": {
+    "patient_id": "2738y19",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 2 in report",
+    "birads_score": "2",
+    "pdf_filename": "2738y19_US_MG_Report.pdf"
+  },
+  "2758y19": {
+    "patient_id": "2758y19",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 2 in report",
+    "birads_score": "2",
+    "pdf_filename": "2758y19_US_MG_Report.pdf"
+  },
+  "2769y18": {
+    "patient_id": "2769y18",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 2 in report",
+    "birads_score": "2",
+    "pdf_filename": "2769y18_US_MG_Report.pdf"
+  },
+  "2774y16": {
+    "patient_id": "2774y16",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 1 in report",
+    "birads_score": "1",
+    "pdf_filename": "2774y16_US_MG_Report.pdf"
+  },
+  "2782y16": {
+    "patient_id": "2782y16",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 1 in report",
+    "birads_score": "1",
+    "pdf_filename": "2782y16_US_MG_Report.pdf"
+  },
+  "2786y19": {
+    "patient_id": "2786y19",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 3 in report",
+    "birads_score": "3",
+    "pdf_filename": "2786y19_US_MG_Report.pdf"
+  },
+  "2829y16": {
+    "patient_id": "2829y16",
+    "label_str": "MALIGNANT",
+    "label_id": 1,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 5 in report",
+    "birads_score": "5",
+    "pdf_filename": "2829y16_US_MG_Report.pdf"
+  },
+  "2833y11": {
+    "patient_id": "2833y11",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 1 in report",
+    "birads_score": "1",
+    "pdf_filename": "2833y11_US_MG_Report.pdf"
+  },
+  "2837y13": {
+    "patient_id": "2837y13",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 3 in report",
+    "birads_score": "3",
+    "pdf_filename": "2837y13_US_MG_Report.pdf"
+  },
+  "2845y11": {
+    "patient_id": "2845y11",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 2 in report",
+    "birads_score": "2",
+    "pdf_filename": "2845y11_US_MG_Report.pdf"
+  },
+  "2889y13": {
+    "patient_id": "2889y13",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 3 in report",
+    "birads_score": "3",
+    "pdf_filename": "2889y13_US_MG_Report.pdf"
+  },
+  "2919y17": {
+    "patient_id": "2919y17",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 2 in report",
+    "birads_score": "2",
+    "pdf_filename": "2919y17_US_MG_Report.pdf"
+  },
+  "2935y14": {
+    "patient_id": "2935y14",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 2 in report",
+    "birads_score": "2",
+    "pdf_filename": "2935y14_US_MG_Report.pdf"
+  },
+  "2966y11": {
+    "patient_id": "2966y11",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 2 in report",
+    "birads_score": "2",
+    "pdf_filename": "2966y11_US_MG_Report.pdf"
+  },
+  "2981y16": {
+    "patient_id": "2981y16",
+    "label_str": "MALIGNANT",
+    "label_id": 1,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 4 in report",
+    "birads_score": "4",
+    "pdf_filename": "2981y16_US_MG_Report.pdf"
+  },
+  "2995y15": {
+    "patient_id": "2995y15",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 2 in report",
+    "birads_score": "2",
+    "pdf_filename": "2995y15_US_MG_Report.pdf"
+  },
+  "3006y17": {
+    "patient_id": "3006y17",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 2 in report",
+    "birads_score": "2",
+    "pdf_filename": "3006y17_US_MG_Report.pdf"
+  },
+  "3052y14": {
+    "patient_id": "3052y14",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 2 in report",
+    "birads_score": "2",
+    "pdf_filename": "3052y14_US_MG_Report.pdf"
+  },
+  "3201y15": {
+    "patient_id": "3201y15",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 2 in report",
+    "birads_score": "2",
+    "pdf_filename": "3201y15_US_MG_Report.pdf"
+  },
+  "3216y14": {
+    "patient_id": "3216y14",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 3 in report",
+    "birads_score": "3",
+    "pdf_filename": "3216y14_US_MG_Report.pdf"
+  },
+  "3218y12": {
+    "patient_id": "3218y12",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 2 in report",
+    "birads_score": "2",
+    "pdf_filename": "3218y12_US_MG_Report.pdf"
+  },
+  "3255y16": {
+    "patient_id": "3255y16",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 2 in report",
+    "birads_score": "2",
+    "pdf_filename": "3255y16_US_MG_Report.pdf"
+  },
+  "3270y12": {
+    "patient_id": "3270y12",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 1 in report",
+    "birads_score": "1",
+    "pdf_filename": "3270y12_US_MG_Report.pdf"
+  },
+  "3280y19": {
+    "patient_id": "3280y19",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 1 in report",
+    "birads_score": "1",
+    "pdf_filename": "3280y19_US_MG_Report.pdf"
+  },
+  "3284y18": {
+    "patient_id": "3284y18",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 2 in report",
+    "birads_score": "2",
+    "pdf_filename": "3284y18_US_MG_Report.pdf"
+  },
+  "3308y19": {
+    "patient_id": "3308y19",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 1 in report",
+    "birads_score": "1",
+    "pdf_filename": "3308y19_US_MG_Report.pdf"
+  },
+  "3384y16": {
+    "patient_id": "3384y16",
+    "label_str": "MALIGNANT",
+    "label_id": 1,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 4C in report",
+    "birads_score": "4C",
+    "pdf_filename": "3384y16_US_MG_Report.pdf"
+  },
+  "3384y18": {
+    "patient_id": "3384y18",
+    "label_str": "MALIGNANT",
+    "label_id": 1,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 4C in report",
+    "birads_score": "4C",
+    "pdf_filename": "3384y18_US_MG_Report.pdf"
+  },
+  "3391y18": {
+    "patient_id": "3391y18",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 2 in report",
+    "birads_score": "2",
+    "pdf_filename": "3391y18_US_MG_Report.pdf"
+  },
+  "3399y16": {
+    "patient_id": "3399y16",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 3 in report",
+    "birads_score": "3",
+    "pdf_filename": "3399y16_US_MG_Report.pdf"
+  },
+  "3454y15": {
+    "patient_id": "3454y15",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 2 in report",
+    "birads_score": "2",
+    "pdf_filename": "3454y15_US_MG_Report.pdf"
+  },
+  "3480y18": {
+    "patient_id": "3480y18",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 3 in report",
+    "birads_score": "3",
+    "pdf_filename": "3480y18_US_MG_Report.pdf"
+  },
+  "3499y19": {
+    "patient_id": "3499y19",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 2 in report",
+    "birads_score": "2",
+    "pdf_filename": "3499y19_US_MG_Report.pdf"
+  },
+  "3534y19": {
+    "patient_id": "3534y19",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 3 in report",
+    "birads_score": "3",
+    "pdf_filename": "3534y19_US_MG_Report.pdf"
+  },
+  "3557y15": {
+    "patient_id": "3557y15",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 2 in report",
+    "birads_score": "2",
+    "pdf_filename": "3557y15_US_MG_Report.pdf"
+  },
+  "3597y17": {
+    "patient_id": "3597y17",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 2 in report",
+    "birads_score": "2",
+    "pdf_filename": "3597y17_US_MG_Report.pdf"
+  },
+  "3604y19": {
+    "patient_id": "3604y19",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 2 in report",
+    "birads_score": "2",
+    "pdf_filename": "3604y19_US_MG_Report.pdf"
+  },
+  "3611y17": {
+    "patient_id": "3611y17",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 1 in report",
+    "birads_score": "1",
+    "pdf_filename": "3611y17_US_MG_Report.pdf"
+  },
+  "3638y16": {
+    "patient_id": "3638y16",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 2 in report",
+    "birads_score": "2",
+    "pdf_filename": "3638y16_US_MG_Report.pdf"
+  },
+  "3664y19": {
+    "patient_id": "3664y19",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 1 in report",
+    "birads_score": "1",
+    "pdf_filename": "3664y19_US_MG_Report.pdf"
+  },
+  "3677y17": {
+    "patient_id": "3677y17",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 3 in report",
+    "birads_score": "3",
+    "pdf_filename": "3677y17_US_MG_Report.pdf"
+  },
+  "3679y19": {
+    "patient_id": "3679y19",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 1 in report",
+    "birads_score": "1",
+    "pdf_filename": "3679y19_US_MG_Report.pdf"
+  },
+  "3736y19": {
+    "patient_id": "3736y19",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 2 in report",
+    "birads_score": "2",
+    "pdf_filename": "3736y19_US_MG_Report.pdf"
+  },
+  "3741y18": {
+    "patient_id": "3741y18",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 2 in report",
+    "birads_score": "2",
+    "pdf_filename": "3741y18_US_MG_Report.pdf"
+  },
+  "3753y19": {
+    "patient_id": "3753y19",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 2 in report",
+    "birads_score": "2",
+    "pdf_filename": "3753y19_US_MG_Report.pdf"
+  },
+  "3761y16": {
+    "patient_id": "3761y16",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.85,
+    "status": "INFERRED_CLINICAL",
+    "reason": "Satisfactory clear follow-up with no residual/recurrent mass",
+    "birads_score": null,
+    "pdf_filename": "3761y16_US_MG_Report.pdf"
+  },
+  "3779y15": {
+    "patient_id": "3779y15",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 3 in report",
+    "birads_score": "3",
+    "pdf_filename": "3779y15_US_MG_Report.pdf"
+  },
+  "3803y19": {
+    "patient_id": "3803y19",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 2 in report",
+    "birads_score": "2",
+    "pdf_filename": "3803y19_US_MG_Report.pdf"
+  },
+  "3855y19": {
+    "patient_id": "3855y19",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 2 in report",
+    "birads_score": "2",
+    "pdf_filename": "3855y19_US_MG_Report.pdf"
+  },
+  "3911y16": {
+    "patient_id": "3911y16",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 3 in report",
+    "birads_score": "3",
+    "pdf_filename": "3911y16_US_MG_Report.pdf"
+  },
+  "3912y19": {
+    "patient_id": "3912y19",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 2 in report",
+    "birads_score": "2",
+    "pdf_filename": "3912y19_US_MG_Report.pdf"
+  },
+  "3915y18": {
+    "patient_id": "3915y18",
+    "label_str": "UNKNOWN",
+    "label_id": -1,
+    "confidence": 0.0,
+    "status": "UNKNOWN",
+    "reason": "No conclusive BI-RADS or definitive diagnostic indicator",
+    "birads_score": "0",
+    "pdf_filename": "3915y18_US_MG_Report.pdf"
+  },
+  "3936y18": {
+    "patient_id": "3936y18",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 2 in report",
+    "birads_score": "2",
+    "pdf_filename": "3936y18_US_MG_Report.pdf"
+  },
+  "3962y18": {
+    "patient_id": "3962y18",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 3 in report",
+    "birads_score": "3",
+    "pdf_filename": "3962y18_US_MG_Report.pdf"
+  },
+  "3966y16": {
+    "patient_id": "3966y16",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 2 in report",
+    "birads_score": "2",
+    "pdf_filename": "3966y16_US_MG_Report.pdf"
+  },
+  "4004y19": {
+    "patient_id": "4004y19",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 2 in report",
+    "birads_score": "2",
+    "pdf_filename": "4004y19_US_MG_Report.pdf"
+  },
+  "4012y15": {
+    "patient_id": "4012y15",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 2 in report",
+    "birads_score": "2",
+    "pdf_filename": "4012y15_US_MG_Report.pdf"
+  },
+  "4033y15": {
+    "patient_id": "4033y15",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 2 in report",
+    "birads_score": "2",
+    "pdf_filename": "4033y15_US_MG_Report.pdf"
+  },
+  "4105y18": {
+    "patient_id": "4105y18",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 2 in report",
+    "birads_score": "2",
+    "pdf_filename": "4105y18_US_MG_Report.pdf"
+  },
+  "4162y19": {
+    "patient_id": "4162y19",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 2 in report",
+    "birads_score": "2",
+    "pdf_filename": "4162y19_US_MG_Report.pdf"
+  },
+  "4228y16": {
+    "patient_id": "4228y16",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 2 in report",
+    "birads_score": "2",
+    "pdf_filename": "4228y16_US_MG_Report.pdf"
+  },
+  "4245y15": {
+    "patient_id": "4245y15",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 2 in report",
+    "birads_score": "2",
+    "pdf_filename": "4245y15_US_MG_Report.pdf"
+  },
+  "4261y16": {
+    "patient_id": "4261y16",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 3 in report",
+    "birads_score": "3",
+    "pdf_filename": "4261y16_US_MG_Report.pdf"
+  },
+  "4315y15": {
+    "patient_id": "4315y15",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 2 in report",
+    "birads_score": "2",
+    "pdf_filename": "4315y15_US_MG_Report.pdf"
+  },
+  "4334y16": {
+    "patient_id": "4334y16",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 3 in report",
+    "birads_score": "3",
+    "pdf_filename": "4334y16_US_MG_Report.pdf"
+  },
+  "4397y15": {
+    "patient_id": "4397y15",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 3 in report",
+    "birads_score": "3",
+    "pdf_filename": "4397y15_US_MG_Report.pdf"
+  },
+  "4578y16": {
+    "patient_id": "4578y16",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 2 in report",
+    "birads_score": "2",
+    "pdf_filename": "4578y16_US_MG_Report.pdf"
+  },
+  "4581y16": {
+    "patient_id": "4581y16",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 1 in report",
+    "birads_score": "1",
+    "pdf_filename": "4581y16_US_MG_Report.pdf"
+  },
+  "4584y15": {
+    "patient_id": "4584y15",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 1 in report",
+    "birads_score": "1",
+    "pdf_filename": "4584y15_US_MG_Report.pdf"
+  },
+  "4639y16": {
+    "patient_id": "4639y16",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 3 in report",
+    "birads_score": "3",
+    "pdf_filename": "4639y16_US_MG_Report.pdf"
+  },
+  "4645y15": {
+    "patient_id": "4645y15",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 2 in report",
+    "birads_score": "2",
+    "pdf_filename": "4645y15_US_MG_Report.pdf"
+  },
+  "4856y16": {
+    "patient_id": "4856y16",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 2 in report",
+    "birads_score": "2",
+    "pdf_filename": "4856y16_US_MG_Report.pdf"
+  },
+  "4908y16": {
+    "patient_id": "4908y16",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 3 in report",
+    "birads_score": "3",
+    "pdf_filename": "4908y16_US_MG_Report.pdf"
+  },
+  "4987y16": {
+    "patient_id": "4987y16",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 2 in report",
+    "birads_score": "2",
+    "pdf_filename": "4987y16_US_MG_Report.pdf"
+  },
+  "5049y16": {
+    "patient_id": "5049y16",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 2 in report",
+    "birads_score": "2",
+    "pdf_filename": "5049y16_US_MG_Report.pdf"
+  },
+  "5310y19": {
+    "patient_id": "5310y19",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 3 in report",
+    "birads_score": "3",
+    "pdf_filename": "5310y19_US_MG_Report.pdf"
+  },
+  "6054y19": {
+    "patient_id": "6054y19",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 3 in report",
+    "birads_score": "3",
+    "pdf_filename": "6054y19_US_MG_Report.pdf"
+  },
+  "7281y18": {
+    "patient_id": "7281y18",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.85,
+    "status": "INFERRED_CLINICAL",
+    "reason": "Benign morphological findings (fibroadenoma/cyst)",
+    "birads_score": null,
+    "pdf_filename": "7281y18_US_MG_Report.pdf"
+  },
+  "7708y181": {
+    "patient_id": "7708y181",
+    "label_str": "MALIGNANT",
+    "label_id": 1,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 4A in report",
+    "birads_score": "4A",
+    "pdf_filename": "7708y181_US_MG_Report.pdf"
+  },
+  "7848y19": {
+    "patient_id": "7848y19",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 2 in report",
+    "birads_score": "2",
+    "pdf_filename": "7848y19_US_MG_Report.pdf"
+  },
+  "8827y19": {
+    "patient_id": "8827y19",
+    "label_str": "UNKNOWN",
+    "label_id": -1,
+    "confidence": 0.0,
+    "status": "UNKNOWN",
+    "reason": "Missing PDF report file",
+    "birads_score": null,
+    "pdf_filename": null
+  },
+  "9207y18": {
+    "patient_id": "9207y18",
+    "label_str": "MALIGNANT",
+    "label_id": 1,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 4A in report",
+    "birads_score": "4A",
+    "pdf_filename": "9207y18_US_MG_Report.pdf"
+  },
+  "9357y18": {
+    "patient_id": "9357y18",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 2 in report",
+    "birads_score": "2",
+    "pdf_filename": "9357y18_US_MG_Report.pdf"
+  },
+  "9639y18": {
+    "patient_id": "9639y18",
+    "label_str": "BENIGN",
+    "label_id": 0,
+    "confidence": 0.95,
+    "status": "CONFIDENT",
+    "reason": "BI-RADS 1 in report",
+    "birads_score": "1",
+    "pdf_filename": "9639y18_US_MG_Report.pdf"
+  }
+}
