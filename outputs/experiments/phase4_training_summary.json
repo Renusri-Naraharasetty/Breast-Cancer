@@ -1,0 +1,54 @@
+[
+  {
+    "experiment_id": "exp1_efficientnet_mammogram",
+    "model_name": "efficientnet_b0",
+    "modality": "mammogram",
+    "architecture": "EfficientNetB0Binary",
+    "best_epoch": 1,
+    "best_val_loss": 0.6349,
+    "best_val_roc_auc": 0.5131,
+    "early_stopped": true,
+    "total_time_mins": 13.98,
+    "checkpoint_path": "outputs/experiments\\exp1_efficientnet_mammogram\\best_checkpoint.pth",
+    "status": "COMPLETED"
+  },
+  {
+    "experiment_id": "exp2_vit_ultrasound",
+    "model_name": "vit_b_16",
+    "modality": "ultrasound",
+    "architecture": "ViTB16Binary",
+    "best_epoch": 1,
+    "best_val_loss": 0.5189,
+    "best_val_roc_auc": 0.7284,
+    "early_stopped": true,
+    "total_time_mins": 295.86,
+    "checkpoint_path": "outputs/experiments\\exp2_vit_ultrasound\\best_checkpoint.pth",
+    "status": "COMPLETED"
+  },
+  {
+    "experiment_id": "exp3_vit_mammogram",
+    "model_name": "vit_b_16",
+    "modality": "mammogram",
+    "architecture": "ViTB16Binary",
+    "best_epoch": 2,
+    "best_val_loss": 0.4592,
+    "best_val_roc_auc": 0.6665,
+    "early_stopped": true,
+    "total_time_mins": 345.03,
+    "checkpoint_path": "outputs/experiments\\exp3_vit_mammogram\\best_checkpoint.pth",
+    "status": "COMPLETED"
+  },
+  {
+    "experiment_id": "exp4_efficientnet_ultrasound",
+    "model_name": "efficientnet_b0",
+    "modality": "ultrasound",
+    "architecture": "EfficientNetB0Binary",
+    "best_epoch": 3,
+    "best_val_loss": 0.5463,
+    "best_val_roc_auc": 0.7519,
+    "early_stopped": true,
+    "total_time_mins": 17.41,
+    "checkpoint_path": "outputs/experiments\\exp4_efficientnet_ultrasound\\best_checkpoint.pth",
+    "status": "COMPLETED"
+  }
+]

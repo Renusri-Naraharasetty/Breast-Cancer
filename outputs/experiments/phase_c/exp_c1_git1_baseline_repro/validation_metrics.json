@@ -1,0 +1,20 @@
+{
+  "val_loss": 0.4272,
+  "val_acc": 0.8542,
+  "val_precision": 0.5455,
+  "val_recall": 0.75,
+  "val_sensitivity": 0.75,
+  "val_specificity": 0.875,
+  "val_f1": 0.6316,
+  "val_balanced_acc": 0.8125,
+  "val_gmean": 0.8101,
+  "val_roc_auc": 0.9187,
+  "val_pr_auc": 0.7432,
+  "composite_score": 0.8086,
+  "val_tn": 35,
+  "val_fp": 5,
+  "val_fn": 2,
+  "val_tp": 6,
+  "selected_epoch": 4,
+  "exp_id": "exp_c1_git1_baseline_repro"
+}

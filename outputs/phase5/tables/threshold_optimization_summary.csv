@@ -1,0 +1,9 @@
+Model,Criterion,Threshold,Val Sens,Val Spec,Val F1,Val BalAcc,Test Acc,Test Sens,Test Spec,Test Prec,Test F1,Test BalAcc,Test G-Mean,Test TP,Test FP,Test TN,Test FN
+GIT 1 (EffNet MG + ViT US),Maximum Validation F1-Score,0.42,87.5%,90.0%,0.7368,88.8%,78.72%,85.71%,77.50%,40.00%,0.5455,81.61%,0.8150,6,9,31,1
+GIT 1 (EffNet MG + ViT US),Maximum Validation Balanced Accuracy,0.42,87.5%,90.0%,0.7368,88.8%,78.72%,85.71%,77.50%,40.00%,0.5455,81.61%,0.8150,6,9,31,1
+GIT 1 (EffNet MG + ViT US),Maximum Specificity subject to Sensitivity >= 90%,0.19,100.0%,72.5%,0.5926,86.2%,72.34%,100.00%,67.50%,35.00%,0.5185,83.75%,0.8216,7,13,27,0
+GIT 1 (EffNet MG + ViT US),Canonical Default (Threshold 0.50),0.5,50.0%,92.5%,0.5333,71.2%,82.98%,71.43%,85.00%,45.45%,0.5556,78.21%,0.7792,5,6,34,2
+GIT 2 (ViT MG + EffNet US),Maximum Validation F1-Score,0.76,87.5%,85.0%,0.6667,86.2%,70.21%,85.71%,67.50%,31.58%,0.4615,76.61%,0.7606,6,13,27,1
+GIT 2 (ViT MG + EffNet US),Maximum Validation Balanced Accuracy,0.76,87.5%,85.0%,0.6667,86.2%,70.21%,85.71%,67.50%,31.58%,0.4615,76.61%,0.7606,6,13,27,1
+GIT 2 (ViT MG + EffNet US),Maximum Specificity subject to Sensitivity >= 90%,0.2,100.0%,47.5%,0.4324,73.8%,55.32%,100.00%,47.50%,25.00%,0.4000,73.75%,0.6892,7,21,19,0
+GIT 2 (ViT MG + EffNet US),Canonical Default (Threshold 0.50),0.5,87.5%,67.5%,0.5000,77.5%,63.83%,100.00%,57.50%,29.17%,0.4516,78.75%,0.7583,7,17,23,0

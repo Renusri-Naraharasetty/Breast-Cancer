@@ -1,0 +1,133 @@
+{
+  "manifest_version": "1.0",
+  "project_title": "Breast Cancer Multimodal Classification using Mammogram and Ultrasound Features with Graph-Infused Transformer (GIT)",
+  "phase": "Phase D9: Research Consolidation, Reproducibility Audit & Publication Readiness",
+  "execution_timestamp": "2026-10-16T10:44:00Z",
+  "governance_status": "LOCKED_FINAL_DOCUMENTATION_AND_VERIFICATION_ONLY",
+  "environment": {
+    "os": "Windows 11 Enterprise (Version 10.0.26200)",
+    "python_version": "3.13.5 (Anaconda 64-bit)",
+    "pytorch_version": "2.7.1+cu118",
+    "cuda_available": true,
+    "cuda_device": "NVIDIA GeForce MX550 (2048 MB VRAM)",
+    "scikit_learn_version": "1.6.1",
+    "pandas_version": "2.2.3",
+    "numpy_version": "2.1.3",
+    "scipy_version": "1.15.3",
+    "statsmodels_version": "0.14.4"
+  },
+  "dataset_provenance": {
+    "dataset_name": "BCMID (Breast Cancer Multimodal Imaging Dataset)",
+    "source_institution": "Ayady Almostakbal Hospital, Alexandria, Egypt",
+    "collection_period": "2019-2022",
+    "zenodo_record": "15546909",
+    "raw_folders_count": 332,
+    "excluded_folders_count": 17,
+    "eligible_patient_folders": 315,
+    "eligible_root_patients": 311,
+    "repeat_examination_patients": 4,
+    "cohort_reconciliation_note": "311 unique patients + 4 repeat visits = 315 patient folders. Legacy '314' was an arithmetic typo in an earlier table sum (220+48+47=315).",
+    "splits_manifest": {
+      "path": "data/splits/patient_stratified_split.json",
+      "sha256": "b1e28b17c34b618dc0937964a677ea8b06884ae5c8ea8bd6d7e48c17e006a8ef",
+      "train_folders": 220,
+      "val_folders": 48,
+      "test_folders": 47
+    },
+    "annotations_tsv": {
+      "path": "BCMID_annotations.tsv",
+      "sha256": "a22a05a6344a6f4cbf0d270e7c644450d42c6ea5aeea847d61a841d99f9b0aca",
+      "total_rows": 332
+    },
+    "feature_cache": {
+      "path": "data/features/patient_multimodal_features.pt",
+      "sha256": "4a7ae4f20085a2f9be61dc9d2f73d2b84f782cd080f18860703d09b2b3f11bb6",
+      "mammogram_encoder": "EfficientNet-B0 (1280-dim, frozen from exp1 best checkpoint)",
+      "ultrasound_encoder": "ViT-B/16 (768-dim, frozen from exp2 best checkpoint)"
+    }
+  },
+  "frozen_model_checkpoints": {
+    "c3_benchmark": {
+      "model_id": "Candidate_C3",
+      "experiment_id": "exp_c3_git1_focal_gamma1_5",
+      "checkpoint_path": "outputs/experiments/phase_c/exp_c3_git1_focal_gamma1_5/best_checkpoint.pth",
+      "sha256": "9a60e5110973660b2d6ab4fd777c47e73124174678e84b8457494da757dafbc8",
+      "selected_epoch": 4,
+      "validation_composite_score": 0.8351,
+      "learning_rate": 0.0001,
+      "loss_formulation": "ClassBalancedFocalLoss(gamma=1.5, alpha=[1.0, 5.1111])"
+    },
+    "d5_candidate": {
+      "model_id": "Candidate_D5",
+      "experiment_id": "exp_d5_lr5e-5",
+      "checkpoint_path": "outputs/phase_d/experiments/exp_d5_lr5e-5/best_checkpoint.pth",
+      "sha256": "e79338f82492e654ceab798250092c86e0e229cace83ea5d28a67a98db8c9e7b",
+      "selected_epoch": 4,
+      "validation_composite_score": 0.8468,
+      "learning_rate": 0.00005,
+      "loss_formulation": "ClassBalancedFocalLoss(gamma=1.5, alpha=[1.0, 5.1111])"
+    }
+  },
+  "locked_held_out_test_metrics_summary": {
+    "cohort_size": 47,
+    "positive_class_count": 7,
+    "negative_class_count": 40,
+    "operating_threshold": 0.5,
+    "c3_benchmark": {
+      "accuracy": 0.8511,
+      "sensitivity": 0.8571,
+      "specificity": 0.85,
+      "precision": 0.5,
+      "npv": 0.9714,
+      "f1_score": 0.6316,
+      "balanced_accuracy": 0.8536,
+      "roc_auc": 0.9036,
+      "pr_auc": 0.6188,
+      "brier_score": 0.1133,
+      "log_loss": 0.3519,
+      "confusion_matrix": {
+        "tn": 34,
+        "fp": 6,
+        "fn": 1,
+        "tp": 6
+      }
+    },
+    "d5_candidate": {
+      "accuracy": 0.8085,
+      "sensitivity": 0.8571,
+      "specificity": 0.8,
+      "precision": 0.4286,
+      "npv": 0.9697,
+      "f1_score": 0.5714,
+      "balanced_accuracy": 0.8286,
+      "roc_auc": 0.8964,
+      "pr_auc": 0.6151,
+      "brier_score": 0.1281,
+      "log_loss": 0.4075,
+      "confusion_matrix": {
+        "tn": 32,
+        "fp": 8,
+        "fn": 1,
+        "tp": 6
+      }
+    },
+    "paired_comparison": {
+      "agreement_count": 45,
+      "disagreement_count": 2,
+      "mcnemar_exact_p_value": 0.5,
+      "wilcoxon_signed_rank_p_value": 0.0074,
+      "descriptive_winner": "Candidate C3 Benchmark (No statistical significance, p=0.50)"
+    }
+  },
+  "output_directory_structure": {
+    "root": "outputs/phase_d/phase_d9_research_consolidation",
+    "manuscript": "outputs/phase_d/phase_d9_research_consolidation/final_research_manuscript.md",
+    "executive_summary": "outputs/phase_d/phase_d9_research_consolidation/executive_summary.md",
+    "limitations": "outputs/phase_d/phase_d9_research_consolidation/limitations_and_future_work.md",
+    "reproducibility_checklist": "outputs/phase_d/phase_d9_research_consolidation/reproducibility_checklist.md",
+    "references": "outputs/phase_d/phase_d9_research_consolidation/references.md",
+    "master_results_csv": "outputs/phase_d/phase_d9_research_consolidation/final_results_tables.csv",
+    "figures_directory": "outputs/phase_d/phase_d9_research_consolidation/figures",
+    "tables_directory": "outputs/phase_d/phase_d9_research_consolidation/tables"
+  }
+}

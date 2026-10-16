@@ -1,0 +1,4 @@
+Model Designation,Experiment ID,Architecture,Modality,Level,N (Pos / Neg),Accuracy,Precision,Sensitivity,Specificity,F1-Score,G-Mean,ROC-AUC,PR-AUC,TP,FP,TN,FN
+Individual Model 1,exp1_efficientnet_mammogram,EfficientNet-B0,Mammogram,Patient,47 (7 / 40),85.11%,50.00%,14.29%,97.50%,0.2222,0.3732,0.6571,0.3079,1,1,39,6
+Individual Model 2,exp2_vit_ultrasound,ViT-B/16,Ultrasound,Patient,47 (7 / 40),91.49%,80.00%,57.14%,97.50%,0.6667,0.7464,0.8357,0.7099,4,1,39,3
+Combined GIT Model,exp_git_multimodal,Graph-Infused Transformer (GIT),Mammogram + Ultrasound (Multimodal),Patient,47 (7 / 40),82.98%,45.45%,71.43%,85.00%,0.5556,0.7792,0.8857,0.5729,5,6,34,2

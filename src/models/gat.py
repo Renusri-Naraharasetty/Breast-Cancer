@@ -1,144 +1,192 @@
+import math
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
-from typing import Tuple, Optional
+from typing import Optional, Tuple
 
 
-class GATv2Layer(nn.Module):
-    """Multi-Head Graph Attention Network v2 (GATv2) layer.
-    
-    Implements dynamic graph attention between modality nodes.
-    Computes cross-modality and self-attention weights and produces
-    graph-enhanced representations with residual connections and layer norm.
+class GraphAttentionLayer(nn.Module):
+    """Multi-Head Graph Attention Layer (GAT) implemented in native PyTorch.
+
+    Computes masked multi-head attention over graph adjacency structures.
+    Supports batched graph tensors with variable node counts via node masks.
+    Includes residual connection, dropout, and layer normalization.
     """
+
     def __init__(
         self,
-        in_dim: int,
-        out_dim: int,
+        in_features: int,
+        out_features: int,
         num_heads: int = 4,
-        dropout: float = 0.2,
-        concat: bool = False
+        dropout_rate: float = 0.2,
+        alpha: float = 0.2,
+        concat: bool = False,
+        residual: bool = True,
     ):
         super().__init__()
-        self.in_dim = in_dim
-        self.out_dim = out_dim
+        self.in_features = in_features
+        self.out_features = out_features
         self.num_heads = num_heads
+        self.dropout_rate = dropout_rate
+        self.alpha = alpha
         self.concat = concat
-        
-        assert out_dim % num_heads == 0, "out_dim must be divisible by num_heads"
-        self.head_dim = out_dim // num_heads
+        self.residual = residual
 
-        # Linear projections for source and target nodes
-        self.lin_src = nn.Linear(in_dim, out_dim, bias=False)
-        self.lin_dst = nn.Linear(in_dim, out_dim, bias=False)
-        
-        # Attention vector for each head
-        self.attn = nn.Parameter(torch.Tensor(1, num_heads, 1, self.head_dim))
-        
-        # Value projection
-        self.lin_val = nn.Linear(in_dim, out_dim, bias=False)
-        
-        self.leaky_relu = nn.LeakyReLU(0.2)
-        self.dropout = nn.Dropout(dropout)
-        
-        self.residual = nn.Linear(in_dim, out_dim) if in_dim != out_dim else nn.Identity()
-        self.norm = nn.LayerNorm(out_dim)
+        if concat:
+            assert out_features % num_heads == 0, "out_features must be divisible by num_heads when concat=True"
+            self.head_dim = out_features // num_heads
+        else:
+            self.head_dim = out_features
+
+        # Projection weight matrix W: (in_features, num_heads * head_dim)
+        self.W = nn.Linear(in_features, num_heads * self.head_dim, bias=False)
+
+        # Attention vectors for source and destination nodes
+        self.a_src = nn.Parameter(torch.empty(size=(1, 1, num_heads, self.head_dim)))
+        self.a_dst = nn.Parameter(torch.empty(size=(1, 1, num_heads, self.head_dim)))
+
+        self.leaky_relu = nn.LeakyReLU(self.alpha)
+        self.dropout = nn.Dropout(dropout_rate)
+
+        # Output projection when concat is False, or to align residual dimension
+        if concat:
+            self.out_proj = nn.Identity()
+        else:
+            self.out_proj = nn.Linear(num_heads * self.head_dim, out_features)
+
+        if self.residual:
+            if in_features != out_features:
+                self.res_proj = nn.Linear(in_features, out_features)
+            else:
+                self.res_proj = nn.Identity()
+            self.layer_norm = nn.LayerNorm(out_features)
 
         self._reset_parameters()
 
     def _reset_parameters(self):
-        nn.init.xavier_uniform_(self.lin_src.weight)
-        nn.init.xavier_uniform_(self.lin_dst.weight)
-        nn.init.xavier_uniform_(self.lin_val.weight)
-        nn.init.xavier_uniform_(self.attn)
+        nn.init.xavier_uniform_(self.W.weight, gain=1.414)
+        nn.init.xavier_uniform_(self.a_src, gain=1.414)
+        nn.init.xavier_uniform_(self.a_dst, gain=1.414)
+        if hasattr(self, "out_proj") and isinstance(self.out_proj, nn.Linear):
+            nn.init.xavier_uniform_(self.out_proj.weight, gain=1.414)
+            nn.init.zeros_(self.out_proj.bias)
 
     def forward(
         self,
-        node_feats: torch.Tensor,
-        adj_mask: Optional[torch.Tensor] = None
-    ) -> Tuple[torch.Tensor, torch.Tensor]:
-        """Args:
-            node_feats: [B, N, in_dim] where B is batch size, N is number of nodes (e.g. 2: Mammo, US)
-            adj_mask: Optional [N, N] adjacency boolean mask (True for existing edges)
-            
+        x: torch.Tensor,
+        adj: torch.Tensor,
+        node_mask: Optional[torch.Tensor] = None,
+    ) -> torch.Tensor:
+        """Forward pass for batched graph attention.
+
+        Args:
+            x: Node feature tensor of shape (batch_size, num_nodes, in_features).
+            adj: Adjacency matrix of shape (batch_size, num_nodes, num_nodes) where
+                 1 indicates an edge and 0 indicates no edge.
+            node_mask: Optional boolean mask of shape (batch_size, num_nodes) where
+                       True indicates a valid node and False indicates a padded node.
+
         Returns:
-            out_feats: [B, N, out_dim] graph-enhanced node representations
-            attn_weights: [B, num_heads, N, N] attention coefficients
+            Output node features of shape (batch_size, num_nodes, out_features).
         """
-        B, N, _ = node_feats.shape
-        
-        # Project features: [B, N, num_heads, head_dim]
-        h_src = self.lin_src(node_feats).view(B, N, self.num_heads, self.head_dim)
-        h_dst = self.lin_dst(node_feats).view(B, N, self.num_heads, self.head_dim)
-        h_val = self.lin_val(node_feats).view(B, N, self.num_heads, self.head_dim)
+        batch_size, num_nodes, _ = x.shape
 
-        # Transpose to [B, num_heads, N, head_dim]
-        h_src = h_src.permute(0, 2, 1, 3)
-        h_dst = h_dst.permute(0, 2, 1, 3)
-        h_val = h_val.permute(0, 2, 1, 3)
+        # Linear projection: (B, N, num_heads * head_dim)
+        h = self.W(x)
+        # Reshape to (B, N, num_heads, head_dim)
+        h = h.view(batch_size, num_nodes, self.num_heads, self.head_dim)
 
-        # Compute pairwise sum: h_src[:, :, :, None, :] + h_dst[:, :, None, :, :] -> [B, num_heads, N, N, head_dim]
-        pairwise = h_src.unsqueeze(3) + h_dst.unsqueeze(2)
-        scores = self.leaky_relu(pairwise)
-        
-        # Dot product with attention vector: [B, num_heads, N, N]
-        attn_logits = (scores * self.attn.unsqueeze(2)).sum(dim=-1)
+        # Compute source and destination attention components
+        # (B, N, num_heads, 1)
+        score_src = (h * self.a_src).sum(dim=-1, keepdim=True)
+        score_dst = (h * self.a_dst).sum(dim=-1, keepdim=True)
 
-        if adj_mask is not None:
-            # Mask out non-edges: [N, N] -> [1, 1, N, N]
-            mask = adj_mask.unsqueeze(0).unsqueeze(0)
-            attn_logits = attn_logits.masked_fill(~mask, float('-inf'))
+        # Pairwise attention scores: e_{ij} = LeakyReLU(score_src_i + score_dst_j)
+        # score_src: (B, N, 1, num_heads) -> broadcast over dst
+        # score_dst: (B, 1, N, num_heads) -> broadcast over src
+        score_src = score_src.squeeze(-1).unsqueeze(2)  # (B, N, 1, num_heads)
+        score_dst = score_dst.squeeze(-1).unsqueeze(1)  # (B, 1, N, num_heads)
+        scores = self.leaky_relu(score_src + score_dst)  # (B, N, N, num_heads)
 
-        # Softmax over source nodes (dim=-1)
-        attn_weights = F.softmax(attn_logits, dim=-1)
+        # Mask out non-edges
+        # adj is (B, N, N) -> expand to (B, N, N, 1)
+        adj_mask = (adj > 0).unsqueeze(-1)  # (B, N, N, 1)
+
+        if node_mask is not None:
+            # node_mask is (B, N), valid pairs have both nodes valid
+            pair_mask = (node_mask.unsqueeze(2) & node_mask.unsqueeze(1)).unsqueeze(-1)
+            adj_mask = adj_mask & pair_mask
+
+        # Apply large negative number to non-edges so softmax weight is 0
+        scores = scores.masked_fill(~adj_mask, -1e4)
+
+        # Softmax over target neighbors (dim=2)
+        attn_weights = F.softmax(scores, dim=2)
         attn_weights = self.dropout(attn_weights)
 
-        # Aggregate values: [B, num_heads, N, N] x [B, num_heads, N, head_dim] -> [B, num_heads, N, head_dim]
-        out = torch.matmul(attn_weights, h_val)
+        # Handle nodes that have zero valid neighbors (prevent NaN in softmax)
+        attn_weights = torch.nan_to_num(attn_weights, nan=0.0)
 
-        # Reshape to [B, N, out_dim]
-        out = out.permute(0, 2, 1, 3).contiguous().view(B, N, self.out_dim)
+        # Weighted message aggregation:
+        # attn_weights: (B, N_i, N_j, H), h: (B, N_j, H, D_head)
+        # aggregated: (B, N_i, H, D_head)
+        out = torch.einsum("bijh,bjhd->bihd", attn_weights, h)
 
-        # Residual connection + LayerNorm
-        res = self.residual(node_feats)
-        out = self.norm(out + res)
+        if self.concat:
+            # Concatenate heads: (B, N, num_heads * head_dim) = (B, N, out_features)
+            out = out.reshape(batch_size, num_nodes, self.num_heads * self.head_dim)
+            out = self.out_proj(out)
+        else:
+            # Average heads or project
+            out = out.reshape(batch_size, num_nodes, self.num_heads * self.head_dim)
+            out = self.out_proj(out)
 
-        return out, attn_weights
+        # Residual connection and Layer Normalization
+        if self.residual:
+            res = self.res_proj(x)
+            out = self.layer_norm(res + self.dropout(out))
+
+        if node_mask is not None:
+            out = out * node_mask.unsqueeze(-1).float()
+
+        return out
 
 
 class MultimodalGAT(nn.Module):
-    """Stack of GATv2 layers for multimodal message passing between Mammogram and Ultrasound."""
+    """Multi-layer Graph Attention Network for modeling relationships between fused features."""
+
     def __init__(
         self,
         hidden_dim: int = 256,
         num_layers: int = 2,
         num_heads: int = 4,
-        dropout: float = 0.2
+        dropout_rate: float = 0.2,
+        alpha: float = 0.2,
     ):
         super().__init__()
-        self.layers = nn.ModuleList([
-            GATv2Layer(
-                in_dim=hidden_dim,
-                out_dim=hidden_dim,
-                num_heads=num_heads,
-                dropout=dropout
+        self.num_layers = num_layers
+        self.layers = nn.ModuleList()
+
+        for _ in range(num_layers):
+            self.layers.append(
+                GraphAttentionLayer(
+                    in_features=hidden_dim,
+                    out_features=hidden_dim,
+                    num_heads=num_heads,
+                    dropout_rate=dropout_rate,
+                    alpha=alpha,
+                    concat=False,
+                    residual=True,
+                )
             )
-            for _ in range(num_layers)
-        ])
 
     def forward(
         self,
-        node_feats: torch.Tensor,
-        adj_mask: Optional[torch.Tensor] = None
-    ) -> Tuple[torch.Tensor, torch.Tensor]:
-        """Passes multimodal tokens through sequential GAT layers.
-        
-        Returns:
-            enhanced_feats: [B, N, hidden_dim]
-            last_attn_weights: [B, num_heads, N, N]
-        """
-        x = node_feats
-        last_attn = None
+        x: torch.Tensor,
+        adj: torch.Tensor,
+        node_mask: Optional[torch.Tensor] = None,
+    ) -> torch.Tensor:
+        """Passes node features through stacked GAT layers with residual connections."""
         for layer in self.layers:
-            x, last_attn = layer(x, adj_mask)
-        return x, last_attn
+            x = layer(x, adj, node_mask=node_mask)
+        return x

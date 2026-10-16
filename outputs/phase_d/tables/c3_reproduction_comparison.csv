@@ -1,0 +1,25 @@
+Metric,Frozen C3 Benchmark (Phase C),Experiment D1 Repro (Phase D),Absolute Delta,Status
+Selected Epoch,4,4,0,Exact Match
+Composite Score,0.8351,0.8351,0.0000,Exact Match
+Validation ROC-AUC,0.9281,0.9281,0.0000,Exact Match
+Validation PR-AUC,0.7661,0.7661,0.0000,Exact Match
+Validation F1-Score,0.7059,0.7059,0.0000,Exact Match
+Validation Sensitivity,0.7500,0.7500,0.0000,Exact Match
+Validation Specificity,0.9250,0.9250,0.0000,Exact Match
+Validation Balanced Accuracy,0.8375,0.8375,0.0000,Exact Match
+Validation Accuracy,0.8958,0.8958,0.0000,Exact Match
+Validation Precision,0.6667,0.6667,0.0000,Exact Match
+Validation Loss,0.1679,0.1679,0.0000,Exact Match
+Training Loss at Selected Epoch,0.1590,0.1590,0.0000,Exact Match
+Training Accuracy at Selected Epoch,0.9091,0.9091,0.0000,Exact Match
+Loss Overfitting Gap at Selected Epoch,+0.0089,+0.0089,0.0000,Exact Match
+True Negatives (TN),37,37,0,Exact Match
+False Positives (FP),3,3,0,Exact Match
+False Negatives (FN),2,2,0,Exact Match
+True Positives (TP),6,6,0,Exact Match
+Stopping Epoch,12,12,0,Exact Match
+Patience,8,8,0,Exact Match
+Runtime (seconds),N/A (est 20-30s),48.40s,N/A,Logged
+Peak VRAM (MB),N/A (<150 MB),105.52 MB,N/A,Logged
+Hardware Device,NVIDIA GeForce MX550,NVIDIA GeForce MX550,N/A,Identical
+Test Cohort Evaluated,No (Quarantined),No (Quarantined),N/A,Compliant

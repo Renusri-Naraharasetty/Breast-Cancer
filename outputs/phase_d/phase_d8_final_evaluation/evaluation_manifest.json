@@ -1,0 +1,83 @@
+{
+  "manifest_version": "1.0",
+  "phase": "Phase D8",
+  "title": "Locked Final Held-Out Evaluation Manifest: C3 vs D5",
+  "execution_timestamp": "2026-10-16T10:33:09.709851",
+  "random_seeds": {
+    "c3_seed": 42,
+    "d5_seed": 42,
+    "bootstrap_seed": 42
+  },
+  "operating_threshold": 0.5,
+  "environment": {
+    "os": "Windows 11 (10.0.26200)",
+    "python_version": "3.13.5 | packaged by Anaconda, Inc. | (main, Jun 12 2025, 16:37:03) [MSC v.1929 64 bit (AMD64)]",
+    "pytorch_version": "2.7.1+cu118",
+    "cuda_available": true,
+    "cuda_device": "NVIDIA GeForce MX550",
+    "scikit_learn_version": "1.6.1",
+    "pandas_version": "2.2.3",
+    "numpy_version": "2.1.3"
+  },
+  "input_provenance": {
+    "splits_manifest": {
+      "path": "data/splits/patient_stratified_split.json",
+      "sha256": "b1e28b17c34b618dc0937964a677ea8b06884ae5c8ea8bd6d7e48c17e006a8ef",
+      "held_out_test_patients": 47,
+      "held_out_unique_roots": 47
+    },
+    "annotations_tsv": {
+      "path": "BCMID_annotations.tsv",
+      "sha256": "a22a05a6344a6f4cbf0d270e7c644450d42c6ea5aeea847d61a841d99f9b0aca",
+      "total_rows": 332
+    },
+    "feature_cache": {
+      "path": "data/features/patient_multimodal_features.pt",
+      "sha256": "4a7ae4f20085a2f9be61dc9d2f73d2b84f782cd080f18860703d09b2b3f11bb6",
+      "mammogram_encoder": "EfficientNet-B0 (1280-dim)",
+      "ultrasound_encoder": "ViT-B/16 (768-dim)"
+    },
+    "c3_checkpoint": {
+      "path": "outputs/experiments/phase_c/exp_c3_git1_focal_gamma1_5/best_checkpoint.pth",
+      "sha256": "9a60e5110973660b2d6ab4fd777c47e73124174678e84b8457494da757dafbc8",
+      "selected_epoch": 4,
+      "selection_composite_score": 0.8351
+    },
+    "d5_checkpoint": {
+      "path": "outputs/phase_d/experiments/exp_d5_lr5e-5/best_checkpoint.pth",
+      "sha256": "e79338f82492e654ceab798250092c86e0e229cace83ea5d28a67a98db8c9e7b",
+      "selected_epoch": 4,
+      "selection_composite_score": 0.8468
+    }
+  },
+  "metric_definitions": {
+    "accuracy": "(TP + TN) / Total",
+    "sensitivity_recall": "TP / (TP + FN)",
+    "specificity": "TN / (TN + FP)",
+    "precision_ppv": "TP / (TP + FP)",
+    "negative_predictive_value_npv": "TN / (TN + FN)",
+    "f1_score": "2 * (Precision * Recall) / (Precision + Recall)",
+    "balanced_accuracy": "0.5 * (Sensitivity + Specificity)",
+    "roc_auc": "Area under the receiver operating characteristic curve (trapezoidal)",
+    "pr_auc": "Average precision score across decision thresholds",
+    "brier_score": "Mean squared error between predicted probabilities and binary labels",
+    "log_loss": "Binary cross-entropy loss"
+  },
+  "evaluation_command": "python scripts/evaluate_phase_d8_locked.py",
+  "output_artifacts": {
+    "predictions_c3": "outputs/phase_d/phase_d8_final_evaluation\\test_predictions_c3.csv",
+    "predictions_d5": "outputs/phase_d/phase_d8_final_evaluation\\test_predictions_d5.csv",
+    "metrics_c3": "outputs/phase_d/phase_d8_final_evaluation\\test_metrics_c3.json",
+    "metrics_d5": "outputs/phase_d/phase_d8_final_evaluation\\test_metrics_d5.json",
+    "paired_comparison": "outputs/phase_d/phase_d8_final_evaluation\\paired_comparison.json",
+    "metrics_table_csv": "outputs/phase_d/phase_d8_final_evaluation\\c3_vs_d5_test_metrics_table.csv",
+    "metrics_table_md": "outputs/phase_d/phase_d8_final_evaluation\\c3_vs_d5_test_metrics_table.md",
+    "contingency_table_csv": "outputs/phase_d/phase_d8_final_evaluation\\paired_contingency_table.csv",
+    "contingency_table_md": "outputs/phase_d/phase_d8_final_evaluation\\paired_contingency_table.md",
+    "roc_curve_plot": "outputs/phase_d/phase_d8_final_evaluation\\figures\\roc_curves_c3_vs_d5.png",
+    "pr_curve_plot": "outputs/phase_d/phase_d8_final_evaluation\\figures\\pr_curves_c3_vs_d5.png",
+    "confusion_matrices_plot": "outputs/phase_d/phase_d8_final_evaluation\\figures\\confusion_matrices_c3_vs_d5.png",
+    "paired_scatter_plot": "outputs/phase_d/phase_d8_final_evaluation\\figures\\paired_prediction_scatter.png",
+    "reliability_diagram_plot": "outputs/phase_d/phase_d8_final_evaluation\\figures\\reliability_curves_c3_vs_d5.png"
+  }
+}

@@ -1,0 +1,303 @@
+{
+  "metadata": {
+    "n_val_patients": 48,
+    "n_val_pos": 8,
+    "n_val_neg": 40,
+    "n_test_patients": 47,
+    "n_test_pos": 7,
+    "n_test_neg": 40,
+    "limitation_statement": "The test set contains only 7 positive patients out of 47 total. Confidence intervals are broad, and thresholds selected on validation data are subject to finite-sample variability. These results do not constitute clinical validation."
+  },
+  "GIT_1": {
+    "model_name": "GIT 1 (EffNet MG + ViT US)",
+    "val_roc_auc": 0.925,
+    "val_pr_auc": 0.7436,
+    "operating_points": {
+      "max_f1": {
+        "criterion": "Maximum Validation F1-Score",
+        "threshold": 0.42,
+        "validation_performance": {
+          "threshold": 0.42,
+          "accuracy": 0.8958,
+          "precision": 0.6364,
+          "sensitivity": 0.875,
+          "recall": 0.875,
+          "specificity": 0.9,
+          "f1_score": 0.7368,
+          "balanced_accuracy": 0.8875,
+          "g_mean": 0.8874,
+          "tp": 7.0,
+          "fp": 4.0,
+          "tn": 36.0,
+          "fn": 1.0,
+          "dist_to_half": 0.08000000000000002
+        },
+        "test_performance": {
+          "threshold": 0.42,
+          "accuracy": 0.7872,
+          "precision": 0.4,
+          "sensitivity": 0.8571,
+          "recall": 0.8571,
+          "specificity": 0.775,
+          "f1_score": 0.5455,
+          "balanced_accuracy": 0.8161,
+          "g_mean": 0.815,
+          "tp": 6,
+          "fp": 9,
+          "tn": 31,
+          "fn": 1
+        }
+      },
+      "max_balanced_accuracy": {
+        "criterion": "Maximum Validation Balanced Accuracy",
+        "threshold": 0.42,
+        "validation_performance": {
+          "threshold": 0.42,
+          "accuracy": 0.8958,
+          "precision": 0.6364,
+          "sensitivity": 0.875,
+          "recall": 0.875,
+          "specificity": 0.9,
+          "f1_score": 0.7368,
+          "balanced_accuracy": 0.8875,
+          "g_mean": 0.8874,
+          "tp": 7.0,
+          "fp": 4.0,
+          "tn": 36.0,
+          "fn": 1.0,
+          "dist_to_half": 0.08000000000000002
+        },
+        "test_performance": {
+          "threshold": 0.42,
+          "accuracy": 0.7872,
+          "precision": 0.4,
+          "sensitivity": 0.8571,
+          "recall": 0.8571,
+          "specificity": 0.775,
+          "f1_score": 0.5455,
+          "balanced_accuracy": 0.8161,
+          "g_mean": 0.815,
+          "tp": 6,
+          "fp": 9,
+          "tn": 31,
+          "fn": 1
+        }
+      },
+      "high_sensitivity_90": {
+        "criterion": "Maximum Specificity subject to Sensitivity >= 90%",
+        "threshold": 0.19,
+        "validation_performance": {
+          "threshold": 0.19,
+          "accuracy": 0.7708,
+          "precision": 0.4211,
+          "sensitivity": 1.0,
+          "recall": 1.0,
+          "specificity": 0.725,
+          "f1_score": 0.5926,
+          "balanced_accuracy": 0.8625,
+          "g_mean": 0.8515,
+          "tp": 8.0,
+          "fp": 11.0,
+          "tn": 29.0,
+          "fn": 0.0,
+          "dist_to_half": 0.31
+        },
+        "test_performance": {
+          "threshold": 0.19,
+          "accuracy": 0.7234,
+          "precision": 0.35,
+          "sensitivity": 1.0,
+          "recall": 1.0,
+          "specificity": 0.675,
+          "f1_score": 0.5185,
+          "balanced_accuracy": 0.8375,
+          "g_mean": 0.8216,
+          "tp": 7,
+          "fp": 13,
+          "tn": 27,
+          "fn": 0
+        }
+      },
+      "baseline_default": {
+        "criterion": "Canonical Default (Threshold 0.50)",
+        "threshold": 0.5,
+        "validation_performance": {
+          "threshold": 0.5,
+          "accuracy": 0.8542,
+          "precision": 0.5714,
+          "sensitivity": 0.5,
+          "recall": 0.5,
+          "specificity": 0.925,
+          "f1_score": 0.5333,
+          "balanced_accuracy": 0.7125,
+          "g_mean": 0.6801,
+          "tp": 4.0,
+          "fp": 3.0,
+          "tn": 37.0,
+          "fn": 4.0
+        },
+        "test_performance": {
+          "threshold": 0.5,
+          "accuracy": 0.8298,
+          "precision": 0.4545,
+          "sensitivity": 0.7143,
+          "recall": 0.7143,
+          "specificity": 0.85,
+          "f1_score": 0.5556,
+          "balanced_accuracy": 0.7821,
+          "g_mean": 0.7792,
+          "tp": 5,
+          "fp": 6,
+          "tn": 34,
+          "fn": 2
+        }
+      }
+    }
+  },
+  "GIT_2": {
+    "model_name": "GIT 2 (ViT MG + EffNet US)",
+    "val_roc_auc": 0.8687,
+    "val_pr_auc": 0.5903,
+    "operating_points": {
+      "max_f1": {
+        "criterion": "Maximum Validation F1-Score",
+        "threshold": 0.76,
+        "validation_performance": {
+          "threshold": 0.76,
+          "accuracy": 0.8542,
+          "precision": 0.5385,
+          "sensitivity": 0.875,
+          "recall": 0.875,
+          "specificity": 0.85,
+          "f1_score": 0.6667,
+          "balanced_accuracy": 0.8625,
+          "g_mean": 0.8624,
+          "tp": 7.0,
+          "fp": 6.0,
+          "tn": 34.0,
+          "fn": 1.0,
+          "dist_to_half": 0.26
+        },
+        "test_performance": {
+          "threshold": 0.76,
+          "accuracy": 0.7021,
+          "precision": 0.3158,
+          "sensitivity": 0.8571,
+          "recall": 0.8571,
+          "specificity": 0.675,
+          "f1_score": 0.4615,
+          "balanced_accuracy": 0.7661,
+          "g_mean": 0.7606,
+          "tp": 6,
+          "fp": 13,
+          "tn": 27,
+          "fn": 1
+        }
+      },
+      "max_balanced_accuracy": {
+        "criterion": "Maximum Validation Balanced Accuracy",
+        "threshold": 0.76,
+        "validation_performance": {
+          "threshold": 0.76,
+          "accuracy": 0.8542,
+          "precision": 0.5385,
+          "sensitivity": 0.875,
+          "recall": 0.875,
+          "specificity": 0.85,
+          "f1_score": 0.6667,
+          "balanced_accuracy": 0.8625,
+          "g_mean": 0.8624,
+          "tp": 7.0,
+          "fp": 6.0,
+          "tn": 34.0,
+          "fn": 1.0,
+          "dist_to_half": 0.26
+        },
+        "test_performance": {
+          "threshold": 0.76,
+          "accuracy": 0.7021,
+          "precision": 0.3158,
+          "sensitivity": 0.8571,
+          "recall": 0.8571,
+          "specificity": 0.675,
+          "f1_score": 0.4615,
+          "balanced_accuracy": 0.7661,
+          "g_mean": 0.7606,
+          "tp": 6,
+          "fp": 13,
+          "tn": 27,
+          "fn": 1
+        }
+      },
+      "high_sensitivity_90": {
+        "criterion": "Maximum Specificity subject to Sensitivity >= 90%",
+        "threshold": 0.2,
+        "validation_performance": {
+          "threshold": 0.2,
+          "accuracy": 0.5625,
+          "precision": 0.2759,
+          "sensitivity": 1.0,
+          "recall": 1.0,
+          "specificity": 0.475,
+          "f1_score": 0.4324,
+          "balanced_accuracy": 0.7375,
+          "g_mean": 0.6892,
+          "tp": 8.0,
+          "fp": 21.0,
+          "tn": 19.0,
+          "fn": 0.0,
+          "dist_to_half": 0.3
+        },
+        "test_performance": {
+          "threshold": 0.2,
+          "accuracy": 0.5532,
+          "precision": 0.25,
+          "sensitivity": 1.0,
+          "recall": 1.0,
+          "specificity": 0.475,
+          "f1_score": 0.4,
+          "balanced_accuracy": 0.7375,
+          "g_mean": 0.6892,
+          "tp": 7,
+          "fp": 21,
+          "tn": 19,
+          "fn": 0
+        }
+      },
+      "baseline_default": {
+        "criterion": "Canonical Default (Threshold 0.50)",
+        "threshold": 0.5,
+        "validation_performance": {
+          "threshold": 0.5,
+          "accuracy": 0.7083,
+          "precision": 0.35,
+          "sensitivity": 0.875,
+          "recall": 0.875,
+          "specificity": 0.675,
+          "f1_score": 0.5,
+          "balanced_accuracy": 0.775,
+          "g_mean": 0.7685,
+          "tp": 7.0,
+          "fp": 13.0,
+          "tn": 27.0,
+          "fn": 1.0
+        },
+        "test_performance": {
+          "threshold": 0.5,
+          "accuracy": 0.6383,
+          "precision": 0.2917,
+          "sensitivity": 1.0,
+          "recall": 1.0,
+          "specificity": 0.575,
+          "f1_score": 0.4516,
+          "balanced_accuracy": 0.7875,
+          "g_mean": 0.7583,
+          "tp": 7,
+          "fp": 17,
+          "tn": 23,
+          "fn": 0
+        }
+      }
+    }
+  }
+}

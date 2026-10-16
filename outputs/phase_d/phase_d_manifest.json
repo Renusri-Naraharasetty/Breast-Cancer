@@ -1,0 +1,75 @@
+{
+  "phase": "Phase D",
+  "project_title": "Scientifically Controlled Improvement of Breast Cancer Multimodal GIT",
+  "created_at": "2026-10-15T13:20:00+05:30",
+  "source_benchmark": {
+    "model_id": "Candidate C3",
+    "experiment_id": "exp_c3_git1_focal_gamma1_5",
+    "checkpoint_path": "outputs/experiments/phase_c/exp_c3_git1_focal_gamma1_5/best_checkpoint.pth",
+    "selected_epoch": 4,
+    "validation_composite_score": 0.8351,
+    "validation_metrics": {
+      "val_loss": 0.1679,
+      "val_acc": 0.8958,
+      "val_roc_auc": 0.9281,
+      "val_pr_auc": 0.7661,
+      "val_f1": 0.7059,
+      "val_sensitivity": 0.75,
+      "val_specificity": 0.925,
+      "val_balanced_acc": 0.8375,
+      "val_tn": 37,
+      "val_fp": 3,
+      "val_fn": 2,
+      "val_tp": 6
+    }
+  },
+  "dataset_manifest": {
+    "raw_folders_count": 332,
+    "annotations_tsv": "BCMID_annotations.tsv",
+    "splits_manifest": "data/splits/patient_stratified_split.json",
+    "total_eligible_root_patients": 311,
+    "total_eligible_patient_folders": 315,
+    "excluded_folders_count": 17,
+    "exclusion_criteria": "BI-RADS NONE (11), INDETERMINATE (5), or Category 0 (1)",
+    "multi_folder_root_patients": [
+      {"root_id": "01566y21", "folders": 2, "split": "train"},
+      {"root_id": "04412y22", "folders": 2, "split": "train"},
+      {"root_id": "03128y21", "folders": 2, "split": "val"},
+      {"root_id": "05128y22", "folders": 2, "split": "train"}
+    ],
+    "cohort_reconciliation": "311 unique root patients + 4 repeat visits = 315 patient folders (220 train + 48 val + 47 test). The previously cited 314 was an arithmetic typo in an earlier markdown summary row for 220+48+47."
+  },
+  "feature_cache": {
+    "path": "data/features/patient_multimodal_features.pt",
+    "mammogram_encoder": "EfficientNet-B0 (1280-dim, from exp1_efficientnet_mammogram checkpoint)",
+    "ultrasound_encoder": "ViT-B/16 (768-dim, from exp2_vit_ultrasound checkpoint)",
+    "train_patients": 220,
+    "val_patients": 48,
+    "test_patients": 47,
+    "integrity_status": "100% disjoint splits, 100% label concordance with TSV"
+  },
+  "environment": {
+    "os": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.5",
+    "pytorch": "2.7.1+cu118",
+    "cuda_available": true,
+    "gpu_device": "NVIDIA GeForce MX550",
+    "gpu_vram_gb": 2.0,
+    "system_ram_gb": 15.68
+  },
+  "governance_rules": {
+    "rule_1": "C3 checkpoint and all Phase C artifacts frozen and preserved.",
+    "rule_2": "Held-out 47-patient test cohort strictly excluded from Phase D training, tuning, and model selection.",
+    "rule_3": "Zero test label or prediction file inspection during development.",
+    "rule_4": "Development restricted strictly to 220 train and 48 val patients.",
+    "rule_5": "Patient-level stratified isolation enforced.",
+    "rule_6": "No silent changes to architecture, weights, or evaluation metrics.",
+    "rule_7": "Research radiologic triage scope only; no clinical diagnostic claims.",
+    "rule_8": "Audit-first gate enforced prior to training."
+  },
+  "selection_protocol": {
+    "formula": "S = 0.5 * ROC-AUC + 0.3 * PR-AUC + 0.2 * F1",
+    "tie_breaker": "Lower validation loss",
+    "early_stopping_patience": 8
+  }
+}

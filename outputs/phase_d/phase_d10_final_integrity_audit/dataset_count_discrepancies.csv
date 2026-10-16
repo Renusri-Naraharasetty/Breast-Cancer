@@ -1,0 +1,23 @@
+Artifact,Reported value,Verified value,Evidence/source,Resolution or unresolved status
+BCMID_annotations.tsv,332,332,Raw row count in BCMID_annotations.tsv,Verified - Concordant
+Non-Diagnostic Exclusions,17,17,"BCMID_annotations.tsv (11 NONE, 5 INDETERMINATE, 1 Category 0)",Verified - Concordant
+Eligible Cohort (Folders),315,315,"BCMID_annotations.tsv (332 total - 17 excluded), data/splits/patient_stratified_split.json",Verified - Concordant
+Eligible Cohort (Unique Root Patients),311,311,"BCMID_annotations.tsv unique root_patient_id where label != -1, split metadata",Verified - Concordant
+Repeat-Visit Patients,4,4,"Roots 01566y21, 04412y22, 05128y22 (Train), 03128y21 (Val)",Verified - Concordant
+Repeat-Visit Additional Folders,4,4,8 total folders across 4 patients (4 primary + 4 repeat exams),Verified - Concordant
+Training Folders,220,220,"patient_stratified_split.json folder_patient_splits['train'], patient_multimodal_features.pt",Verified - Concordant
+Training Root Patients,217,217,patient_stratified_split.json root_patient_splits['train'],Verified - Concordant
+Training Class 0 (LOW_RISK) Folders,184,184,"BCMID_annotations.tsv joined on train folder IDs, phase_d0_audit_report.md",Verified - Concordant
+Training Class 1 (SUSPICIOUS) Folders,36,36,"BCMID_annotations.tsv joined on train folder IDs, phase_d0_audit_report.md",Verified - Concordant
+Validation Folders,48,48,"patient_stratified_split.json folder_patient_splits['val'], patient_multimodal_features.pt",Verified - Concordant
+Validation Root Patients,47,47,patient_stratified_split.json root_patient_splits['val'],Verified - Concordant
+Validation Class 0 (LOW_RISK) Folders,40,40,"BCMID_annotations.tsv joined on val folder IDs, phase_d0_audit_report.md",Verified - Concordant
+Validation Class 1 (SUSPICIOUS) Folders,8,8,"BCMID_annotations.tsv joined on val folder IDs, phase_d0_audit_report.md",Verified - Concordant
+Test Folders,47,47,"patient_stratified_split.json folder_patient_splits['test'], patient_multimodal_features.pt",Verified - Concordant
+Test Root Patients,47,47,patient_stratified_split.json root_patient_splits['test'] (100% unique),Verified - Concordant
+Test Class 0 (LOW_RISK) Folders,40,40,"BCMID_annotations.tsv joined on test folder IDs, test_predictions_c3.csv",Verified - Concordant
+Test Class 1 (SUSPICIOUS) Folders,7,7,"BCMID_annotations.tsv joined on test folder IDs, test_predictions_c3.csv",Verified - Concordant
+Historical Table Total ("314"),314,315,Arithmetic typo in legacy Phase C summary row (220 + 48 + 47 = 315),Resolved - Documented arithmetic error
+Phase D9 Assistant Chat Turn Summary,"Train: 165 / 55; Val: 38 / 10","Train: 184 / 36; Val: 40 / 8","Ephemeral chat summary error. D9 manuscript and table files already had 184/36 and 40/8",Resolved - D10 corrected manuscript and audit enforce 184/36 and 40/8
+Partition Leakage / Overlap,0,0,Pairwise intersections of root and folder sets across train/val/test are null,Verified - Zero leakage
+Excluded Cases in Splits,0,0,Zero excluded patients present in train/val/test folder lists,Verified - Strict isolation

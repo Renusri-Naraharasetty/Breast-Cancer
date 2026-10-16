@@ -1,0 +1,18 @@
+Metric,C3 Benchmark (lr=1e-4),Candidate D5 (lr=5e-5),Delta (D5 - C3)
+"Confusion Matrix [TN, FP, FN, TP]","[34, 6, 1, 6]","[32, 8, 1, 6]","TN: -2, FP: +2, FN: 0, TP: 0"
+Accuracy,85.11% (40/47),80.85% (38/47),-4.26%
+Sensitivity (Recall),85.71% (6/7),85.71% (6/7),0.00%
+Specificity,85.00% (34/40),80.00% (32/40),-5.00%
+Precision (PPV),50.00% (6/12),42.86% (6/14),-7.14%
+Negative Predictive Value (NPV),97.14% (34/35),96.97% (32/33),-0.17%
+F1-Score,0.6316,0.5714,-0.0602
+Balanced Accuracy,85.36%,82.86%,-2.50%
+ROC-AUC,0.9036,0.8964,-0.0072
+PR-AUC (Prevalence: 14.89%),0.6188,0.6151,-0.0037
+Brier Score,0.1133,0.1281,+0.0148
+Log Loss,0.3519,0.4075,+0.0556
+Sensitivity 95% CI (Wilson),"[0.4869, 0.9743]","[0.4869, 0.9743]",Identical
+Sensitivity 95% CI (Clopper-Pearson),"[0.4213, 0.9964]","[0.4213, 0.9964]",Identical
+Specificity 95% CI (Wilson),"[0.7093, 0.9294]","[0.6524, 0.8950]",Shifted by 2 FP
+ROC-AUC 95% CI (Bootstrap),"[0.7928, 0.9821]","[0.7750, 0.9786]",Broad overlap
+PR-AUC 95% CI (Bootstrap),"[0.3821, 0.9286]","[0.3831, 0.9137]",Broad overlap

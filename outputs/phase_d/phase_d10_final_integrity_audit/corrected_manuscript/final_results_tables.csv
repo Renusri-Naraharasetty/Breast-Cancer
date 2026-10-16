@@ -1,0 +1,9 @@
+Phase,Model,Modality,Cohort,Accuracy,Sensitivity,Specificity,Precision,F1-Score,Balanced Acc,ROC-AUC,PR-AUC
+Phase 1-5 (Single Modality),Exp 1: EfficientNet-B0,Mammogram,Held-Out Test (N=47),85.11%,14.29% (1/7),97.50% (39/40),50.00% (1/2),0.2222,55.89%,0.6571,0.3079
+Phase 1-5 (Single Modality),Exp 2: ViT-B/16,Ultrasound,Held-Out Test (N=47),91.49%,57.14% (4/7),97.50% (39/40),80.00% (4/5),0.6667,77.32%,0.8357,0.7099
+Phase 1-5 (Single Modality),Exp 3: ViT-B/16,Mammogram,Held-Out Test (N=47),87.23%,14.29% (1/7),100.00% (40/40),100.00% (1/1),0.2500,57.14%,0.7893,0.4130
+Phase 1-5 (Single Modality),Exp 4: EfficientNet-B0,Ultrasound,Held-Out Test (N=47),48.94%,100.00% (7/7),40.00% (16/40),22.58% (7/31),0.3684,70.00%,0.8357,0.4999
+Phase 5 (Multimodal GIT),GIT 1 Baseline,Multimodal,Held-Out Test (N=47),82.98% (39/47),71.43% (5/7),85.00% (34/40),45.45% (5/11),0.5556,78.21%,0.8857,0.5729
+Phase 5 (Multimodal GIT),GIT 2 Baseline,Multimodal,Held-Out Test (N=47),63.83% (30/47),100.00% (7/7),57.50% (23/40),29.17% (7/24),0.4516,78.75%,0.8321,0.4048
+Phase D8 (Locked Final Test),C3 Benchmark (lr=1e-4),Multimodal,Held-Out Test (N=47),85.11% (40/47),85.71% (6/7),85.00% (34/40),50.00% (6/12),0.6316,85.36%,0.9036,0.6188
+Phase D8 (Locked Final Test),Candidate D5 (lr=5e-5),Multimodal,Held-Out Test (N=47),80.85% (38/47),85.71% (6/7),80.00% (32/40),42.86% (6/14),0.5714,82.86%,0.8964,0.6151

@@ -1,0 +1,3 @@
+Model Designation,Architecture,Selection Protocol,Accuracy,Sensitivity,Specificity,Precision,F1-Score,Balanced Acc,ROC-AUC,PR-AUC,"CM [TN, FP, FN, TP]"
+GIT 1 Baseline,EffNet MG + ViT US,Min Val Loss (Ep 3),82.98% (39/47),71.43% (5/7),85.00% (34/40),45.45% (5/11),0.5556,78.21%,0.8857,0.5729,"[34, 6, 2, 5]"
+GIT 2 Baseline,ViT MG + EffNet US,Min Val Loss (Ep 2),63.83% (30/47),100.00% (7/7),57.50% (23/40),29.17% (7/24),0.4516,78.75%,0.8321,0.4048,"[23, 17, 0, 7]"

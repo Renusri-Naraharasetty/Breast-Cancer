@@ -1,194 +1,167 @@
-# Multimodal Breast Cancer Classification Framework (BCMID)
+# Multimodal Radiologic Breast Cancer Triage using Graph-Infused Transformers (GIT)
 
-A research-grade multimodal deep learning framework for breast cancer classification (Benign vs. Malignant) utilizing the Breast Cancer Multimodal Imaging Dataset (BCMID), combining Full-Field Digital Mammography (FFDM), Ultrasound (US) imaging, and clinical diagnostic reports.
+[![Python 3.10+](https://img.shields.io/badge/python-3.10%2B-blue.svg)](https://www.python.org/)
+[![PyTorch 2.0+](https://img.shields.io/badge/PyTorch-2.0%2B-ee4c2c.svg)](https://pytorch.org/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Research Audit: PASS](https://img.shields.io/badge/Research%20Audit-READY%20FOR%20SUBMISSION-success.svg)](outputs/phase_d/phase_d10_final_integrity_audit/final_integrity_audit_report.md)
+
+This repository contains the authoritative research implementation, experimental pipelines, locked evaluation suite, and publication deliverables for multimodal radiologic breast cancer triage on the **Breast Cancer Multimodal Imaging Dataset (BCMID)**.
+
+The framework pairs Full-Field Digital Mammography (FFDM) and targeted Ultrasound (US) sweeps using frozen unimodal vision backbones, anatomical side-aware Graph Attention Networks (GAT), and cross-attention Transformers to triage patient examinations into **Low-Risk Screening (`LOW_RISK`, BI-RADS 1–3)** versus **Suspicious / Actionable Screening (`SUSPICIOUS_ACTIONABLE`, BI-RADS 4A–6)**.
 
 ---
 
-## 1. Architectural Overview
+## 1. Architectural Pipeline
 
-```mermaid
-graph TD
-    subgraph Input["Patient-Level Multimodal Inputs"]
-        M["Mammogram Images N >= 1"]
-        U["Ultrasound Images M >= 1"]
-        R["Clinical PDF Report"]
-    end
-
-    R --> LE["Robust Label Extractor"] --> GT["Ground Truth: Benign (0) / Malignant (1)"]
-
-    subgraph Backbones["Deep Feature Extractors (ImageNet Pretrained)"]
-        M --> DN["DenseNet-121 Backbone"]
-        U --> RN["ResNet-50 Backbone"]
-    end
-
-    DN --> MF["Mammogram Embeddings [N, 1024]"]
-    RN --> UF["Ultrasound Embeddings [M, 2048]"]
-
-    subgraph Aggregation["Patient-Level Multi-Image Aggregation"]
-        MF --> MA["Learnable Modality Attention Pooling"]
-        UF --> UA["Learnable Modality Attention Pooling"]
-        MA --> MP["Patient Mammogram Representation [B, 1024]"]
-        UA --> UP["Patient Ultrasound Representation [B, 2048]"]
-    end
-
-    subgraph Graph_Builder["Multimodal Graph Representation"]
-        MP --> GB["Graph Builder (Linear Projections + Modality Embeddings)"]
-        UP --> GB
-        GB --> Nodes["Modality Tokens [B, 2, 256]"]
-        GB --> Adj["Adjacency (Bidirectional Edges & Self-Loops)"]
-    end
-
-    subgraph GAT_Module["Graph Attention Network"]
-        Nodes & Adj --> GAT["Multi-Head GATv2 Layers (Cross-Modal Message Passing)"]
-        GAT --> GTExp["Graph-Enhanced Modality Tokens [B, 2, 256]"]
-        GAT --> GATAttn["GAT Cross-Attention Weights [B, Heads, 2, 2]"]
-    end
-
-    subgraph Transformer_Module["Graph-Infused Transformer"]
-        GTExp --> Trans["Multi-Head Self-Attention Transformer Layers"]
-        Trans --> TransTokens["Refined Modality Tokens [B, 2, 256]"]
-        Trans --> TransAttn["Self-Attention Weights [B, 2, 2]"]
-    end
-
-    subgraph Fusion["Multimodal Fusion & Residuals"]
-        TransTokens & Nodes --> Res["Residual Fusion: (Transformer Tokens + Initial Tokens)"]
-        Res --> Fused["Concatenate Modality Tokens [B, 512]"]
-        Fused --> LN["Layer Normalization"]
-    end
-
-    subgraph Classifier["Classification Head"]
-        LN --> Drop["Dropout (p=0.3)"]
-        Drop --> FC1["Linear (512 -> 256)"]
-        FC1 --> Act["ReLU"]
-        Act --> FC2["Linear (256 -> 2)"]
-        FC2 --> Out["Logits (Benign / Malignant)"]
-    end
+```
+  Mammograms (CC / MLO)                 Ultrasound Sweeps
+   (Frozen EfficientNet-B0)              (Frozen ViT-B/16)
+          │                                     │
+          ▼                                     ▼
+   Mammogram Embeddings                  Ultrasound Embeddings
+     [N, 1280]                             [M, 768]
+          │                                     │
+          └──────────────────┬──────────────────┘
+                             ▼
+            Side-Aware Graph Builder (GAT Layers)
+            • View-to-view message passing
+            • Anatomical side relational biases (Ipsilateral / Contralateral)
+                             │
+                             ▼
+            Multimodal Cross-Attention Transformer
+            • Patient-level cross-modal interaction
+            • Residual token fusion
+                             │
+                             ▼
+            Linear Classification Head (Softmax)
+            • Class-Balanced Focal Loss (gamma = 1.5, alpha = [1.0, 5.11])
+            • Canonical Operating Threshold tau = 0.50
+                             │
+                             ▼
+            Radiologic Triage Prediction:
+            P(SUSPICIOUS_ACTIONABLE | Mammography + Ultrasound)
 ```
 
 ---
 
-## 2. Dataset Structure & Clinical Label Extraction
+## 2. BCMID Dataset & Patient-Level Split Governance
 
-### Dataset Inspection
-The BCMID repository contains patient-wise subdirectories:
-```
-BCMID/
-├── 00074y23/
-│   ├── Mammogram/
-│   │   ├── 00074y23_R_CC_1.png
-│   │   └── 00074y23_R_MLO_1.png
-│   ├── Ultrasound/
-│   │   ├── 00074y23_US_R_1.png
-│   │   └── ...
-│   └── (optional) report.pdf
-└── ...
-```
-- **332 Patients**: 100% have both Mammogram and Ultrasound folders.
-- **951 Mammograms**: High-resolution grayscale images (`L` mode), 1–4 views per patient (CC and MLO projections).
-- **1,050 Ultrasounds**: Color/RGB images (`RGBA` mode), 1–16 frames per patient.
-- **321 Clinical Reports**: Structured PDF radiology reports.
+The dataset was curated from **Ayady Almostakbal Hospital in Alexandria, Egypt** (2019–2022) and hosted on [Zenodo (Record 15546909)](https://zenodo.org/records/15546909).
 
-### Ground-Truth Extraction
-The clinical reports contain radiology impressions and BI-RADS assessments. The `src/data/label_extractor.py` module extracts labels without relying on filenames:
-- **Filtering**: Strips out standardized reference footers containing dictionary definitions.
-- **Spelling-Robust BI-RADS Parsing**: Captures `BIRADS`, `BI-RADS`, `BIARADS`, `BIRDAS`, and `BIRAD` (categories 0–6).
-- **Label Mapping**:
-  - `BENIGN` (Class 0): BI-RADS 1, 2, 3, clear post-surgical follow-ups, fibroadenomas, simple cysts.
-  - `MALIGNANT` (Class 1): BI-RADS 4 (4a, 4b, 4c), 5, 6, pathologically proven carcinomas, neoadjuvant localization clips/markers.
-  - `UNKNOWN` (Class -1): Missing reports (11 patients), unreadable scans (1 patient), or non-diagnostic impressions (3 patients). **Strictly excluded from supervised training to prevent label noise.**
+### Cohort Accounting & Anti-Leakage Protocol
+To prevent data leakage across multiple visits or bilateral folders, all partitions were generated strictly at the **biological root-patient level** (`root_patient_id`):
+
+| Cohort Partition | Unique Root Patients | Patient Folders | Class 0 (`LOW_RISK`) | Class 1 (`SUSPICIOUS`) | Class Ratio (Neg/Pos) | Repeat Exam Groups | Images (MG / US) |
+| :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| **Training (70%)** | 217 | **220** | 184 (83.64%) | 36 (16.36%) | 5.1111 : 1 | Groups R1, R2, R3 (6 folders) | 644 / 671 |
+| **Validation (15%)**| 47 | **48** | 40 (83.33%) | 8 (16.67%) | 5.0000 : 1 | Group R4 (2 folders) | 138 / 135 |
+| **Held-Out Test (15%)**| 47 | **47** | 40 (85.11%) | 7 (14.89%) | 5.7143 : 1 | Zero repeat visits (100% unique) | 132 / 150 |
+| **Total Eligible Cohort** | **311** | **315** | **264** (83.81%) | **51** (16.19%) | 5.1765 : 1 | 4 Root Patients (8 folders) | **914 / 956** |
+
+- **Exclusions ($N=17$):** 11 non-diagnostic / missing reports (`NONE`), 5 indeterminate reports (`INDETERMINATE`), and 1 incomplete assessment (`Category 0`).
+- **Partition Intersections:** Strictly null ($\text{Train} \cap \text{Val} = \emptyset$, $\text{Train} \cap \text{Test} = \emptyset$, $\text{Val} \cap \text{Test} = \emptyset$).
 
 ---
 
-## 3. Patient-Level Splitting & Anti-Leakage Protocol
+## 3. Locked Final Held-Out Evaluation (Threshold $\tau = 0.50$)
 
-> [!IMPORTANT]
-> Image-level splitting in medical imaging causes severe data leakage. In this project, splitting is performed strictly at the **PATIENT** level. All mammograms and ultrasounds for any given patient reside in exactly one split (Train, Validation, or Test).
+Following upstream development and quarantine during Phase D1–D7, the 47-patient held-out test cohort was unblinded once in Phase D8 for locked evaluation comparing the frozen reference benchmark **C3** (`exp_c3_git1_focal_gamma1_5`) against the leading tuned candidate **D5** (`exp_d5_lr5e-5`):
 
-- **Stratified Split**: 70% Train, 15% Validation, 15% Test.
-- **Class Imbalance Management**: The cohort has ~80% Benign and ~16% Malignant patients. The training pipeline applies class-weighted cross-entropy loss:
-  $$w_c = \frac{N}{2 \cdot N_c}$$
+| Performance Metric | Frozen Benchmark C3 | Leading Candidate D5 | Delta ($\text{D5} - \text{C3}$) | Exact Statistical Interpretation |
+| :--- | :---: | :---: | :---: | :--- |
+| **Accuracy** | **85.11%** (40/47) | **80.85%** (38/47) | $-4.26\%$ | C3 achieves higher overall classification accuracy |
+| **Sensitivity (Recall)** | **85.71%** (6/7) | **85.71%** (6/7) | $0.00\%$ | **Identical detection yield (both identify 6 of 7 suspicious cases)** |
+| **Specificity** | **85.00%** (34/40) | **80.00%** (32/40) | $-5.00\%$ | C3 clears 2 additional benign patients without false alarms |
+| **Positive Predictive Value (PPV)** | **50.00%** (6/12) | **42.86%** (6/14) | $-7.14\%$ | C3 yields higher biopsy precision on flagged examinations |
+| **Negative Predictive Value (NPV)** | **97.14%** (34/35) | **96.97%** (32/33) | $-0.17\%$ | High reassurance on low-risk screening triage clearance |
+| **F1-Score** | **0.6316** | **0.5714** | $-0.0602$ | Harmonic mean favors C3 |
+| **Balanced Accuracy** | **85.36%** | **82.86%** | $-2.50\%$ | Unweighted average of sensitivity and specificity |
+| **ROC-AUC** | **0.9036** | **0.8964** | $-0.0072$ | Overlapping 95% bootstrap confidence intervals |
+| **PR-AUC (Average Precision)** | **0.6188** | **0.6151** | $-0.0037$ | Baseline prevalence: 14.89% |
+| **Brier Score** | **0.1133** | **0.1281** | $+0.0148$ (worse) | C3 exhibits lower squared continuous probability error |
+| **Log Loss (Cross-Entropy)** | **0.3519** | **0.4075** | $+0.0556$ (worse) | C3 penalizes ground-truth cross-entropy less |
+| **Confusion Matrix `[TN, FP, FN, TP]`** | `[34, 6, 1, 6]` | `[32, 8, 1, 6]` | 2 extra FPs in D5 | Driven entirely by 2 borderline benign patients |
+| **Exact McNemar Test (Paired)** | Reference | $p = 0.5000$ | — | **No statistically significant difference ($95.74\%$ agreement)** |
+| **Wilcoxon Signed-Rank Test** | Reference | $p = 0.0074$ | — | Slight upward probability shift in D5 ($\Delta p = +0.0409$) |
 
----
-
-## 4. Primary Model & Baseline Comparison
-
-This framework implements and benchmarks 4 architectures:
-1. **Mammogram-Only DenseNet-121**: ImageNet-pretrained backbone with attention-pooling over mammogram views.
-2. **Ultrasound-Only ResNet-50**: ImageNet-pretrained backbone with attention-pooling over ultrasound frames.
-3. **Simple Concatenation Fusion**: Early/late concatenation baseline combining pooled mammogram and ultrasound vectors into an MLP.
-4. **Proposed Multimodal Graph-Infused Transformer**:
-   - Projection to a shared 256-dimensional space with learnable modality embeddings.
-   - Multi-Head GATv2 layer propagating cross-modal signals.
-   - Graph-Infused Transformer encoder applying Multi-Head Self-Attention across graph tokens.
-   - Residual connection and balanced classification head.
-
----
-
-## 5. Memory-Efficient GPU Optimization
-
-Designed to run smoothly on workstation and budget laptop GPUs (e.g., NVIDIA GeForce MX550 with 2GB VRAM):
-- **Automatic Mixed Precision (AMP)**: `torch.amp.autocast('cuda')` and `GradScaler`.
-- **Gradient Accumulation**: Simulated batch size via configurable accumulation steps.
-- **Two-Stage Fine-Tuning**: Convolutional backbones are frozen initially; heads, graph, and transformer layers train first before gradual unfreezing.
-- **Automatic Device Selection**: Auto-detects CUDA GPU with seamless CPU fallback.
+### Key Scientific Findings
+1. **Benchmark C3 Reaffirmation:** Candidate D5 demonstrated an apparent sensitivity advantage on validation data ($87.5\%$ vs $75.0\%$), but **failed to improve sensitivity on held-out test data**. Both models detected the exact same 6 of 7 suspicious lesions and missed the identical single positive case.
+2. **False Alarm Penalty:** Candidate D5 incurred 2 additional false-positive classifications on benign patients, lowering specificity from 85.00% to 80.00% and precision from 50.00% to 42.86%.
+3. **Statistical Non-Significance:** The exact McNemar test ($p = 0.5000$) demonstrates that the paired classification difference is not statistically significant. Benchmark C3 is reaffirmed as the primary, most defensible model.
 
 ---
 
-## 6. Installation & Execution
+## 4. Phase D10 Final Research Integrity Audit Deliverables
 
-### Setup
+All publication-ready reports, audited tables, de-identified figures, and multi-format manuscript exports are located in [`outputs/phase_d/phase_d10_final_integrity_audit/`](outputs/phase_d/phase_d10_final_integrity_audit/):
+
+- **Master Research Manuscript:**
+  - Markdown Source: [`final_research_manuscript.md`](outputs/phase_d/phase_d10_final_integrity_audit/final_research_manuscript.md)
+  - Compiled PDF: [`final_research_manuscript.pdf`](outputs/phase_d/phase_d10_final_integrity_audit/final_research_manuscript.pdf)
+  - Editable Word Document: [`final_research_manuscript.docx`](outputs/phase_d/phase_d10_final_integrity_audit/final_research_manuscript.docx)
+  - Standalone HTML: [`final_research_manuscript.html`](outputs/phase_d/phase_d10_final_integrity_audit/final_research_manuscript.html)
+- **Executive Synthesis:** [`executive_summary.md`](outputs/phase_d/phase_d10_final_integrity_audit/executive_summary.md)
+- **Integrity Audit Report:** [`final_integrity_audit_report.md`](outputs/phase_d/phase_d10_final_integrity_audit/final_integrity_audit_report.md)
+- **Submission Readiness Checklist:** [`submission_readiness_checklist.md`](outputs/phase_d/phase_d10_final_integrity_audit/submission_readiness_checklist.md) (16/16 PASS)
+- **Reconciliation Audit CSVs:**
+  - Dataset Counts: [`dataset_count_discrepancies.csv`](outputs/phase_d/phase_d10_final_integrity_audit/dataset_count_discrepancies.csv)
+  - Metric Consistency: [`metric_consistency_audit.csv`](outputs/phase_d/phase_d10_final_integrity_audit/metric_consistency_audit.csv)
+- **Privacy & Literature Verification:** [`privacy_and_citation_audit.md`](outputs/phase_d/phase_d10_final_integrity_audit/privacy_and_citation_audit.md)
+- **Machine-Readable Manifest:** [`phase_d10_manifest.json`](outputs/phase_d/phase_d10_final_integrity_audit/phase_d10_manifest.json)
+
+---
+
+## 5. Quickstart & Reproducibility
+
+### Installation
 ```bash
-pip install -r requirements.txt
+git clone https://github.com/Renusri-Naraharasetty/Breast-Cancer.git
+cd Breast-Cancer
+pip install torch torchvision scikit-learn pandas numpy scipy matplotlib statsmodels
 ```
 
-### 1. Inspect Dataset
+### Reproduce Locked Phase D8 Evaluation
 ```bash
-python scripts/inspect_dataset.py
+python scripts/evaluate_phase_d8_locked.py
 ```
 
-### 2. Prepare Dataset Manifest & Splits
+### Run Phase D10 Automated Integrity Verification Checks
 ```bash
-python scripts/prepare_dataset.py
+python scratch/run_final_automated_checks.py
 ```
 
-### 3. Verify All Components (Architecture Unit Tests)
+### Run Multimodal Sample Inference
 ```bash
-python scripts/verify_components.py
-```
-
-### 4. Train Models
-```bash
-# Standalone Mammogram model
-python scripts/train_densenet.py
-
-# Standalone Ultrasound model
-python scripts/train_resnet.py
-
-# Simple Fusion baseline
-python scripts/train_fusion.py
-
-# Proposed Multimodal Graph-Infused Transformer
-python scripts/train_graph_transformer.py
-```
-
-### 5. Evaluate & Generate Comparison Report
-```bash
-python scripts/evaluate.py
-```
-
-### 6. Unified CLI
-```bash
-python main.py --action smoke_test
-python main.py --action train --model graph_transformer
-python main.py --action eval
+python predict_sample.py
 ```
 
 ---
 
-## 7. Explainability & Clinical Disclaimer
-
-- **Grad-CAM**: Generates class activation maps for DenseNet-121 and ResNet-50 layers (`src/explainability/gradcam.py`).
-- **Attention Visualization**: Visualizes GATv2 cross-attention and Transformer self-attention matrices.
+## 6. Ethical Considerations & Clinical Boundaries
 
 > [!CAUTION]
-> **Research Disclaimer**: This software is an experimental artificial intelligence research prototype developed for academic and scientific inquiry. It has not been approved by any regulatory health agency (e.g., FDA, CE-IVD) and must NOT be used as a clinical diagnostic decision-support tool.
+> **Research Prototype Disclaimer**: This system is an automated radiologic triage research tool (`LOW_RISK` vs. `SUSPICIOUS_ACTIONABLE`), not an autonomous tissue pathology diagnostic device. It does not replace clinical breast examination, expert radiological interpretation, or tissue biopsy.
+>
+> **Cohort Constraints**: The held-out test cohort contains $N_{\text{pos}} = 7$ suspicious cases, yielding wide exact 95% Clopper-Pearson confidence intervals ($[42.13\%, 99.64\%]$ for sensitivity). Results reflect internal descriptive observations on retrospective data from a single hospital and require external multi-center clinical validation before translational deployment.
+
+---
+
+## 7. Citation
+
+If you use this codebase, methodology, or results in your research, please cite:
+
+```bibtex
+@article{bcmid_git_triage_2026,
+  title   = {Multimodal Deep Learning for Radiologic Breast Cancer Triage: Graph-Infused Transformers on Paired Mammogram and Ultrasound Imaging},
+  author  = {Antigravity AI Research Team and Collaborators},
+  journal = {Research Consolidation Report, BCMID Project},
+  year    = {2026},
+  url     = {https://github.com/Renusri-Naraharasetty/Breast-Cancer}
+}
+```
+
+---
+
+## 8. License
+
+This repository is licensed under the [MIT License](LICENSE). The BCMID imaging dataset is governed by its original Zenodo open-access terms (Record 15546909).

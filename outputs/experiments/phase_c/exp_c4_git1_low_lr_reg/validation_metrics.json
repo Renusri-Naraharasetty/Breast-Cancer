@@ -1,0 +1,63 @@
+{
+  "val_loss": 0.4664,
+  "val_acc": 0.9167,
+  "val_precision": 0.8333,
+  "val_recall": 0.625,
+  "val_sensitivity": 0.625,
+  "val_specificity": 0.975,
+  "val_f1": 0.7143,
+  "val_balanced_acc": 0.8,
+  "val_gmean": 0.7806,
+  "val_roc_auc": 0.9219,
+  "val_pr_auc": 0.7667,
+  "composite_score": 0.8338,
+  "val_tn": 39,
+  "val_fp": 1,
+  "val_fn": 3,
+  "val_tp": 5,
+  "selected_epoch": 7,
+  "exp_id": "exp_c4_git1_low_lr_reg",
+  "overfitting_indicators": {
+    "train_loss_selected_epoch": 0.2967,
+    "val_loss_selected_epoch": 0.4664,
+    "loss_gap_selected_epoch": 0.1697,
+    "train_acc_selected_epoch": 0.9227,
+    "val_acc_selected_epoch": 0.9167,
+    "final_epoch": 15,
+    "final_train_loss": 0.0754,
+    "final_val_loss": 0.9227,
+    "final_loss_gap": 0.8473
+  },
+  "metadata": {
+    "exp_id": "exp_c4_git1_low_lr_reg",
+    "loss_type": "weighted_bce",
+    "focal_gamma": 0.0,
+    "loss_formula": "WCE(p_t) = -alpha_t * log(p_t), normalized by sum(alpha_t)",
+    "alpha_weights": [
+      1.0,
+      5.1111
+    ],
+    "reduction": "mean (divided by sum of class weights across batch)",
+    "training_distribution": {
+      "class_0_neg": 184,
+      "class_1_pos": 36,
+      "ratio_neg_to_pos": 5.1111
+    },
+    "validation_distribution": {
+      "class_0_neg": 40,
+      "class_1_pos": 8,
+      "ratio_neg_to_pos": 5.0
+    },
+    "checkpoint_selection_protocol": "Predeclared Composite Score = 0.5 * ROC-AUC + 0.3 * PR-AUC + 0.2 * F1 (tie-breaker: lower val_loss)",
+    "lr": 5e-05,
+    "weight_decay": 0.02,
+    "dropout_rate": 0.4,
+    "hidden_dim": 256,
+    "num_gat_layers": 2,
+    "gat_heads": 4,
+    "transformer_layers": 2,
+    "transformer_heads": 8,
+    "dim_feedforward": 1024,
+    "seed": 42
+  }
+}

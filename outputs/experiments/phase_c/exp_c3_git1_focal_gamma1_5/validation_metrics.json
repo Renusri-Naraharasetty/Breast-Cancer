@@ -1,0 +1,63 @@
+{
+  "val_loss": 0.1679,
+  "val_acc": 0.8958,
+  "val_precision": 0.6667,
+  "val_recall": 0.75,
+  "val_sensitivity": 0.75,
+  "val_specificity": 0.925,
+  "val_f1": 0.7059,
+  "val_balanced_acc": 0.8375,
+  "val_gmean": 0.8329,
+  "val_roc_auc": 0.9281,
+  "val_pr_auc": 0.7661,
+  "composite_score": 0.8351,
+  "val_tn": 37,
+  "val_fp": 3,
+  "val_fn": 2,
+  "val_tp": 6,
+  "selected_epoch": 4,
+  "exp_id": "exp_c3_git1_focal_gamma1_5",
+  "overfitting_indicators": {
+    "train_loss_selected_epoch": 0.159,
+    "val_loss_selected_epoch": 0.1679,
+    "loss_gap_selected_epoch": 0.0089,
+    "train_acc_selected_epoch": 0.9091,
+    "val_acc_selected_epoch": 0.8958,
+    "final_epoch": 12,
+    "final_train_loss": 0.0235,
+    "final_val_loss": 0.7972,
+    "final_loss_gap": 0.7737
+  },
+  "metadata": {
+    "exp_id": "exp_c3_git1_focal_gamma1_5",
+    "loss_type": "focal",
+    "focal_gamma": 1.5,
+    "loss_formula": "FL(p_t) = -alpha_t * (1 - p_t)^1.5 * log(p_t), normalized by sum(alpha_t)",
+    "alpha_weights": [
+      1.0,
+      5.1111
+    ],
+    "reduction": "mean (divided by sum of class weights across batch)",
+    "training_distribution": {
+      "class_0_neg": 184,
+      "class_1_pos": 36,
+      "ratio_neg_to_pos": 5.1111
+    },
+    "validation_distribution": {
+      "class_0_neg": 40,
+      "class_1_pos": 8,
+      "ratio_neg_to_pos": 5.0
+    },
+    "checkpoint_selection_protocol": "Predeclared Composite Score = 0.5 * ROC-AUC + 0.3 * PR-AUC + 0.2 * F1 (tie-breaker: lower val_loss)",
+    "lr": 0.0001,
+    "weight_decay": 0.01,
+    "dropout_rate": 0.3,
+    "hidden_dim": 256,
+    "num_gat_layers": 2,
+    "gat_heads": 4,
+    "transformer_layers": 2,
+    "transformer_heads": 8,
+    "dim_feedforward": 1024,
+    "seed": 42
+  }
+}

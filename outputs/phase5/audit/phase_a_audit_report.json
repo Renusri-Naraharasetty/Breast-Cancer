@@ -1,0 +1,101 @@
+{
+  "dataset_integrity": {
+    "total_annotated_entries": 332,
+    "eligible_cohort_size": 315,
+    "multimodal_paired_count": 315,
+    "root_patients": {
+      "train": 217,
+      "val": 47,
+      "test": 47,
+      "total": 311
+    },
+    "patient_folders": {
+      "train": 220,
+      "val": 48,
+      "test": 47,
+      "total": 315
+    },
+    "split_disjointness_check": {
+      "train_val_overlap": 0,
+      "train_test_overlap": 0,
+      "val_test_overlap": 0,
+      "status": "PASS_ZERO_LEAKAGE"
+    },
+    "positive_class_semantics": {
+      "positive_label_id": 1,
+      "positive_label_name": "SUSPICIOUS_ACTIONABLE",
+      "positive_birads_categories": [
+        "4",
+        "4A",
+        "4B",
+        "4C",
+        "5",
+        "6",
+        "6_PATHOLOGY"
+      ],
+      "negative_label_id": 0,
+      "negative_label_name": "LOW_RISK",
+      "negative_birads_categories": [
+        "1",
+        "2",
+        "2_CLEAR_FOLLOWUP",
+        "3",
+        "3_PROBABLY_BENIGN"
+      ],
+      "status": "VERIFIED"
+    }
+  },
+  "models_audited": {
+    "GIT_1": {
+      "experiment_id": "exp_git_multimodal",
+      "backbones": "Mammogram: EfficientNet-B0, Ultrasound: ViT-B/16",
+      "n_test_patients": 47,
+      "metrics_tau_0_50": {
+        "accuracy": 0.8298,
+        "sensitivity": 0.7143,
+        "specificity": 0.85,
+        "precision": 0.4545,
+        "f1_score": 0.5556,
+        "balanced_accuracy": 0.7821,
+        "g_mean": 0.7792,
+        "roc_auc_continuous": 0.8857,
+        "roc_auc_binary": 0.7821,
+        "pr_auc_continuous": 0.5729,
+        "pr_auc_binary": 0.3672,
+        "tp": 5,
+        "fp": 6,
+        "tn": 34,
+        "fn": 2
+      },
+      "discrepancies_found": 0
+    },
+    "GIT_2": {
+      "experiment_id": "exp_git_vit_mammogram_effnet_ultrasound",
+      "backbones": "Mammogram: ViT-B/16, Ultrasound: EfficientNet-B0",
+      "n_test_patients": 47,
+      "metrics_tau_0_50": {
+        "accuracy": 0.6383,
+        "sensitivity": 1.0,
+        "specificity": 0.575,
+        "precision": 0.2917,
+        "f1_score": 0.4516,
+        "balanced_accuracy": 0.7875,
+        "g_mean": 0.7583,
+        "roc_auc_continuous": 0.8321,
+        "roc_auc_binary": 0.7875,
+        "pr_auc_continuous": 0.4048,
+        "pr_auc_binary": 0.2917,
+        "tp": 7,
+        "fp": 17,
+        "tn": 23,
+        "fn": 0
+      },
+      "discrepancies_found": 0
+    }
+  },
+  "validation_predictions_status": {
+    "git_1_val_exists": false,
+    "git_2_val_exists": false,
+    "action_required_for_phase_b": "Generate validation set predictions using best checkpoints on the 48 validation patients"
+  }
+}

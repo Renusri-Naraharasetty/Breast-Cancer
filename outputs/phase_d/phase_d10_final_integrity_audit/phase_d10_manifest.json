@@ -1,0 +1,328 @@
+{
+  "manifest_version": "1.0",
+  "phase": "Phase D10",
+  "title": "Final Research Integrity Audit and Submission Readiness Manifest",
+  "audit_timestamp": "2026-10-16T11:18:47.262739",
+  "final_verdict": "READY FOR SUBMISSION REVIEW",
+  "critical_safety_confirmations": {
+    "training_performed": false,
+    "fine_tuning_performed": false,
+    "model_weights_modified": false,
+    "new_test_inference_run": false,
+    "threshold_sweeps_on_test_run": false,
+    "recalibration_performed": false,
+    "original_phase_d9_artifacts_overwritten": false,
+    "patient_data_uploaded_externally": false
+  },
+  "inspected_source_artifacts": [
+    "BCMID_annotations.tsv",
+    "data/splits/patient_stratified_split.json",
+    "data/features/patient_multimodal_features.pt",
+    "outputs/phase_d/phase_d0_audit_report.md",
+    "outputs/phase_d/phase_d8_final_evaluation/test_metrics_c3.json",
+    "outputs/phase_d/phase_d8_final_evaluation/test_metrics_d5.json",
+    "outputs/phase_d/phase_d8_final_evaluation/paired_comparison.json",
+    "outputs/phase_d/phase_d8_final_evaluation/historical_metric_reconciliation.md",
+    "outputs/phase_d/phase_d9_research_consolidation/final_research_manuscript.md",
+    "outputs/phase_d/phase_d9_research_consolidation/executive_summary.md",
+    "outputs/phase_d/phase_d9_research_consolidation/references.md",
+    "outputs/phase_d/phase_d9_research_consolidation/final_results_tables.csv"
+  ],
+  "checks_performed": [
+    "Check 1: Patient privacy scan (regex \\b\\d{3,5}y\\d{2,3}\\b across publication files) -> PASS",
+    "Check 2: Clinical framing and pathology terminology audit -> PASS",
+    "Check 3: Dataset counts and test metrics consistency audit -> PASS",
+    "Check 4: Scholarly literature and in-text citation callouts audit (22/22 references) -> PASS",
+    "Check 5: Figures and tables presence and cross-reference audit -> PASS",
+    "Check 6: Publication export compilation and verification (Markdown, PDF, DOCX, HTML) -> PASS",
+    "Check 7: Clinical readiness and autonomous diagnostic claim prevention -> PASS",
+    "Check 8: Required submission files presence audit (13 required files) -> PASS"
+  ],
+  "unresolved_discrepancies": [],
+  "created_deliverables": {
+    "phase_d10_final_integrity_audit\\dataset_count_discrepancies.csv": {
+      "size_bytes": 3081,
+      "sha256": "fb5f648483d78eda139b7effd587b67562bdf014b66e7de757a140603fa43f84"
+    },
+    "phase_d10_final_integrity_audit\\executive_summary.md": {
+      "size_bytes": 7266,
+      "sha256": "1bdb6528882fc17053c233f71962d6d8317d72e3476785fd3f2cf572c15bc389"
+    },
+    "phase_d10_final_integrity_audit\\final_integrity_audit_report.md": {
+      "size_bytes": 16860,
+      "sha256": "3b18c6077ea6150297c2dfc41904e09a27521fc4a97867a723b06e94e11d03e9"
+    },
+    "phase_d10_final_integrity_audit\\final_research_manuscript.docx": {
+      "size_bytes": 2510309,
+      "sha256": "56930c22cc20d600615a4ff16e4874e0ea27f459a9aa724bb0af19a49243e5b3"
+    },
+    "phase_d10_final_integrity_audit\\final_research_manuscript.html": {
+      "size_bytes": 3785290,
+      "sha256": "ec78d89663b3543ff0ddd438a563f5586ed4b6dcbab80c6184e608272d9f03ba"
+    },
+    "phase_d10_final_integrity_audit\\final_research_manuscript.md": {
+      "size_bytes": 44314,
+      "sha256": "44123285ab06025129355fddb97378e84f4f9b7b0e06536b0c107238a4ecbe48"
+    },
+    "phase_d10_final_integrity_audit\\final_research_manuscript.pdf": {
+      "size_bytes": 661302,
+      "sha256": "f0675065dfe1ff9f165613ff5c0c4209f8481fff2b4bfab5ce77b44f2976d30a"
+    },
+    "phase_d10_final_integrity_audit\\final_results_tables.csv": {
+      "size_bytes": 1394,
+      "sha256": "fea10648ee7c4991e8dddb95d61ac21c93dbb90984c5d29ff66f1c8241e1cec6"
+    },
+    "phase_d10_final_integrity_audit\\final_submission_checklist.md": {
+      "size_bytes": 6212,
+      "sha256": "0d44130dbbe4d1bcb9b63daf1640242c12ec2c5352d3720b53b9978dd4111caa"
+    },
+    "phase_d10_final_integrity_audit\\limitations_and_future_work.md": {
+      "size_bytes": 6764,
+      "sha256": "ec3fbab8f8ee8e14acd30cc38a175e4ff8a692ab0e1b791f309d8a4cd86f39f6"
+    },
+    "phase_d10_final_integrity_audit\\metric_consistency_audit.csv": {
+      "size_bytes": 4973,
+      "sha256": "e1180a09a9065e635dc61fa7f8e358f7e24e52cdec72f77fdb4d1e6e5b22bd47"
+    },
+    "phase_d10_final_integrity_audit\\phase_d10_final_integrity_audit.md": {
+      "size_bytes": 16860,
+      "sha256": "3b18c6077ea6150297c2dfc41904e09a27521fc4a97867a723b06e94e11d03e9"
+    },
+    "phase_d10_final_integrity_audit\\privacy_and_citation_audit.md": {
+      "size_bytes": 9205,
+      "sha256": "9c1b57fa9dc95a9cd824ddcd27e48833f67d0da32a77be2d7eee3233b7722ecf"
+    },
+    "phase_d10_final_integrity_audit\\references.md": {
+      "size_bytes": 7727,
+      "sha256": "261449a351f6f56e87b54066251292c5063a9069395f151a5bb2226ca7dcc4b9"
+    },
+    "phase_d10_final_integrity_audit\\submission_readiness_checklist.md": {
+      "size_bytes": 6212,
+      "sha256": "0d44130dbbe4d1bcb9b63daf1640242c12ec2c5352d3720b53b9978dd4111caa"
+    },
+    "phase_d10_final_integrity_audit\\corrected_manuscript\\executive_summary.md": {
+      "size_bytes": 7266,
+      "sha256": "1bdb6528882fc17053c233f71962d6d8317d72e3476785fd3f2cf572c15bc389"
+    },
+    "phase_d10_final_integrity_audit\\corrected_manuscript\\final_research_manuscript.docx": {
+      "size_bytes": 2510294,
+      "sha256": "497e94c20dde3fed941acbcd01cf6fa1b5b96ba91c3e91981ef99ba97c84a3f0"
+    },
+    "phase_d10_final_integrity_audit\\corrected_manuscript\\final_research_manuscript.html": {
+      "size_bytes": 3785265,
+      "sha256": "1400257c15bc811a3a33b6afa030281dfe851e3d89c735326b39209305063725"
+    },
+    "phase_d10_final_integrity_audit\\corrected_manuscript\\final_research_manuscript.md": {
+      "size_bytes": 44314,
+      "sha256": "44123285ab06025129355fddb97378e84f4f9b7b0e06536b0c107238a4ecbe48"
+    },
+    "phase_d10_final_integrity_audit\\corrected_manuscript\\final_research_manuscript.pdf": {
+      "size_bytes": 661262,
+      "sha256": "c50c7a566324b41ad6591dd08df54a58bede36bbcdffcf316dd4e5a4f0ab3078"
+    },
+    "phase_d10_final_integrity_audit\\corrected_manuscript\\final_results_tables.csv": {
+      "size_bytes": 1394,
+      "sha256": "fea10648ee7c4991e8dddb95d61ac21c93dbb90984c5d29ff66f1c8241e1cec6"
+    },
+    "phase_d10_final_integrity_audit\\corrected_manuscript\\limitations_and_future_work.md": {
+      "size_bytes": 6764,
+      "sha256": "ec3fbab8f8ee8e14acd30cc38a175e4ff8a692ab0e1b791f309d8a4cd86f39f6"
+    },
+    "phase_d10_final_integrity_audit\\corrected_manuscript\\references.md": {
+      "size_bytes": 7727,
+      "sha256": "261449a351f6f56e87b54066251292c5063a9069395f151a5bb2226ca7dcc4b9"
+    },
+    "phase_d10_final_integrity_audit\\corrected_manuscript\\figures\\architecture_pipeline_diagram.png": {
+      "size_bytes": 386808,
+      "sha256": "698fa942c532a5bea587cc6e3d08002503c8fc2499c6ae64350002a372f2e00b"
+    },
+    "phase_d10_final_integrity_audit\\corrected_manuscript\\figures\\confusion_matrices_c3_vs_d5.png": {
+      "size_bytes": 139933,
+      "sha256": "3c64bdd0905a3c76a57630db6c5381ab0040960f2dfeca2962299ebb5243992a"
+    },
+    "phase_d10_final_integrity_audit\\corrected_manuscript\\figures\\dataset_split_flowchart.png": {
+      "size_bytes": 656670,
+      "sha256": "757bab7434d7a9b2c0d696ec3de15bfd97c22adfd284ad1465a05218f43d103b"
+    },
+    "phase_d10_final_integrity_audit\\corrected_manuscript\\figures\\paired_prediction_scatter.png": {
+      "size_bytes": 310091,
+      "sha256": "f59716028933705945dc88580fb759a281b8ece0cfeb31a50aeba40af946d029"
+    },
+    "phase_d10_final_integrity_audit\\corrected_manuscript\\figures\\pr_curves_c3_vs_d5.png": {
+      "size_bytes": 185018,
+      "sha256": "bda97d537e10d0a5a66048d464d4f55862faf223c132b4a544c6ee95052334a1"
+    },
+    "phase_d10_final_integrity_audit\\corrected_manuscript\\figures\\reliability_curves_c3_vs_d5.png": {
+      "size_bytes": 226346,
+      "sha256": "3a526fd48e96c1b31d569bdf284f98cc3c7e912544fd894f7ec3c43f601d2f69"
+    },
+    "phase_d10_final_integrity_audit\\corrected_manuscript\\figures\\reliability_diagram_c3_vs_d5.png": {
+      "size_bytes": 428067,
+      "sha256": "bd704a9e885eab3b700790f88434d534076feae321638209072174d61df9139b"
+    },
+    "phase_d10_final_integrity_audit\\corrected_manuscript\\figures\\roc_curves_c3_vs_d5.png": {
+      "size_bytes": 199910,
+      "sha256": "cbbe8a7f8c1fa240b1dcf083d06000bfdd83770b8c762624b729859b450f4b61"
+    },
+    "phase_d10_final_integrity_audit\\corrected_manuscript\\figures\\threshold_metrics_curve_c3_vs_d5.png": {
+      "size_bytes": 577846,
+      "sha256": "e28f2b5eabf8526aec469e25cd55c3e306589920c74762e3a109ad7fd1e9dc79"
+    },
+    "phase_d10_final_integrity_audit\\corrected_manuscript\\figures\\threshold_sensitivity_specificity_tradeoff.png": {
+      "size_bytes": 251380,
+      "sha256": "6368f2747dcf1cfa3834c1a7eb71601eb70ae327ea8a7ab442c28dad0e2fb20d"
+    },
+    "phase_d10_final_integrity_audit\\corrected_manuscript\\tables\\table1_individual_baselines.csv": {
+      "size_bytes": 653,
+      "sha256": "35693b42bff72efe7b8a4f262fcc175730ef70f763a5e503a3b737c7ffc3b922"
+    },
+    "phase_d10_final_integrity_audit\\corrected_manuscript\\tables\\table1_individual_baselines.md": {
+      "size_bytes": 1144,
+      "sha256": "075605f465c79b5c3082c5b00c9992b858f6471add2df06936c37f685bcd1171"
+    },
+    "phase_d10_final_integrity_audit\\corrected_manuscript\\tables\\table2_git_baselines.csv": {
+      "size_bytes": 467,
+      "sha256": "d2eccc84575df409e1171b898080d0373db27154d8110bec62e7b9d5ee80f00e"
+    },
+    "phase_d10_final_integrity_audit\\corrected_manuscript\\tables\\table2_git_baselines.md": {
+      "size_bytes": 846,
+      "sha256": "d04157f7157b108d419abf58b51f1430cac242a33852426cc19e33dd8d182cba"
+    },
+    "phase_d10_final_integrity_audit\\corrected_manuscript\\tables\\table3_phase_c_experiments.csv": {
+      "size_bytes": 884,
+      "sha256": "36388d7e8381c88a727b963f5ec2e2b8a95c363f916ed40459c02a01e1023b1d"
+    },
+    "phase_d10_final_integrity_audit\\corrected_manuscript\\tables\\table3_phase_c_experiments.md": {
+      "size_bytes": 1766,
+      "sha256": "0c78cc0a54277a06644ca41cdf388d3486ced8a72862aba6a960fc8469639531"
+    },
+    "phase_d10_final_integrity_audit\\corrected_manuscript\\tables\\table4_phase_d_ablations.csv": {
+      "size_bytes": 868,
+      "sha256": "8ade7ef82563dff900e9bc76e77e0b30bda80df3a9457a668fcd1b598d37d545"
+    },
+    "phase_d10_final_integrity_audit\\corrected_manuscript\\tables\\table4_phase_d_ablations.md": {
+      "size_bytes": 1727,
+      "sha256": "0152395e8df19b9509ebc72918e1ad641d3570c660cafa5f82bc1afa50707e4b"
+    },
+    "phase_d10_final_integrity_audit\\corrected_manuscript\\tables\\table5_multi_seed_stability.csv": {
+      "size_bytes": 732,
+      "sha256": "751f50e45b5cc7d13864b452b7cfd30a24269c56eb5c1ba0dacdcf1aa45ab90f"
+    },
+    "phase_d10_final_integrity_audit\\corrected_manuscript\\tables\\table5_multi_seed_stability.md": {
+      "size_bytes": 1388,
+      "sha256": "b8daa4fe13e922f01e49d5a87c379fe5daf82cacf96896838cf708fcee87ea8a"
+    },
+    "phase_d10_final_integrity_audit\\corrected_manuscript\\tables\\table6_locked_test_comparison.csv": {
+      "size_bytes": 1069,
+      "sha256": "a5a7fc05b1a6aa95068dc26210b3bc42350143f254a0122c06abdd459bd238b0"
+    },
+    "phase_d10_final_integrity_audit\\corrected_manuscript\\tables\\table6_locked_test_comparison.md": {
+      "size_bytes": 2411,
+      "sha256": "4715b288b70cdb619542b747bd378b97de5588a370d79e27fab154536fc77dff"
+    },
+    "phase_d10_final_integrity_audit\\corrected_manuscript\\tables\\table7_paired_contingency.csv": {
+      "size_bytes": 146,
+      "sha256": "904bf1e16091a2b4688cb2c9cc7df0a7f7db507c067a00ef2370bba29e5c8e77"
+    },
+    "phase_d10_final_integrity_audit\\corrected_manuscript\\tables\\table7_paired_contingency.md": {
+      "size_bytes": 503,
+      "sha256": "f58c850746e93bb5e468b0942a8bd590b5c6c270cef86c9444f41d4f84dfc0e9"
+    },
+    "phase_d10_final_integrity_audit\\figures\\architecture_pipeline_diagram.png": {
+      "size_bytes": 386808,
+      "sha256": "698fa942c532a5bea587cc6e3d08002503c8fc2499c6ae64350002a372f2e00b"
+    },
+    "phase_d10_final_integrity_audit\\figures\\confusion_matrices_c3_vs_d5.png": {
+      "size_bytes": 139933,
+      "sha256": "3c64bdd0905a3c76a57630db6c5381ab0040960f2dfeca2962299ebb5243992a"
+    },
+    "phase_d10_final_integrity_audit\\figures\\dataset_split_flowchart.png": {
+      "size_bytes": 656670,
+      "sha256": "757bab7434d7a9b2c0d696ec3de15bfd97c22adfd284ad1465a05218f43d103b"
+    },
+    "phase_d10_final_integrity_audit\\figures\\paired_prediction_scatter.png": {
+      "size_bytes": 310091,
+      "sha256": "f59716028933705945dc88580fb759a281b8ece0cfeb31a50aeba40af946d029"
+    },
+    "phase_d10_final_integrity_audit\\figures\\pr_curves_c3_vs_d5.png": {
+      "size_bytes": 185018,
+      "sha256": "bda97d537e10d0a5a66048d464d4f55862faf223c132b4a544c6ee95052334a1"
+    },
+    "phase_d10_final_integrity_audit\\figures\\reliability_curves_c3_vs_d5.png": {
+      "size_bytes": 226346,
+      "sha256": "3a526fd48e96c1b31d569bdf284f98cc3c7e912544fd894f7ec3c43f601d2f69"
+    },
+    "phase_d10_final_integrity_audit\\figures\\reliability_diagram_c3_vs_d5.png": {
+      "size_bytes": 428067,
+      "sha256": "bd704a9e885eab3b700790f88434d534076feae321638209072174d61df9139b"
+    },
+    "phase_d10_final_integrity_audit\\figures\\roc_curves_c3_vs_d5.png": {
+      "size_bytes": 199910,
+      "sha256": "cbbe8a7f8c1fa240b1dcf083d06000bfdd83770b8c762624b729859b450f4b61"
+    },
+    "phase_d10_final_integrity_audit\\figures\\threshold_metrics_curve_c3_vs_d5.png": {
+      "size_bytes": 577846,
+      "sha256": "e28f2b5eabf8526aec469e25cd55c3e306589920c74762e3a109ad7fd1e9dc79"
+    },
+    "phase_d10_final_integrity_audit\\figures\\threshold_sensitivity_specificity_tradeoff.png": {
+      "size_bytes": 251380,
+      "sha256": "6368f2747dcf1cfa3834c1a7eb71601eb70ae327ea8a7ab442c28dad0e2fb20d"
+    },
+    "phase_d10_final_integrity_audit\\tables\\table1_individual_baselines.csv": {
+      "size_bytes": 653,
+      "sha256": "35693b42bff72efe7b8a4f262fcc175730ef70f763a5e503a3b737c7ffc3b922"
+    },
+    "phase_d10_final_integrity_audit\\tables\\table1_individual_baselines.md": {
+      "size_bytes": 1144,
+      "sha256": "075605f465c79b5c3082c5b00c9992b858f6471add2df06936c37f685bcd1171"
+    },
+    "phase_d10_final_integrity_audit\\tables\\table2_git_baselines.csv": {
+      "size_bytes": 467,
+      "sha256": "d2eccc84575df409e1171b898080d0373db27154d8110bec62e7b9d5ee80f00e"
+    },
+    "phase_d10_final_integrity_audit\\tables\\table2_git_baselines.md": {
+      "size_bytes": 846,
+      "sha256": "d04157f7157b108d419abf58b51f1430cac242a33852426cc19e33dd8d182cba"
+    },
+    "phase_d10_final_integrity_audit\\tables\\table3_phase_c_experiments.csv": {
+      "size_bytes": 884,
+      "sha256": "36388d7e8381c88a727b963f5ec2e2b8a95c363f916ed40459c02a01e1023b1d"
+    },
+    "phase_d10_final_integrity_audit\\tables\\table3_phase_c_experiments.md": {
+      "size_bytes": 1766,
+      "sha256": "0c78cc0a54277a06644ca41cdf388d3486ced8a72862aba6a960fc8469639531"
+    },
+    "phase_d10_final_integrity_audit\\tables\\table4_phase_d_ablations.csv": {
+      "size_bytes": 868,
+      "sha256": "8ade7ef82563dff900e9bc76e77e0b30bda80df3a9457a668fcd1b598d37d545"
+    },
+    "phase_d10_final_integrity_audit\\tables\\table4_phase_d_ablations.md": {
+      "size_bytes": 1727,
+      "sha256": "0152395e8df19b9509ebc72918e1ad641d3570c660cafa5f82bc1afa50707e4b"
+    },
+    "phase_d10_final_integrity_audit\\tables\\table5_multi_seed_stability.csv": {
+      "size_bytes": 732,
+      "sha256": "751f50e45b5cc7d13864b452b7cfd30a24269c56eb5c1ba0dacdcf1aa45ab90f"
+    },
+    "phase_d10_final_integrity_audit\\tables\\table5_multi_seed_stability.md": {
+      "size_bytes": 1388,
+      "sha256": "b8daa4fe13e922f01e49d5a87c379fe5daf82cacf96896838cf708fcee87ea8a"
+    },
+    "phase_d10_final_integrity_audit\\tables\\table6_locked_test_comparison.csv": {
+      "size_bytes": 1069,
+      "sha256": "a5a7fc05b1a6aa95068dc26210b3bc42350143f254a0122c06abdd459bd238b0"
+    },
+    "phase_d10_final_integrity_audit\\tables\\table6_locked_test_comparison.md": {
+      "size_bytes": 2411,
+      "sha256": "4715b288b70cdb619542b747bd378b97de5588a370d79e27fab154536fc77dff"
+    },
+    "phase_d10_final_integrity_audit\\tables\\table7_paired_contingency.csv": {
+      "size_bytes": 146,
+      "sha256": "904bf1e16091a2b4688cb2c9cc7df0a7f7db507c067a00ef2370bba29e5c8e77"
+    },
+    "phase_d10_final_integrity_audit\\tables\\table7_paired_contingency.md": {
+      "size_bytes": 503,
+      "sha256": "f58c850746e93bb5e468b0942a8bd590b5c6c270cef86c9444f41d4f84dfc0e9"
+    }
+  }
+}

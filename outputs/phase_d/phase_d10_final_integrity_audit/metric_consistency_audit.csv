@@ -1,0 +1,39 @@
+Metric,Artifact,Reported value,Verified value,Status
+Test Cases (C3),outputs/phase_d/phase_d8_final_evaluation/test_metrics_c3.json,47,47,Verified - 100% Concordant
+Test Cases (D5),outputs/phase_d/phase_d8_final_evaluation/test_metrics_d5.json,47,47,Verified - 100% Concordant
+Positive Cases (C3),outputs/phase_d/phase_d8_final_evaluation/test_metrics_c3.json,7,7,Verified - 100% Concordant
+Positive Cases (D5),outputs/phase_d/phase_d8_final_evaluation/test_metrics_d5.json,7,7,Verified - 100% Concordant
+Negative Cases (C3),outputs/phase_d/phase_d8_final_evaluation/test_metrics_c3.json,40,40,Verified - 100% Concordant
+Negative Cases (D5),outputs/phase_d/phase_d8_final_evaluation/test_metrics_d5.json,40,40,Verified - 100% Concordant
+C3 Confusion Matrix,outputs/phase_d/phase_d8_final_evaluation/test_metrics_c3.json,"[34, 6, 1, 6]","[34, 6, 1, 6]",Verified - 100% Concordant
+D5 Confusion Matrix,outputs/phase_d/phase_d8_final_evaluation/test_metrics_d5.json,"[32, 8, 1, 6]","[32, 8, 1, 6]",Verified - 100% Concordant
+C3 Accuracy,outputs/phase_d/phase_d8_final_evaluation/test_metrics_c3.json,85.11%,85.11%,Verified - 100% Concordant
+D5 Accuracy,outputs/phase_d/phase_d8_final_evaluation/test_metrics_d5.json,80.85%,80.85%,Verified - 100% Concordant
+C3 Sensitivity,outputs/phase_d/phase_d8_final_evaluation/test_metrics_c3.json,85.71%,85.71%,Verified - 100% Concordant
+D5 Sensitivity,outputs/phase_d/phase_d8_final_evaluation/test_metrics_d5.json,85.71%,85.71%,Verified - 100% Concordant
+C3 Specificity,outputs/phase_d/phase_d8_final_evaluation/test_metrics_c3.json,85.00%,85.00%,Verified - 100% Concordant
+D5 Specificity,outputs/phase_d/phase_d8_final_evaluation/test_metrics_d5.json,80.00%,80.00%,Verified - 100% Concordant
+C3 Precision (PPV),outputs/phase_d/phase_d8_final_evaluation/test_metrics_c3.json,50.00%,50.00%,Verified - 100% Concordant
+D5 Precision (PPV),outputs/phase_d/phase_d8_final_evaluation/test_metrics_d5.json,42.86%,42.86%,Verified - 100% Concordant
+C3 Negative Predictive Value,outputs/phase_d/phase_d8_final_evaluation/test_metrics_c3.json,97.14%,97.14%,Verified - 100% Concordant
+D5 Negative Predictive Value,outputs/phase_d/phase_d8_final_evaluation/test_metrics_d5.json,96.97%,96.97%,Verified - 100% Concordant
+C3 F1-score,outputs/phase_d/phase_d8_final_evaluation/test_metrics_c3.json,0.6316,0.6316,Verified - 100% Concordant
+D5 F1-score,outputs/phase_d/phase_d8_final_evaluation/test_metrics_d5.json,0.5714,0.5714,Verified - 100% Concordant
+C3 Balanced Accuracy,outputs/phase_d/phase_d8_final_evaluation/test_metrics_c3.json,85.36%,85.36%,Verified - 100% Concordant
+D5 Balanced Accuracy,outputs/phase_d/phase_d8_final_evaluation/test_metrics_d5.json,82.86%,82.86%,Verified - 100% Concordant
+C3 ROC-AUC,outputs/phase_d/phase_d8_final_evaluation/test_metrics_c3.json,0.9036,0.9036,Verified - 100% Concordant
+D5 ROC-AUC,outputs/phase_d/phase_d8_final_evaluation/test_metrics_d5.json,0.8964,0.8964,Verified - 100% Concordant
+C3 PR-AUC,outputs/phase_d/phase_d8_final_evaluation/test_metrics_c3.json,0.6188,0.6188,Verified - 100% Concordant
+D5 PR-AUC,outputs/phase_d/phase_d8_final_evaluation/test_metrics_d5.json,0.6151,0.6151,Verified - 100% Concordant
+C3 Brier Score,outputs/phase_d/phase_d8_final_evaluation/test_metrics_c3.json,0.1133,0.1133,Verified - 100% Concordant
+D5 Brier Score,outputs/phase_d/phase_d8_final_evaluation/test_metrics_d5.json,0.1281,0.1281,Verified - 100% Concordant
+C3 Log Loss,outputs/phase_d/phase_d8_final_evaluation/test_metrics_c3.json,0.3519,0.3519,Verified - 100% Concordant
+D5 Log Loss,outputs/phase_d/phase_d8_final_evaluation/test_metrics_d5.json,0.4075,0.4075,Verified - 100% Concordant
+Paired Classification Agreement,outputs/phase_d/phase_d8_final_evaluation/paired_comparison.json,45/47 (95.74%),45/47 (95.74%),Verified - 100% Concordant
+Exact McNemar Test p-value,outputs/phase_d/phase_d8_final_evaluation/paired_comparison.json,0.5000,0.5000,Verified - 100% Concordant
+Wilcoxon Signed-Rank Test p-value,outputs/phase_d/phase_d8_final_evaluation/paired_comparison.json,0.0074,0.0074,Verified - 100% Concordant
+Historical GIT 1 ROC-AUC,outputs/phase_d/phase_d8_final_evaluation/historical_metric_reconciliation.md,0.8857,0.8857,Reconciled from raw predictions (legacy hardcode was 0.8679)
+Historical GIT 1 PR-AUC,outputs/phase_d/phase_d8_final_evaluation/historical_metric_reconciliation.md,0.5729,0.5729,Reconciled from raw predictions (legacy hardcode was 0.6800)
+Historical GIT 2 ROC-AUC,outputs/phase_d/phase_d8_final_evaluation/historical_metric_reconciliation.md,0.8321,0.8321,Reconciled from raw predictions (legacy hardcode was 0.8429)
+Historical GIT 2 PR-AUC,outputs/phase_d/phase_d8_final_evaluation/historical_metric_reconciliation.md,0.4048,0.4048,Reconciled from raw predictions (legacy hardcode was 0.5739)
+C3 Phase C vs Phase D8 Concordance,outputs/phase_d/phase_d8_final_evaluation/historical_metric_reconciliation.md,100.0%,100.0%,Verified - Bit-for-bit identical across all 47 test cases

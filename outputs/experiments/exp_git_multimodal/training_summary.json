@@ -1,0 +1,24 @@
+{
+  "experiment_id": "exp_git_multimodal",
+  "selected_epoch": 3,
+  "best_val_loss": 0.4069,
+  "best_val_roc_auc": 0.925,
+  "val_metrics": {
+    "val_loss": 0.4069,
+    "val_acc": 0.8542,
+    "val_precision": 0.5714,
+    "val_recall": 0.5,
+    "val_sensitivity": 0.5,
+    "val_specificity": 0.925,
+    "val_f1": 0.5333,
+    "val_gmean": 0.6801,
+    "val_roc_auc": 0.925,
+    "val_pr_auc": 0.7436,
+    "val_tn": 37,
+    "val_fp": 3,
+    "val_fn": 4,
+    "val_tp": 4
+  },
+  "history_csv": "outputs/experiments/exp_git_multimodal\\training_history.csv",
+  "checkpoint_path": "outputs/experiments/exp_git_multimodal\\best_checkpoint.pth"
+}

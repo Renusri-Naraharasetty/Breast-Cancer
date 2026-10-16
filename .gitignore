@@ -28,7 +28,9 @@ outputs/**/checkpoints/
 
 # Clinical dataset (12.4 GB patient scans - medical privacy & GitHub limits)
 BCMID/
+data/cached_224/
 *.pdf
+!outputs/**/final_research_manuscript.pdf
 
 # Editor & OS files
 .vscode/
@@ -37,5 +39,6 @@ BCMID/
 Thumbs.db
 ehthumbs.db
 
-# Logs
+# Logs & scratch
 *.log
+scratch/
