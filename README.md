@@ -127,7 +127,7 @@ python scripts/evaluate_phase_d8_locked.py
 
 ### Run Phase D10 Automated Integrity Verification Checks
 ```bash
-python scratch/run_final_automated_checks.py
+python scripts/run_final_automated_checks.py
 ```
 
 ### Run Multimodal Sample Inference
